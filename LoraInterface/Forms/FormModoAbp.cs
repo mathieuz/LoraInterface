@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 using LoraInterface.Forms;
+using System.Threading;
 
 namespace LoraInterface.Forms
 {
@@ -112,6 +113,12 @@ namespace LoraInterface.Forms
         //Envia as chave e configurações de conexão com o Lora.
         private void conectarLoraButton_Click(object sender, EventArgs e)
         {
+            if (!MainForm.formInstance.ColapsarConsole())
+            {
+                MainForm.formInstance.ColapsarConsole();
+
+            }
+
             string deviceAddress = deviceAddressTextBox.Texts;
             string appskey = appskeyTextBox.Texts;
             string nwkskey = nwkskeyTextBox.Texts;
@@ -123,18 +130,18 @@ namespace LoraInterface.Forms
             serialPort.WriteLine($"AT+DEVADDR={deviceAddress}");
             serialPort.WriteLine($"AT+APPSKEY={appskey}");
             serialPort.WriteLine($"AT+NWKSKEY={nwkskey}");
-            /*
+
+            serialPort.BaseStream.Flush();
+            Thread.Sleep(500);
+
             serialPort.WriteLine($"AT+DEVEUI={deviceEui}");
             serialPort.WriteLine($"AT+CLASS={classe}");
-            serialPort.WriteLine($"AT+BAND={bandRegion.ToString()}");
-            */
+            serialPort.WriteLine($"AT+BAND={bandRegion}");
 
-            MainForm.formInstance.console.AppendText("Conexão no Modo ABP bem-sucedida." + Environment.NewLine);
+            serialPort.BaseStream.Flush();
+            Thread.Sleep(1000);
 
-            if (MainForm.formInstance.ColapsarConsole() == false)
-            {
-                MainForm.formInstance.ColapsarConsole();
-            }
+            MainForm.formInstance.console.AppendText("Conexão no Modo ABP bem-sucedida!" + Environment.NewLine);
         }
     }
 }
