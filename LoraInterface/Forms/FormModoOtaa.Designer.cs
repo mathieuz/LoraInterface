@@ -239,6 +239,7 @@
             this.cTextBox2.ForeColor = System.Drawing.Color.Black;
             this.cTextBox2.Location = new System.Drawing.Point(10, 10);
             this.cTextBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.cTextBox2.MaxLength = 32767;
             this.cTextBox2.Multiline = true;
             this.cTextBox2.Name = "cTextBox2";
             this.cTextBox2.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
@@ -281,6 +282,7 @@
             this.cTextBox3.ForeColor = System.Drawing.Color.Black;
             this.cTextBox3.Location = new System.Drawing.Point(10, 10);
             this.cTextBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.cTextBox3.MaxLength = 32767;
             this.cTextBox3.Multiline = true;
             this.cTextBox3.Name = "cTextBox3";
             this.cTextBox3.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);

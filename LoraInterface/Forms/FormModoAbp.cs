@@ -13,6 +13,7 @@ using System.Threading;
 
 namespace LoraInterface.Forms
 {
+
     public partial class FormModoAbp : Form
     {
         //Serial Port
@@ -30,13 +31,22 @@ namespace LoraInterface.Forms
 
             comboBoxCOM.SelectedIndex = 0;
 
+            //Inicializando número de retentativas ComboBox.
+            for (int i = 0; i <= 7; i++)
+            {
+                numeroRetentativasComboBox.Items.Add(i.ToString());
+            }
+
+            numeroRetentativasComboBox.SelectedIndex = 0;
+
             //Definindo classes de conexão
             classeComboBox.Items.Add("A");
             classeComboBox.Items.Add("B");
             classeComboBox.Items.Add("C");
             classeComboBox.SelectedIndex = 0;
 
-
+            //Definindo colapso de abas
+            modoDeConfirmacaoGroup.Height = 40;
         }
 
         //Conexão com porta COM.
@@ -63,6 +73,9 @@ namespace LoraInterface.Forms
                         chavesDeAtivacaoGroup.Enabled = true;
                         configuracoesConexaoGroup.Enabled = true;
 
+                        //Altera estilo de controle.
+                        conectarLoraButton.BackColor = Color.LimeGreen;
+
                         //Desabilita acesso das abas do menu lateral.
                         MainForm.formInstance.acessoModoAbp.Enabled = false;
                         MainForm.formInstance.acessoModoOtaa.Enabled = false;
@@ -79,6 +92,7 @@ namespace LoraInterface.Forms
 
             } else if (conectarCOMButton.Text == "Desconectar COM")
             {
+                //Fecha conexão.
                 serialPort.Close();
 
                 //Habilita/desabilita os controles do form.
@@ -86,6 +100,9 @@ namespace LoraInterface.Forms
                 comboBoxCOM.Enabled = true;
                 chavesDeAtivacaoGroup.Enabled = false;
                 configuracoesConexaoGroup.Enabled = false;
+
+                //Altera estilo de controle.
+                conectarLoraButton.BackColor = Color.Gainsboro;
 
                 //Habilita acesso das abas do menu lateral.
                 MainForm.formInstance.acessoModoAbp.Enabled = true;
@@ -110,7 +127,7 @@ namespace LoraInterface.Forms
             }
         }
 
-        //Envia as chave e configurações de conexão com o Lora.
+        //Envia as chaves e configurações de conexão com o Lora.
         private void conectarLoraButton_Click(object sender, EventArgs e)
         {
             if (!MainForm.formInstance.ColapsarConsole())
@@ -124,7 +141,8 @@ namespace LoraInterface.Forms
             string nwkskey = nwkskeyTextBox.Texts;
             string deviceEui = deviceEuiTextBox.Texts;
             string classe = classeComboBox.SelectedItem.ToString();
-            int bandRegion = 6;
+            string cfm = modoConfirmacaoToggle.Checked ? "1" : "0";
+            string rety = numeroRetentativasComboBox.SelectedItem.ToString();
 
             serialPort.WriteLine("AT+NJM=0");
             serialPort.WriteLine($"AT+DEVADDR={deviceAddress}");
@@ -136,12 +154,32 @@ namespace LoraInterface.Forms
 
             serialPort.WriteLine($"AT+DEVEUI={deviceEui}");
             serialPort.WriteLine($"AT+CLASS={classe}");
-            serialPort.WriteLine($"AT+BAND={bandRegion}");
+            serialPort.WriteLine($"AT+CFM={cfm}");
+            serialPort.WriteLine($"AT+RETY={rety}");
 
             serialPort.BaseStream.Flush();
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
+
+            serialPort.WriteLine($"AT+BAND=6");
+
+            serialPort.BaseStream.Flush();
+            Thread.Sleep(300);
 
             MainForm.formInstance.console.AppendText("Conexão no Modo ABP bem-sucedida!" + Environment.NewLine);
         }
+
+        //Colapsa a aba de modo de confirmação.
+        private void cToggle1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (modoConfirmacaoToggle.Checked)
+            {
+                modoDeConfirmacaoGroup.Height = 100;
+            }
+            else
+            {
+                modoDeConfirmacaoGroup.Height = 40;
+            }
+        }
+
     }
 }

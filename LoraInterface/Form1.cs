@@ -40,7 +40,7 @@ namespace LoraInterface
             //Iniciando console fechado.
             ColapsarConsole();
 
-            //Tornando o acesso ao console público.
+            //Tornando o acesso ao console e demais controles públicos/visíveis para outros forms.
             formInstance = this;
             console = consolePanel;
             acessoModoAbp = modoAbpButton;
