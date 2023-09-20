@@ -23,6 +23,9 @@ namespace LoraInterface.Forms
         {
             InitializeComponent();
 
+            //serialPort
+            serialPort.DataReceived += SerialPort_DataReceived;
+
             //Inicializando portas COM
             for (int i = 0; i <= 50; i++)
             {
@@ -233,11 +236,30 @@ namespace LoraInterface.Forms
 
                     textoHex += (char) digitoHex1;
                     textoHex += (char) digitoHex2;
-                    textoHex += " ";
                 }
             }
 
-            new CustomDialog($"{textoHex}").ShowDialog();
+            MainForm.formInstance.console.AppendText($"AT+SEND={port}:{textoHex}" + Environment.NewLine);
+
+            //Enviando o AT+SEND.
+            try
+            {
+                serialPort.WriteLine($"AT+SEND={port}:{textoHex}");
+                MainForm.formInstance.console.AppendText($"Enviando: AT+SEND={port}:{textoHex}" + Environment.NewLine);
+            }
+            catch (Exception ex)
+            {
+                MainForm.formInstance.console.AppendText(ex.Message + Environment.NewLine);
+            }
+        }
+
+        private static void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            SerialPort serialPort = (SerialPort)sender;
+            string respostaPlaca = serialPort.ReadExisting();
+
+            if (!respostaPlaca.Contains("OK"))
+                MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
         }
 
     }
