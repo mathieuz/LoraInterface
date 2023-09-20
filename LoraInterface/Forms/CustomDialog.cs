@@ -18,6 +18,7 @@ namespace LoraInterface.Forms
             InitializeComponent();
             msgText.Text = msg;
             msgText.Dock = DockStyle.Fill;
+
             
         }
 

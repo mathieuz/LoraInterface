@@ -28,7 +28,6 @@ namespace LoraInterface.Forms
             {
                 comboBoxCOM.Items.Add("COM" + i.ToString());
             }
-
             comboBoxCOM.SelectedIndex = 0;
 
             //Inicializando número de retentativas ComboBox.
@@ -36,8 +35,14 @@ namespace LoraInterface.Forms
             {
                 numeroRetentativasComboBox.Items.Add(i.ToString());
             }
-
             numeroRetentativasComboBox.SelectedIndex = 0;
+
+            //Inicializando porta AT+SEND ComboBox
+            for (int i = 1; i <= 233; i++)
+            {
+                atSendPortaComboBox.Items.Add(i.ToString());
+            }
+            atSendPortaComboBox.SelectedIndex = 7;
 
             //Definindo classes de conexão
             classeComboBox.Items.Add("A");
@@ -100,6 +105,7 @@ namespace LoraInterface.Forms
                 comboBoxCOM.Enabled = true;
                 chavesDeAtivacaoGroup.Enabled = false;
                 configuracoesConexaoGroup.Enabled = false;
+                comandosATGroup.Visible = false;
 
                 //Altera estilo de controle.
                 conectarLoraButton.BackColor = Color.Gainsboro;
@@ -130,12 +136,14 @@ namespace LoraInterface.Forms
         //Envia as chaves e configurações de conexão com o Lora.
         private void conectarLoraButton_Click(object sender, EventArgs e)
         {
+            //Colapsa o console.
             if (!MainForm.formInstance.ColapsarConsole())
             {
                 MainForm.formInstance.ColapsarConsole();
 
             }
 
+            //Envia as chaves e configurações de conexão.
             string deviceAddress = deviceAddressTextBox.Texts;
             string appskey = appskeyTextBox.Texts;
             string nwkskey = nwkskeyTextBox.Texts;
@@ -165,6 +173,10 @@ namespace LoraInterface.Forms
             serialPort.BaseStream.Flush();
             Thread.Sleep(300);
 
+            //Habilita painel de comandos AT.
+            comandosATGroup.Visible = true;
+
+            //Exibe mensagem no console.
             MainForm.formInstance.console.AppendText("Conexão no Modo ABP bem-sucedida!" + Environment.NewLine);
         }
 
@@ -179,6 +191,53 @@ namespace LoraInterface.Forms
             {
                 modoDeConfirmacaoGroup.Height = 40;
             }
+        }
+
+
+        //Comandos AT Modo ABP
+        private void atSendButton_Click(object sender, EventArgs e)
+        {
+            string textoHex = "";
+
+            string texto = atSendTextoTextBox.Texts;
+            string port = atSendPortaComboBox.SelectedItem.ToString();
+
+            for (int i = 0; i < texto.Length; i++)
+            {
+                //Verifica se o caractere no índice está entre esse intervalo, que representa um conjunto de letras, números, símbolos, etc.
+                //Não considera conjuntos de letras com acentuações.
+                if (texto[i] >= 32 && texto[i] <= 126)
+                {
+                    byte digitoHex1 = (byte)((texto[i] & 0xf0) >> 4);
+                    byte digitoHex2 = (byte)((texto[i] & 0x0f));
+
+                    if (digitoHex1 >= 0 && digitoHex1 <= 9)
+                    {
+                        digitoHex1 = (byte)(digitoHex1 + 48);
+
+                    }
+                    else if (digitoHex1 >= 10 && digitoHex1 <= 15)
+                    {
+                        digitoHex1 = (byte)(digitoHex1 + 55);
+                    }
+
+                    if (digitoHex2 >= 0 && digitoHex2 <= 9)
+                    {
+                        digitoHex2 = (byte)(digitoHex2 + 48);
+
+                    }
+                    else if (digitoHex2 >= 10 && digitoHex2 <= 15)
+                    {
+                        digitoHex2 = (byte)(digitoHex2 + 55);
+                    }
+
+                    textoHex += (char) digitoHex1;
+                    textoHex += (char) digitoHex2;
+                    textoHex += " ";
+                }
+            }
+
+            new CustomDialog($"{textoHex}").ShowDialog();
         }
 
     }
