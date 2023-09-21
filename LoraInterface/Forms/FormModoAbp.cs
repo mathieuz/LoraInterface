@@ -98,7 +98,8 @@ namespace LoraInterface.Forms
 
                 }
 
-            } else if (conectarCOMButton.Text == "Desconectar COM")
+            } 
+            else if (conectarCOMButton.Text == "Desconectar COM")
             {
                 //Fecha conexão.
                 serialPort.Close();
@@ -130,7 +131,8 @@ namespace LoraInterface.Forms
             {
                 conectarLoraButton.BackColor = Color.LimeGreen;
 
-            } else
+            } 
+            else
             {
                 conectarLoraButton.BackColor = Color.Gainsboro;
             }
@@ -198,6 +200,8 @@ namespace LoraInterface.Forms
 
 
         //Comandos AT Modo ABP
+
+        //AT+SEND
         private void atSendButton_Click(object sender, EventArgs e)
         {
             string textoHex = "";
@@ -245,7 +249,6 @@ namespace LoraInterface.Forms
             try
             {
                 serialPort.WriteLine($"AT+SEND={port}:{textoHex}");
-                MainForm.formInstance.console.AppendText($"Enviando: AT+SEND={port}:{textoHex}" + Environment.NewLine);
             }
             catch (Exception ex)
             {
@@ -253,6 +256,8 @@ namespace LoraInterface.Forms
             }
         }
 
+        //Evento assíncrono serial port: retorna dados da placa à partir do momento em que um comando
+        //AT é enviado ou um programa upado está rodando e escrevendo algo.
         private static void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             SerialPort serialPort = (SerialPort)sender;
