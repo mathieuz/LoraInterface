@@ -256,6 +256,9 @@ namespace LoraInterface.Forms
             }
         }
 
+        //AT+LPSEND
+
+
         //Evento assíncrono serial port: retorna dados da placa à partir do momento em que um comando
         //AT é enviado ou um programa upado está rodando e escrevendo algo.
         private static void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -263,9 +266,12 @@ namespace LoraInterface.Forms
             SerialPort serialPort = (SerialPort)sender;
             string respostaPlaca = serialPort.ReadExisting();
 
-            if (!respostaPlaca.Contains("OK"))
+            if (!respostaPlaca.Contains("OK") || respostaPlaca.Contains("EVT"))
+            {
                 MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
-        }
 
+            }
+
+        }
     }
 }

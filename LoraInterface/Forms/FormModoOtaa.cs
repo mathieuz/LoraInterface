@@ -17,6 +17,7 @@ namespace LoraInterface.Forms
         //Serial Port
         SerialPort serialPort = new SerialPort();
 
+
         public FormModoOtaa()
         {
             InitializeComponent();
@@ -193,11 +194,12 @@ namespace LoraInterface.Forms
             serialPort.WriteLine($"AT+BAND=6");
 
             serialPort.BaseStream.Flush();
-            Thread.Sleep(300);
+            Thread.Sleep(500);
 
             serialPort.WriteLine($"AT+JOIN=1:{autoJoinConfig}:{intervaloJoinConfig}:{numTentativasJoin}");
 
-            //Habilita painel de comandos AT.
+            serialPort.BaseStream.Flush();
+
             comandosATGroup.Visible = true;
 
             //Exibe mensagem no console.
@@ -230,6 +232,63 @@ namespace LoraInterface.Forms
             }
         }
 
+        //Comandos AT Modo ABP
+
+        //AT+SEND
+        private void atSendButton_Click(object sender, EventArgs e)
+        {
+            string textoHex = "";
+
+            string texto = atSendTextoTextBox.Texts;
+            string port = atSendPortaComboBox.SelectedItem.ToString();
+
+            for (int i = 0; i < texto.Length; i++)
+            {
+                //Verifica se o caractere no índice está entre esse intervalo, que representa um conjunto de letras, números, símbolos, etc.
+                //Não considera conjuntos de letras com acentuações.
+                if (texto[i] >= 32 && texto[i] <= 126)
+                {
+                    byte digitoHex1 = (byte)((texto[i] & 0xf0) >> 4);
+                    byte digitoHex2 = (byte)((texto[i] & 0x0f));
+
+                    if (digitoHex1 >= 0 && digitoHex1 <= 9)
+                    {
+                        digitoHex1 = (byte)(digitoHex1 + 48);
+
+                    }
+                    else if (digitoHex1 >= 10 && digitoHex1 <= 15)
+                    {
+                        digitoHex1 = (byte)(digitoHex1 + 55);
+                    }
+
+                    if (digitoHex2 >= 0 && digitoHex2 <= 9)
+                    {
+                        digitoHex2 = (byte)(digitoHex2 + 48);
+
+                    }
+                    else if (digitoHex2 >= 10 && digitoHex2 <= 15)
+                    {
+                        digitoHex2 = (byte)(digitoHex2 + 55);
+                    }
+
+                    textoHex += (char)digitoHex1;
+                    textoHex += (char)digitoHex2;
+                }
+            }
+
+            MainForm.formInstance.console.AppendText($"AT+SEND={port}:{textoHex}" + Environment.NewLine);
+
+            //Enviando o AT+SEND.
+            try
+            {
+                serialPort.WriteLine($"AT+SEND={port}:{textoHex}");
+            }
+            catch (Exception ex)
+            {
+                MainForm.formInstance.console.AppendText(ex.Message + Environment.NewLine);
+            }
+        }
+
         //Evento assíncrono serial port: retorna dados da placa à partir do momento em que um comando
         //AT é enviado ou um programa upado está rodando e escrevendo algo.
         private static void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -237,8 +296,11 @@ namespace LoraInterface.Forms
             SerialPort serialPort = (SerialPort)sender;
             string respostaPlaca = serialPort.ReadExisting();
 
-            if (!respostaPlaca.Contains("OK"))
+            if (!respostaPlaca.Contains("OK") || respostaPlaca.Contains("EVT"))
+            {
                 MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
+
+            }
         }
     }
 }

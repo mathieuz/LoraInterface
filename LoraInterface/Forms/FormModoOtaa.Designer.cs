@@ -592,7 +592,7 @@
             this.deviceEuiTextBox.ForeColor = System.Drawing.Color.Black;
             this.deviceEuiTextBox.Location = new System.Drawing.Point(10, 10);
             this.deviceEuiTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.deviceEuiTextBox.MaxLength = 8;
+            this.deviceEuiTextBox.MaxLength = 16;
             this.deviceEuiTextBox.Multiline = true;
             this.deviceEuiTextBox.Name = "deviceEuiTextBox";
             this.deviceEuiTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
@@ -733,6 +733,7 @@
             this.atSendButton.TabIndex = 14;
             this.atSendButton.Text = "Enviar";
             this.atSendButton.UseVisualStyleBackColor = false;
+            this.atSendButton.Click += new System.EventHandler(this.atSendButton_Click);
             // 
             // panel10
             // 
@@ -901,7 +902,6 @@
         private System.Windows.Forms.Panel panel7;
         private FontAwesome.Sharp.IconButton conectarLoraButton;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.GroupBox comandosATGroup;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label5;
@@ -926,5 +926,6 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label10;
         private CustomControls.CComboBox autoJoinComboBox;
+        public System.Windows.Forms.GroupBox comandosATGroup;
     }
 }
