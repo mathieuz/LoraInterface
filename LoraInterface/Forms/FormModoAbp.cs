@@ -17,7 +17,8 @@ namespace LoraInterface.Forms
     public partial class FormModoAbp : Form
     {
         //Serial Port
-        SerialPort serialPort = new SerialPort();
+        public SerialPort serialPort = new SerialPort();
+        public static FormModoAbp formInstance;
 
         public FormModoAbp()
         {
@@ -55,6 +56,9 @@ namespace LoraInterface.Forms
 
             //Definindo colapso de abas
             modoDeConfirmacaoGroup.Height = 40;
+
+            //Tornando o form visível para outros forms
+            formInstance = this;
         }
 
         //Conexão com porta COM.
@@ -66,6 +70,8 @@ namespace LoraInterface.Forms
             {
                 serialPort.BaudRate = 115200;
                 serialPort.PortName = portSelecionado;
+
+                MainForm.formInstance.modoSelecionado = 0;
 
                 //Verifica se a porta selecionada está disponível. Se sim, conecta.
                 if (serialPort.IsOpen == false)
@@ -266,11 +272,7 @@ namespace LoraInterface.Forms
             SerialPort serialPort = (SerialPort)sender;
             string respostaPlaca = serialPort.ReadExisting();
 
-            if (!respostaPlaca.Contains("OK") || respostaPlaca.Contains("EVT"))
-            {
-                MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
-
-            }
+            MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
 
         }
     }

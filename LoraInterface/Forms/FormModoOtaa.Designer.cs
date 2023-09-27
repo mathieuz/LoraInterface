@@ -112,7 +112,7 @@
             this.groupBox1.Location = new System.Drawing.Point(10, 10);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox1.Size = new System.Drawing.Size(608, 108);
+            this.groupBox1.Size = new System.Drawing.Size(625, 108);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Conectar COM";
@@ -125,7 +125,7 @@
             this.panel2.Location = new System.Drawing.Point(10, 24);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel2.Size = new System.Drawing.Size(588, 74);
+            this.panel2.Size = new System.Drawing.Size(605, 74);
             this.panel2.TabIndex = 13;
             // 
             // panel6
@@ -135,7 +135,7 @@
             this.panel6.Location = new System.Drawing.Point(10, 10);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.panel6.Size = new System.Drawing.Size(405, 54);
+            this.panel6.Size = new System.Drawing.Size(422, 54);
             this.panel6.TabIndex = 13;
             // 
             // comboBoxCOM
@@ -154,7 +154,7 @@
             this.comboBoxCOM.MinimumSize = new System.Drawing.Size(370, 53);
             this.comboBoxCOM.Name = "comboBoxCOM";
             this.comboBoxCOM.Padding = new System.Windows.Forms.Padding(1);
-            this.comboBoxCOM.Size = new System.Drawing.Size(400, 53);
+            this.comboBoxCOM.Size = new System.Drawing.Size(417, 53);
             this.comboBoxCOM.TabIndex = 15;
             this.comboBoxCOM.Texts = "";
             // 
@@ -172,7 +172,7 @@
             this.conectarCOMButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.conectarCOMButton.IconColor = System.Drawing.Color.Black;
             this.conectarCOMButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.conectarCOMButton.Location = new System.Drawing.Point(415, 10);
+            this.conectarCOMButton.Location = new System.Drawing.Point(432, 10);
             this.conectarCOMButton.Name = "conectarCOMButton";
             this.conectarCOMButton.Size = new System.Drawing.Size(163, 54);
             this.conectarCOMButton.TabIndex = 12;
@@ -194,7 +194,7 @@
             this.configuracoesConexaoGroup.Location = new System.Drawing.Point(10, 268);
             this.configuracoesConexaoGroup.Name = "configuracoesConexaoGroup";
             this.configuracoesConexaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.configuracoesConexaoGroup.Size = new System.Drawing.Size(608, 518);
+            this.configuracoesConexaoGroup.Size = new System.Drawing.Size(625, 518);
             this.configuracoesConexaoGroup.TabIndex = 5;
             this.configuracoesConexaoGroup.TabStop = false;
             this.configuracoesConexaoGroup.Text = "Configurações de Conexão";
@@ -206,7 +206,7 @@
             this.panel7.Location = new System.Drawing.Point(10, 452);
             this.panel7.Name = "panel7";
             this.panel7.Padding = new System.Windows.Forms.Padding(10);
-            this.panel7.Size = new System.Drawing.Size(588, 56);
+            this.panel7.Size = new System.Drawing.Size(605, 56);
             this.panel7.TabIndex = 13;
             // 
             // conectarLoraButton
@@ -225,7 +225,7 @@
             this.conectarLoraButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.conectarLoraButton.Location = new System.Drawing.Point(10, 10);
             this.conectarLoraButton.Name = "conectarLoraButton";
-            this.conectarLoraButton.Size = new System.Drawing.Size(568, 36);
+            this.conectarLoraButton.Size = new System.Drawing.Size(585, 36);
             this.conectarLoraButton.TabIndex = 13;
             this.conectarLoraButton.Text = "Conectar";
             this.conectarLoraButton.UseVisualStyleBackColor = false;
@@ -241,7 +241,7 @@
             this.configuracoesDeJoinGroup.Location = new System.Drawing.Point(10, 181);
             this.configuracoesDeJoinGroup.Name = "configuracoesDeJoinGroup";
             this.configuracoesDeJoinGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.configuracoesDeJoinGroup.Size = new System.Drawing.Size(588, 271);
+            this.configuracoesDeJoinGroup.Size = new System.Drawing.Size(605, 271);
             this.configuracoesDeJoinGroup.TabIndex = 14;
             // 
             // configuracoesJoinToggle
@@ -282,7 +282,7 @@
             this.panel12.Location = new System.Drawing.Point(10, 10);
             this.panel12.Name = "panel12";
             this.panel12.Padding = new System.Windows.Forms.Padding(10, 25, 10, 5);
-            this.panel12.Size = new System.Drawing.Size(568, 251);
+            this.panel12.Size = new System.Drawing.Size(585, 251);
             this.panel12.TabIndex = 13;
             // 
             // panel15
@@ -293,7 +293,7 @@
             this.panel15.Location = new System.Drawing.Point(10, 168);
             this.panel15.Name = "panel15";
             this.panel15.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel15.Size = new System.Drawing.Size(546, 73);
+            this.panel15.Size = new System.Drawing.Size(563, 73);
             this.panel15.TabIndex = 22;
             // 
             // label11
@@ -324,7 +324,7 @@
             this.intervaloTentativasJoinComboBox.MinimumSize = new System.Drawing.Size(432, 61);
             this.intervaloTentativasJoinComboBox.Name = "intervaloTentativasJoinComboBox";
             this.intervaloTentativasJoinComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.intervaloTentativasJoinComboBox.Size = new System.Drawing.Size(546, 61);
+            this.intervaloTentativasJoinComboBox.Size = new System.Drawing.Size(563, 61);
             this.intervaloTentativasJoinComboBox.TabIndex = 13;
             this.intervaloTentativasJoinComboBox.Texts = "";
             // 
@@ -336,7 +336,7 @@
             this.panel17.Location = new System.Drawing.Point(10, 96);
             this.panel17.Name = "panel17";
             this.panel17.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel17.Size = new System.Drawing.Size(546, 72);
+            this.panel17.Size = new System.Drawing.Size(563, 72);
             this.panel17.TabIndex = 21;
             // 
             // label12
@@ -367,7 +367,7 @@
             this.numeroTentativasJoinComboBox.MinimumSize = new System.Drawing.Size(432, 61);
             this.numeroTentativasJoinComboBox.Name = "numeroTentativasJoinComboBox";
             this.numeroTentativasJoinComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.numeroTentativasJoinComboBox.Size = new System.Drawing.Size(546, 61);
+            this.numeroTentativasJoinComboBox.Size = new System.Drawing.Size(563, 61);
             this.numeroTentativasJoinComboBox.TabIndex = 13;
             this.numeroTentativasJoinComboBox.Texts = "";
             // 
@@ -379,7 +379,7 @@
             this.panel13.Location = new System.Drawing.Point(10, 25);
             this.panel13.Name = "panel13";
             this.panel13.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel13.Size = new System.Drawing.Size(546, 71);
+            this.panel13.Size = new System.Drawing.Size(563, 71);
             this.panel13.TabIndex = 19;
             // 
             // label10
@@ -410,7 +410,7 @@
             this.autoJoinComboBox.MinimumSize = new System.Drawing.Size(432, 61);
             this.autoJoinComboBox.Name = "autoJoinComboBox";
             this.autoJoinComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.autoJoinComboBox.Size = new System.Drawing.Size(546, 61);
+            this.autoJoinComboBox.Size = new System.Drawing.Size(563, 61);
             this.autoJoinComboBox.TabIndex = 13;
             this.autoJoinComboBox.Texts = "";
             // 
@@ -423,7 +423,7 @@
             this.modoDeConfirmacaoGroup.Location = new System.Drawing.Point(10, 82);
             this.modoDeConfirmacaoGroup.Name = "modoDeConfirmacaoGroup";
             this.modoDeConfirmacaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.modoDeConfirmacaoGroup.Size = new System.Drawing.Size(588, 99);
+            this.modoDeConfirmacaoGroup.Size = new System.Drawing.Size(605, 99);
             this.modoDeConfirmacaoGroup.TabIndex = 9;
             // 
             // modoConfirmacaoToggle
@@ -463,7 +463,7 @@
             this.panel16.Location = new System.Drawing.Point(10, 10);
             this.panel16.Name = "panel16";
             this.panel16.Padding = new System.Windows.Forms.Padding(10, 25, 10, 10);
-            this.panel16.Size = new System.Drawing.Size(568, 79);
+            this.panel16.Size = new System.Drawing.Size(585, 79);
             this.panel16.TabIndex = 13;
             // 
             // label9
@@ -494,7 +494,7 @@
             this.numeroRetentativasComboBox.MinimumSize = new System.Drawing.Size(317, 46);
             this.numeroRetentativasComboBox.Name = "numeroRetentativasComboBox";
             this.numeroRetentativasComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.numeroRetentativasComboBox.Size = new System.Drawing.Size(546, 46);
+            this.numeroRetentativasComboBox.Size = new System.Drawing.Size(563, 46);
             this.numeroRetentativasComboBox.TabIndex = 4;
             this.numeroRetentativasComboBox.Texts = "";
             // 
@@ -506,7 +506,7 @@
             this.panel1.Location = new System.Drawing.Point(10, 24);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
-            this.panel1.Size = new System.Drawing.Size(588, 58);
+            this.panel1.Size = new System.Drawing.Size(605, 58);
             this.panel1.TabIndex = 7;
             // 
             // label2
@@ -537,7 +537,7 @@
             this.classeComboBox.MinimumSize = new System.Drawing.Size(233, 35);
             this.classeComboBox.Name = "classeComboBox";
             this.classeComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.classeComboBox.Size = new System.Drawing.Size(568, 38);
+            this.classeComboBox.Size = new System.Drawing.Size(585, 38);
             this.classeComboBox.TabIndex = 3;
             this.classeComboBox.Texts = "";
             // 
@@ -553,7 +553,7 @@
             this.chavesDeAtivacaoGroup.Location = new System.Drawing.Point(10, 118);
             this.chavesDeAtivacaoGroup.Name = "chavesDeAtivacaoGroup";
             this.chavesDeAtivacaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.chavesDeAtivacaoGroup.Size = new System.Drawing.Size(608, 150);
+            this.chavesDeAtivacaoGroup.Size = new System.Drawing.Size(625, 150);
             this.chavesDeAtivacaoGroup.TabIndex = 4;
             this.chavesDeAtivacaoGroup.TabStop = false;
             this.chavesDeAtivacaoGroup.Text = "Chaves de Ativação";
@@ -566,7 +566,7 @@
             this.panel3.Location = new System.Drawing.Point(10, 82);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(10);
-            this.panel3.Size = new System.Drawing.Size(588, 58);
+            this.panel3.Size = new System.Drawing.Size(605, 58);
             this.panel3.TabIndex = 10;
             // 
             // label3
@@ -596,7 +596,7 @@
             this.deviceEuiTextBox.Multiline = true;
             this.deviceEuiTextBox.Name = "deviceEuiTextBox";
             this.deviceEuiTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.deviceEuiTextBox.Size = new System.Drawing.Size(568, 38);
+            this.deviceEuiTextBox.Size = new System.Drawing.Size(585, 38);
             this.deviceEuiTextBox.TabIndex = 7;
             this.deviceEuiTextBox.Texts = "";
             this.deviceEuiTextBox.UnderlinedStyle = false;
@@ -609,7 +609,7 @@
             this.panel5.Location = new System.Drawing.Point(10, 24);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(10);
-            this.panel5.Size = new System.Drawing.Size(588, 58);
+            this.panel5.Size = new System.Drawing.Size(605, 58);
             this.panel5.TabIndex = 8;
             // 
             // label6
@@ -639,7 +639,7 @@
             this.appKeyTextBox.Multiline = true;
             this.appKeyTextBox.Name = "appKeyTextBox";
             this.appKeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.appKeyTextBox.Size = new System.Drawing.Size(568, 38);
+            this.appKeyTextBox.Size = new System.Drawing.Size(585, 38);
             this.appKeyTextBox.TabIndex = 7;
             this.appKeyTextBox.Texts = "";
             this.appKeyTextBox.UnderlinedStyle = false;
@@ -649,7 +649,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(10, 786);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(608, 36);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(625, 36);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // comandosATGroup
@@ -662,7 +662,7 @@
             this.comandosATGroup.Location = new System.Drawing.Point(10, 822);
             this.comandosATGroup.Name = "comandosATGroup";
             this.comandosATGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.comandosATGroup.Size = new System.Drawing.Size(608, 253);
+            this.comandosATGroup.Size = new System.Drawing.Size(625, 253);
             this.comandosATGroup.TabIndex = 7;
             this.comandosATGroup.TabStop = false;
             this.comandosATGroup.Text = "Comandos AT";
@@ -687,7 +687,7 @@
             this.panel4.Location = new System.Drawing.Point(10, 24);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(10);
-            this.panel4.Size = new System.Drawing.Size(588, 217);
+            this.panel4.Size = new System.Drawing.Size(605, 217);
             this.panel4.TabIndex = 0;
             // 
             // panel8
@@ -700,7 +700,7 @@
             this.panel8.Location = new System.Drawing.Point(10, 10);
             this.panel8.Name = "panel8";
             this.panel8.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.panel8.Size = new System.Drawing.Size(568, 196);
+            this.panel8.Size = new System.Drawing.Size(585, 196);
             this.panel8.TabIndex = 0;
             // 
             // panel14
@@ -710,7 +710,7 @@
             this.panel14.Location = new System.Drawing.Point(10, 135);
             this.panel14.Name = "panel14";
             this.panel14.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.panel14.Size = new System.Drawing.Size(546, 51);
+            this.panel14.Size = new System.Drawing.Size(563, 51);
             this.panel14.TabIndex = 18;
             // 
             // atSendButton
@@ -729,7 +729,7 @@
             this.atSendButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.atSendButton.Location = new System.Drawing.Point(0, 10);
             this.atSendButton.Name = "atSendButton";
-            this.atSendButton.Size = new System.Drawing.Size(546, 36);
+            this.atSendButton.Size = new System.Drawing.Size(563, 36);
             this.atSendButton.TabIndex = 14;
             this.atSendButton.Text = "Enviar";
             this.atSendButton.UseVisualStyleBackColor = false;
@@ -743,7 +743,7 @@
             this.panel10.Location = new System.Drawing.Point(10, 78);
             this.panel10.Name = "panel10";
             this.panel10.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.panel10.Size = new System.Drawing.Size(546, 57);
+            this.panel10.Size = new System.Drawing.Size(563, 57);
             this.panel10.TabIndex = 1;
             // 
             // label4
@@ -774,7 +774,7 @@
             this.atSendPortaComboBox.MinimumSize = new System.Drawing.Size(317, 46);
             this.atSendPortaComboBox.Name = "atSendPortaComboBox";
             this.atSendPortaComboBox.Padding = new System.Windows.Forms.Padding(1);
-            this.atSendPortaComboBox.Size = new System.Drawing.Size(546, 46);
+            this.atSendPortaComboBox.Size = new System.Drawing.Size(563, 46);
             this.atSendPortaComboBox.TabIndex = 10;
             this.atSendPortaComboBox.Texts = "";
             // 
@@ -786,7 +786,7 @@
             this.panel9.Location = new System.Drawing.Point(10, 20);
             this.panel9.Name = "panel9";
             this.panel9.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.panel9.Size = new System.Drawing.Size(546, 58);
+            this.panel9.Size = new System.Drawing.Size(563, 58);
             this.panel9.TabIndex = 0;
             // 
             // label1
@@ -816,7 +816,7 @@
             this.atSendTextoTextBox.Multiline = false;
             this.atSendTextoTextBox.Name = "atSendTextoTextBox";
             this.atSendTextoTextBox.Padding = new System.Windows.Forms.Padding(12, 13, 3, 3);
-            this.atSendTextoTextBox.Size = new System.Drawing.Size(546, 32);
+            this.atSendTextoTextBox.Size = new System.Drawing.Size(563, 32);
             this.atSendTextoTextBox.TabIndex = 8;
             this.atSendTextoTextBox.Texts = "";
             this.atSendTextoTextBox.UnderlinedStyle = false;
@@ -827,7 +827,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(645, 557);
+            this.ClientSize = new System.Drawing.Size(662, 557);
             this.ControlBox = false;
             this.Controls.Add(this.comandosATGroup);
             this.Controls.Add(this.flowLayoutPanel1);

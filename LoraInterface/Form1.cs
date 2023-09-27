@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using LoraInterface.Forms;
 using FontAwesome.Sharp;
 using LoraInterface.CustomControls;
+using System.IO.Ports;
 
 namespace LoraInterface
 {
@@ -22,6 +23,8 @@ namespace LoraInterface
         public RichTextBox console;
         public IconButton acessoModoAbp;
         public IconButton acessoModoOtaa;
+        public SerialPort serialPort = new SerialPort();
+        public int modoSelecionado = 0;
 
         public MainForm()
         {
@@ -46,6 +49,7 @@ namespace LoraInterface
             console = consolePanel;
             acessoModoAbp = modoAbpButton;
             acessoModoOtaa = modoOtaaButton;
+            
         }
 
         //Permitir movimentação de janela quando os controles estão desativados.
@@ -241,6 +245,43 @@ namespace LoraInterface
         private void MainForm_Deactivate(object sender, EventArgs e)
         {
             this.Refresh();
+        }
+
+        private void enviarConsole_Click(object sender, EventArgs e)
+        {
+            string cmdConsole = consoleCmdTextBox.Texts;
+
+            if (!(string.IsNullOrEmpty(cmdConsole)))
+            {
+                if (modoSelecionado == 0)
+                {
+                    try
+                    {
+                        FormModoAbp.formInstance.serialPort.WriteLine(cmdConsole);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        consolePanel.AppendText(ex.Message + Environment.NewLine);
+
+                    }
+
+                }
+                else
+                {
+                    try
+                    {
+                        FormModoOtaa.formInstance.serialPort.WriteLine(cmdConsole);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        consolePanel.AppendText(ex.Message + Environment.NewLine);
+
+                    }
+
+                }
+            }
         }
     }
 }

@@ -39,12 +39,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.consoleButton = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.enviarConsole = new FontAwesome.Sharp.IconButton();
             this.consolePanel = new System.Windows.Forms.RichTextBox();
             this.fecharJanelaButton = new FontAwesome.Sharp.IconButton();
             this.maximizarJanelaButton = new FontAwesome.Sharp.IconButton();
             this.minimizarJanelaButton = new FontAwesome.Sharp.IconButton();
             this.topBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.consoleCmdTextBox = new LoraInterface.CustomControls.CTextBox();
             this.sideBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -203,6 +205,8 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.panel5.Controls.Add(this.enviarConsole);
+            this.panel5.Controls.Add(this.consoleCmdTextBox);
             this.panel5.Controls.Add(this.consolePanel);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 362);
@@ -211,18 +215,32 @@
             this.panel5.Size = new System.Drawing.Size(868, 250);
             this.panel5.TabIndex = 0;
             // 
+            // enviarConsole
+            // 
+            this.enviarConsole.Dock = System.Windows.Forms.DockStyle.Right;
+            this.enviarConsole.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.enviarConsole.IconColor = System.Drawing.Color.Black;
+            this.enviarConsole.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.enviarConsole.Location = new System.Drawing.Point(792, 5);
+            this.enviarConsole.Name = "enviarConsole";
+            this.enviarConsole.Size = new System.Drawing.Size(71, 28);
+            this.enviarConsole.TabIndex = 2;
+            this.enviarConsole.Text = "Enviar";
+            this.enviarConsole.UseVisualStyleBackColor = true;
+            this.enviarConsole.Click += new System.EventHandler(this.enviarConsole_Click);
+            // 
             // consolePanel
             // 
             this.consolePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.consolePanel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.consolePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.consolePanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.consolePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consolePanel.ForeColor = System.Drawing.Color.PowderBlue;
-            this.consolePanel.Location = new System.Drawing.Point(5, 5);
+            this.consolePanel.Location = new System.Drawing.Point(5, 33);
             this.consolePanel.Name = "consolePanel";
             this.consolePanel.ReadOnly = true;
             this.consolePanel.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.consolePanel.Size = new System.Drawing.Size(858, 240);
+            this.consolePanel.Size = new System.Drawing.Size(858, 212);
             this.consolePanel.TabIndex = 0;
             this.consolePanel.Text = "";
             // 
@@ -306,6 +324,24 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // consoleCmdTextBox
+            // 
+            this.consoleCmdTextBox.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.consoleCmdTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.consoleCmdTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.consoleCmdTextBox.BorderSize = 2;
+            this.consoleCmdTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.consoleCmdTextBox.ForeColor = System.Drawing.Color.White;
+            this.consoleCmdTextBox.Location = new System.Drawing.Point(5, 5);
+            this.consoleCmdTextBox.MaxLength = 32767;
+            this.consoleCmdTextBox.Multiline = false;
+            this.consoleCmdTextBox.Name = "consoleCmdTextBox";
+            this.consoleCmdTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.consoleCmdTextBox.Size = new System.Drawing.Size(858, 28);
+            this.consoleCmdTextBox.TabIndex = 1;
+            this.consoleCmdTextBox.Texts = "";
+            this.consoleCmdTextBox.UnderlinedStyle = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,6 +385,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Panel panel5;
         public System.Windows.Forms.RichTextBox consolePanel;
+        private CustomControls.CTextBox consoleCmdTextBox;
+        private FontAwesome.Sharp.IconButton enviarConsole;
     }
 }
 
