@@ -32,6 +32,8 @@
             this.sideBarPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuButton = new FontAwesome.Sharp.IconButton();
+            this.salvarButton = new FontAwesome.Sharp.IconButton();
+            this.abrirButton = new FontAwesome.Sharp.IconButton();
             this.modoAbpButton = new FontAwesome.Sharp.IconButton();
             this.modoOtaaButton = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,13 +42,14 @@
             this.consoleButton = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.enviarConsole = new FontAwesome.Sharp.IconButton();
+            this.consoleCmdTextBox = new LoraInterface.CustomControls.CTextBox();
             this.consolePanel = new System.Windows.Forms.RichTextBox();
             this.fecharJanelaButton = new FontAwesome.Sharp.IconButton();
             this.maximizarJanelaButton = new FontAwesome.Sharp.IconButton();
             this.minimizarJanelaButton = new FontAwesome.Sharp.IconButton();
             this.topBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.consoleCmdTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.sideBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -61,6 +64,9 @@
             // 
             this.sideBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
             this.sideBarPanel.Controls.Add(this.panel1);
+            this.sideBarPanel.Controls.Add(this.salvarButton);
+            this.sideBarPanel.Controls.Add(this.abrirButton);
+            this.sideBarPanel.Controls.Add(this.panel4);
             this.sideBarPanel.Controls.Add(this.modoAbpButton);
             this.sideBarPanel.Controls.Add(this.modoOtaaButton);
             this.sideBarPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -74,7 +80,7 @@
             this.panel1.Controls.Add(this.menuButton);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(177, 55);
+            this.panel1.Size = new System.Drawing.Size(177, 38);
             this.panel1.TabIndex = 3;
             // 
             // menuButton
@@ -96,6 +102,57 @@
             this.menuButton.UseVisualStyleBackColor = true;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
+            // salvarButton
+            // 
+            this.salvarButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.salvarButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.salvarButton.FlatAppearance.BorderSize = 0;
+            this.salvarButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Goldenrod;
+            this.salvarButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.salvarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.salvarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salvarButton.ForeColor = System.Drawing.Color.White;
+            this.salvarButton.IconChar = FontAwesome.Sharp.IconChar.FileText;
+            this.salvarButton.IconColor = System.Drawing.Color.White;
+            this.salvarButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.salvarButton.IconSize = 25;
+            this.salvarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.salvarButton.Location = new System.Drawing.Point(0, 44);
+            this.salvarButton.Margin = new System.Windows.Forms.Padding(0);
+            this.salvarButton.Name = "salvarButton";
+            this.salvarButton.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.salvarButton.Size = new System.Drawing.Size(180, 36);
+            this.salvarButton.TabIndex = 5;
+            this.salvarButton.Tag = "Salvar";
+            this.salvarButton.Text = "Salvar";
+            this.salvarButton.UseVisualStyleBackColor = true;
+            this.salvarButton.Click += new System.EventHandler(this.salvarButton_Click);
+            // 
+            // abrirButton
+            // 
+            this.abrirButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.abrirButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.abrirButton.FlatAppearance.BorderSize = 0;
+            this.abrirButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Goldenrod;
+            this.abrirButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.abrirButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.abrirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abrirButton.ForeColor = System.Drawing.Color.White;
+            this.abrirButton.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
+            this.abrirButton.IconColor = System.Drawing.Color.White;
+            this.abrirButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.abrirButton.IconSize = 25;
+            this.abrirButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.abrirButton.Location = new System.Drawing.Point(0, 80);
+            this.abrirButton.Margin = new System.Windows.Forms.Padding(0);
+            this.abrirButton.Name = "abrirButton";
+            this.abrirButton.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.abrirButton.Size = new System.Drawing.Size(180, 36);
+            this.abrirButton.TabIndex = 7;
+            this.abrirButton.Tag = "Abrir";
+            this.abrirButton.Text = "Abrir";
+            this.abrirButton.UseVisualStyleBackColor = true;
+            // 
             // modoAbpButton
             // 
             this.modoAbpButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -111,7 +168,7 @@
             this.modoAbpButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.modoAbpButton.IconSize = 25;
             this.modoAbpButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.modoAbpButton.Location = new System.Drawing.Point(0, 61);
+            this.modoAbpButton.Location = new System.Drawing.Point(0, 160);
             this.modoAbpButton.Margin = new System.Windows.Forms.Padding(0);
             this.modoAbpButton.Name = "modoAbpButton";
             this.modoAbpButton.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
@@ -137,7 +194,7 @@
             this.modoOtaaButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.modoOtaaButton.IconSize = 25;
             this.modoOtaaButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.modoOtaaButton.Location = new System.Drawing.Point(0, 97);
+            this.modoOtaaButton.Location = new System.Drawing.Point(0, 196);
             this.modoOtaaButton.Margin = new System.Windows.Forms.Padding(0);
             this.modoOtaaButton.Name = "modoOtaaButton";
             this.modoOtaaButton.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
@@ -228,6 +285,24 @@
             this.enviarConsole.Text = "Enviar";
             this.enviarConsole.UseVisualStyleBackColor = true;
             this.enviarConsole.Click += new System.EventHandler(this.enviarConsole_Click);
+            // 
+            // consoleCmdTextBox
+            // 
+            this.consoleCmdTextBox.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.consoleCmdTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.consoleCmdTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.consoleCmdTextBox.BorderSize = 2;
+            this.consoleCmdTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.consoleCmdTextBox.ForeColor = System.Drawing.Color.White;
+            this.consoleCmdTextBox.Location = new System.Drawing.Point(5, 5);
+            this.consoleCmdTextBox.MaxLength = 32767;
+            this.consoleCmdTextBox.Multiline = false;
+            this.consoleCmdTextBox.Name = "consoleCmdTextBox";
+            this.consoleCmdTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.consoleCmdTextBox.Size = new System.Drawing.Size(858, 28);
+            this.consoleCmdTextBox.TabIndex = 1;
+            this.consoleCmdTextBox.Texts = "";
+            this.consoleCmdTextBox.UnderlinedStyle = false;
             // 
             // consolePanel
             // 
@@ -324,23 +399,13 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // consoleCmdTextBox
+            // panel4
             // 
-            this.consoleCmdTextBox.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.consoleCmdTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.consoleCmdTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.consoleCmdTextBox.BorderSize = 2;
-            this.consoleCmdTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.consoleCmdTextBox.ForeColor = System.Drawing.Color.White;
-            this.consoleCmdTextBox.Location = new System.Drawing.Point(5, 5);
-            this.consoleCmdTextBox.MaxLength = 32767;
-            this.consoleCmdTextBox.Multiline = false;
-            this.consoleCmdTextBox.Name = "consoleCmdTextBox";
-            this.consoleCmdTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.consoleCmdTextBox.Size = new System.Drawing.Size(858, 28);
-            this.consoleCmdTextBox.TabIndex = 1;
-            this.consoleCmdTextBox.Texts = "";
-            this.consoleCmdTextBox.UnderlinedStyle = false;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(3, 119);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(177, 38);
+            this.panel4.TabIndex = 6;
             // 
             // MainForm
             // 
@@ -387,6 +452,9 @@
         public System.Windows.Forms.RichTextBox consolePanel;
         private CustomControls.CTextBox consoleCmdTextBox;
         private FontAwesome.Sharp.IconButton enviarConsole;
+        private FontAwesome.Sharp.IconButton salvarButton;
+        private FontAwesome.Sharp.IconButton abrirButton;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 

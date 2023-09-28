@@ -12,6 +12,7 @@ using LoraInterface.Forms;
 using FontAwesome.Sharp;
 using LoraInterface.CustomControls;
 using System.IO.Ports;
+using System.IO;
 
 namespace LoraInterface
 {
@@ -178,6 +179,73 @@ namespace LoraInterface
         }
 
         //Eventos de clique nos botões do menu lateral.
+        private void salvarButton_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFile = new SaveFileDialog();
+
+            saveFile.FileName = "*.txt";
+            saveFile.RestoreDirectory = true;
+            saveFile.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            saveFile.DefaultExt = "txt";
+
+            if (saveFile.ShowDialog() == DialogResult.OK)
+            {
+                string deviceAddress;
+                string appskey;
+                string nwkskey;
+                string deveui;
+                string classe;
+                string numTentativas;
+
+                string appkey;
+                string autoJoin;
+                string numTentativasJoin;
+                string intervaloTentativasJoin;
+
+                if (formAtual.Name.Contains("Abp"))
+                {
+                    deviceAddress = FormModoAbp.formInstance.acessoDeviceAddress.Texts;
+                    appskey = FormModoAbp.formInstance.acessoAppskey.Texts;
+                    nwkskey = FormModoAbp.formInstance.acessoNwkskey.Texts;
+                    deveui = FormModoAbp.formInstance.acessoDeveui.Texts;
+                    classe = FormModoAbp.formInstance.acessoClasse.SelectedItem.ToString();
+                    numTentativas = FormModoAbp.formInstance.acessoNumTentativas.SelectedItem.ToString();
+
+                    File.WriteAllText(saveFile.FileName, $"Arquivo Salvo 28/09/2023 Modo ABP\n" +
+                                                         $"{deviceAddress}\n" +
+                                                         $"{appskey}\n" +
+                                                         $"{nwkskey}\n" +
+                                                         $"{deveui}\n" +
+                                                         $"{classe}\n" +
+                                                         $"{numTentativas}");
+
+                }
+                else if (formAtual.Name.Contains("Otaa"))
+                {
+                    appkey = FormModoOtaa.formInstance.acessoAppkey.Texts;
+                    deveui = FormModoOtaa.formInstance.acessoDeveui.Texts;
+                    classe = FormModoOtaa.formInstance.acessoClasse.Texts;
+                    numTentativas = FormModoOtaa.formInstance.acessoNumTentativas.SelectedItem.ToString();
+                    autoJoin = FormModoOtaa.formInstance.acessoAutoJoin.SelectedItem.ToString();
+                    numTentativasJoin = FormModoOtaa.formInstance.acessoNumTentativasJoin.SelectedItem.ToString();
+                    intervaloTentativasJoin = FormModoOtaa.formInstance.acessoIntervaloTentativasJoin.SelectedItem.ToString();
+
+                    File.WriteAllText(saveFile.FileName, $"Arquivo Salvo 28/09/2023 Modo OTAA\n" +
+                                                         $"Appkey: {appkey}\n" +
+                                                         $"Deveui: {deveui}\n" +
+                                                         $"Classe: {classe}\n" +
+                                                         $"numTentativas: {numTentativas}\n" +
+                                                         $"autoJoin: {autoJoin}\n" +
+                                                         $"numTentativasJoin: {numTentativasJoin}\n" +
+                                                         $"intervaloTentativasJoin: {intervaloTentativasJoin}");
+
+                }
+
+                new CustomDialog("Arquivo salvo com sucesso.").ShowDialog();
+            }
+
+        }
+
         private void modoAbpButton_Click(object sender, EventArgs e)
         {
             abrirForm(new FormModoAbp());

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO.Ports;
 using LoraInterface.Forms;
 using System.Threading;
+using LoraInterface.CustomControls;
 
 namespace LoraInterface.Forms
 {
@@ -18,7 +19,16 @@ namespace LoraInterface.Forms
     {
         //Serial Port
         public SerialPort serialPort = new SerialPort();
+
+        //Tornando os controles do form e o forms acessíveis em outros forms.
         public static FormModoAbp formInstance;
+        public CTextBox acessoDeviceAddress;
+        public CTextBox acessoAppskey;
+        public CTextBox acessoNwkskey;
+        public CTextBox acessoDeveui;
+        public CComboBox acessoClasse;
+        public CToggle acessoToggleModoConfirmacao;
+        public CComboBox acessoNumTentativas;
 
         public FormModoAbp()
         {
@@ -57,8 +67,15 @@ namespace LoraInterface.Forms
             //Definindo colapso de abas
             modoDeConfirmacaoGroup.Height = 40;
 
-            //Tornando o form visível para outros forms
+            //Tornando o form e controles visíveis para outros forms
             formInstance = this;
+            acessoDeviceAddress = deviceAddressTextBox;
+            acessoAppskey = appskeyTextBox;
+            acessoNwkskey = nwkskeyTextBox;
+            acessoDeveui = deviceEuiTextBox;
+            acessoClasse = classeComboBox;
+            acessoToggleModoConfirmacao = modoConfirmacaoToggle;
+            acessoNumTentativas = numeroRetentativasComboBox;
         }
 
         //Conexão com porta COM.

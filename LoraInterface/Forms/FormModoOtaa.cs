@@ -1,10 +1,12 @@
-﻿using System;
+﻿using LoraInterface.CustomControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO.Ports;
 using System.Linq;
+using System.Security.RightsManagement;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -16,8 +18,18 @@ namespace LoraInterface.Forms
     {
         //Serial Port
         public SerialPort serialPort = new SerialPort();
-        public static FormModoOtaa formInstance;
 
+        //Tornando os controles do form e o forms acessíveis em outros forms.
+        public static FormModoOtaa formInstance;
+        public CTextBox acessoAppkey;
+        public CTextBox acessoDeveui;
+        public CComboBox acessoClasse;
+        public CToggle acessoToggleModoConfirmacao;
+        public CComboBox acessoNumTentativas;
+        public CToggle acessoToggleConfiguracoesJoin;
+        public CComboBox acessoAutoJoin;
+        public CComboBox acessoNumTentativasJoin;
+        public CComboBox acessoIntervaloTentativasJoin;
 
         public FormModoOtaa()
         {
@@ -79,6 +91,16 @@ namespace LoraInterface.Forms
 
             //Tornando o form visível para outros forms
             formInstance = this;
+            acessoAppkey = appKeyTextBox;
+            acessoDeveui = deviceEuiTextBox;
+            acessoClasse = classeComboBox;
+            acessoToggleModoConfirmacao = modoConfirmacaoToggle;
+            acessoNumTentativas = numeroRetentativasComboBox;
+            acessoToggleConfiguracoesJoin = configuracoesJoinToggle;
+            acessoAutoJoin = autoJoinComboBox;
+            acessoNumTentativasJoin = numeroTentativasJoinComboBox;
+            acessoIntervaloTentativasJoin = intervaloTentativasJoinComboBox;
+
         }
 
         //Conexão com porta COM.
