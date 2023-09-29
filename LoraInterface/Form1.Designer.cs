@@ -152,6 +152,7 @@
             this.abrirButton.Tag = "Abrir";
             this.abrirButton.Text = "Abrir";
             this.abrirButton.UseVisualStyleBackColor = true;
+            this.abrirButton.Click += new System.EventHandler(this.abrirButton_Click);
             // 
             // modoAbpButton
             // 

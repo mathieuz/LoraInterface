@@ -22,6 +22,7 @@ namespace LoraInterface
 
         public static MainForm formInstance;
         public RichTextBox console;
+        public IconButton acessoAbrir;
         public IconButton acessoModoAbp;
         public IconButton acessoModoOtaa;
         public SerialPort serialPort = new SerialPort();
@@ -48,6 +49,7 @@ namespace LoraInterface
             //Tornando o acesso ao console e demais controles públicos/visíveis para outros forms.
             formInstance = this;
             console = consolePanel;
+            acessoAbrir = abrirButton;
             acessoModoAbp = modoAbpButton;
             acessoModoOtaa = modoOtaaButton;
             
@@ -176,6 +178,43 @@ namespace LoraInterface
             form.BringToFront();
             form.Show();
 
+            if (form.Name.Contains("Abp"))
+            {
+
+                modoAbpButton.IconColor = Color.FromArgb(65, 65, 65);
+                modoAbpButton.BackColor = Color.WhiteSmoke;
+                modoAbpButton.ForeColor = Color.FromArgb(65, 65, 65);
+
+                modoAbpButton.FlatAppearance.MouseDownBackColor = Color.WhiteSmoke;
+                modoAbpButton.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
+
+                modoOtaaButton.IconColor = Color.WhiteSmoke;
+                modoOtaaButton.BackColor = Color.FromArgb(253, 189, 19);
+                modoOtaaButton.ForeColor = Color.WhiteSmoke;
+
+                modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
+                modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+
+            }
+            else if (form.Name.Contains("Otaa"))
+            {
+
+                modoOtaaButton.IconColor = Color.FromArgb(65, 65, 65);
+                modoOtaaButton.BackColor = Color.WhiteSmoke;
+                modoOtaaButton.ForeColor = Color.FromArgb(65, 65, 65);
+
+                modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.WhiteSmoke;
+                modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
+
+                modoAbpButton.IconColor = Color.WhiteSmoke;
+                modoAbpButton.BackColor = Color.FromArgb(253, 189, 19);
+                modoAbpButton.ForeColor = Color.WhiteSmoke;
+
+                modoAbpButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
+                modoAbpButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+
+            }
+
         }
 
         //Eventos de clique nos botões do menu lateral.
@@ -183,7 +222,7 @@ namespace LoraInterface
         {
             SaveFileDialog saveFile = new SaveFileDialog();
 
-            saveFile.FileName = "*.txt";
+            saveFile.FileName = formAtual.Name.Contains("Abp") ? "config-abp.txt" : "config-otaa.txt";
             saveFile.RestoreDirectory = true;
             saveFile.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             saveFile.DefaultExt = "txt";
@@ -211,7 +250,7 @@ namespace LoraInterface
                     classe = FormModoAbp.formInstance.acessoClasse.SelectedItem.ToString();
                     numTentativas = FormModoAbp.formInstance.acessoNumTentativas.SelectedItem.ToString();
 
-                    File.WriteAllText(saveFile.FileName, $"Arquivo Salvo 28/09/2023 Modo ABP\n" +
+                    File.WriteAllText(saveFile.FileName, $"ABP\n" +
                                                          $"{deviceAddress}\n" +
                                                          $"{appskey}\n" +
                                                          $"{nwkskey}\n" +
@@ -230,14 +269,14 @@ namespace LoraInterface
                     numTentativasJoin = FormModoOtaa.formInstance.acessoNumTentativasJoin.SelectedItem.ToString();
                     intervaloTentativasJoin = FormModoOtaa.formInstance.acessoIntervaloTentativasJoin.SelectedItem.ToString();
 
-                    File.WriteAllText(saveFile.FileName, $"Arquivo Salvo 28/09/2023 Modo OTAA\n" +
-                                                         $"Appkey: {appkey}\n" +
-                                                         $"Deveui: {deveui}\n" +
-                                                         $"Classe: {classe}\n" +
-                                                         $"numTentativas: {numTentativas}\n" +
-                                                         $"autoJoin: {autoJoin}\n" +
-                                                         $"numTentativasJoin: {numTentativasJoin}\n" +
-                                                         $"intervaloTentativasJoin: {intervaloTentativasJoin}");
+                    File.WriteAllText(saveFile.FileName, $"OTAA\n" +
+                                                         $"{appkey}\n" +
+                                                         $"{deveui}\n" +
+                                                         $"{classe}\n" +
+                                                         $"{numTentativas}\n" +
+                                                         $"{autoJoin}\n" +
+                                                         $"{numTentativasJoin}\n" +
+                                                         $"{intervaloTentativasJoin}");
 
                 }
 
@@ -246,43 +285,164 @@ namespace LoraInterface
 
         }
 
+        private void abrirButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+
+            openFile.RestoreDirectory = true;
+            openFile.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFile.DefaultExt = "txt";
+
+            string strConfig;
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                strConfig = File.ReadAllText(openFile.FileName, Encoding.UTF8);
+
+                if (strConfig.Contains("ABP"))
+                {
+                    abrirForm(new FormModoAbp());
+
+                    List<CTextBox> cTextBoxes = new List<CTextBox>();
+                    cTextBoxes.Add(FormModoAbp.formInstance.acessoDeviceAddress);
+                    cTextBoxes.Add(FormModoAbp.formInstance.acessoAppskey);
+                    cTextBoxes.Add(FormModoAbp.formInstance.acessoNwkskey);
+                    cTextBoxes.Add(FormModoAbp.formInstance.acessoDeveui);
+
+                    int textBoxAtual = 0;
+                    int comboBoxAtual = 0;
+                    int i = 4;
+
+                    while (i < strConfig.Length)
+                    {
+                        if (strConfig[i] != '\n')
+                        {
+                            cTextBoxes[textBoxAtual].Texts += strConfig[i];
+                            i++;
+                        }
+                        else
+                        {
+                            textBoxAtual++;
+                            i++;
+                        }
+
+                        if (textBoxAtual == cTextBoxes.Count)
+                        {
+                            break;
+                        }
+                    }
+
+                    List<CComboBox> cComboBoxes = new List<CComboBox>();
+                    cComboBoxes.Add(FormModoAbp.formInstance.acessoClasse);
+                    cComboBoxes.Add(FormModoAbp.formInstance.acessoNumTentativas);
+
+                    while (i < strConfig.Length)
+                    {
+                        if (strConfig[i] != '\n')
+                        {
+                            cComboBoxes[comboBoxAtual].SelectedIndex = cComboBoxes[comboBoxAtual].Items.IndexOf(strConfig[i].ToString());
+                            i++;
+
+                        }
+                        else
+                        {
+                            comboBoxAtual++;
+                            i++;
+                        }
+
+                        if (comboBoxAtual == cComboBoxes.Count)
+                        {
+                            break;
+                        }
+                    }
+
+                    if (FormModoAbp.formInstance.acessoNumTentativas.SelectedItem.ToString() != "0")
+                    {
+                        FormModoAbp.formInstance.acessoToggleModoConfirmacao.Checked = true;
+                    }
+
+                    new CustomDialog("Arquivo carregado com sucesso.").ShowDialog();
+
+
+                } 
+                else if (strConfig.Contains("OTAA"))
+                {
+                    abrirForm(new FormModoOtaa());
+
+                    List <CTextBox> cTextBoxes = new List<CTextBox>();
+                    cTextBoxes.Add(FormModoOtaa.formInstance.acessoAppkey);
+                    cTextBoxes.Add(FormModoOtaa.formInstance.acessoDeveui);
+
+                    int textBoxAtual = 0;
+                    int comboBoxAtual = 0;
+                    int i = 5;
+
+                    while (i < strConfig.Length)
+                    {
+                        if (strConfig[i] != '\n')
+                        {
+                            cTextBoxes[textBoxAtual].Texts += strConfig[i];
+                            i++;
+                        }
+                        else
+                        {
+                            textBoxAtual++;
+                            i++;
+                        }
+
+                        if (textBoxAtual == cTextBoxes.Count)
+                        {
+                            break;
+                        }
+                    }
+
+                    List<CComboBox> cComboBoxes = new List<CComboBox>();
+                    cComboBoxes.Add(FormModoOtaa.formInstance.acessoClasse);
+                    cComboBoxes.Add(FormModoOtaa.formInstance.acessoNumTentativas);
+                    cComboBoxes.Add(FormModoOtaa.formInstance.acessoAutoJoin);
+                    cComboBoxes.Add(FormModoOtaa.formInstance.acessoNumTentativasJoin);
+                    cComboBoxes.Add(FormModoOtaa.formInstance.acessoIntervaloTentativasJoin);
+
+                    while (i < strConfig.Length)
+                    {
+                        if (strConfig[i] != '\n')
+                        {
+                            cComboBoxes[comboBoxAtual].SelectedIndex = cComboBoxes[comboBoxAtual].Items.IndexOf(strConfig[i].ToString());
+                            i++;
+
+                        }
+                        else
+                        {
+                            comboBoxAtual++;
+                            i++;
+                        }
+
+                        if (comboBoxAtual == cComboBoxes.Count)
+                        {
+                            break;
+                        }
+                    }
+
+                    new CustomDialog($"Arquivo carregado com sucesso.").ShowDialog();
+
+                } 
+                else
+                {
+                    new CustomDialog("Não foi possível carregar as chaves ou identifcar o modo de conexão.").ShowDialog();
+
+                }
+            }
+        }
+
         private void modoAbpButton_Click(object sender, EventArgs e)
         {
             abrirForm(new FormModoAbp());
-
-            modoAbpButton.IconColor = Color.FromArgb(65, 65, 65);
-            modoAbpButton.BackColor = Color.WhiteSmoke;
-            modoAbpButton.ForeColor = Color.FromArgb(65, 65, 65);
-
-            modoAbpButton.FlatAppearance.MouseDownBackColor = Color.WhiteSmoke;
-            modoAbpButton.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
-
-            modoOtaaButton.IconColor = Color.WhiteSmoke;
-            modoOtaaButton.BackColor = Color.FromArgb(253, 189, 19);
-            modoOtaaButton.ForeColor = Color.WhiteSmoke;
-
-            modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
-            modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
 
         }
 
         private void modoOtaaButton_Click(object sender, EventArgs e)
         {
             abrirForm(new FormModoOtaa());
-
-            modoOtaaButton.IconColor = Color.FromArgb(65, 65, 65);
-            modoOtaaButton.BackColor = Color.WhiteSmoke;
-            modoOtaaButton.ForeColor = Color.FromArgb(65, 65, 65);
-
-            modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.WhiteSmoke;
-            modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
-
-            modoAbpButton.IconColor = Color.WhiteSmoke;
-            modoAbpButton.BackColor = Color.FromArgb(253, 189, 19);
-            modoAbpButton.ForeColor = Color.WhiteSmoke;
-
-            modoAbpButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
-            modoAbpButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
 
         }
 

@@ -133,6 +133,7 @@ namespace LoraInterface.Forms
                         conectarLoraButton.BackColor = Color.LimeGreen;
 
                         //Desabilita acesso das abas do menu lateral.
+                        MainForm.formInstance.acessoAbrir.Enabled = false;
                         MainForm.formInstance.acessoModoAbp.Enabled = false;
                         MainForm.formInstance.acessoModoOtaa.Enabled = false;
 
@@ -163,6 +164,7 @@ namespace LoraInterface.Forms
                 conectarLoraButton.BackColor = Color.Gainsboro;
 
                 //Habilita acesso das abas do menu lateral.
+                MainForm.formInstance.acessoAbrir.Enabled = true;
                 MainForm.formInstance.acessoModoAbp.Enabled = true;
                 MainForm.formInstance.acessoModoOtaa.Enabled = true;
 
