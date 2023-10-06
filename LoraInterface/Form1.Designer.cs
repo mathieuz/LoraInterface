@@ -34,6 +34,7 @@
             this.menuButton = new FontAwesome.Sharp.IconButton();
             this.salvarButton = new FontAwesome.Sharp.IconButton();
             this.abrirButton = new FontAwesome.Sharp.IconButton();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.modoAbpButton = new FontAwesome.Sharp.IconButton();
             this.modoOtaaButton = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,14 +43,13 @@
             this.consoleButton = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.enviarConsole = new FontAwesome.Sharp.IconButton();
-            this.consoleCmdTextBox = new LoraInterface.CustomControls.CTextBox();
             this.consolePanel = new System.Windows.Forms.RichTextBox();
             this.fecharJanelaButton = new FontAwesome.Sharp.IconButton();
             this.maximizarJanelaButton = new FontAwesome.Sharp.IconButton();
             this.minimizarJanelaButton = new FontAwesome.Sharp.IconButton();
             this.topBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.consoleCmdTextBox = new LoraInterface.CustomControls.CTextBox();
             this.sideBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -153,6 +153,14 @@
             this.abrirButton.Text = "Abrir";
             this.abrirButton.UseVisualStyleBackColor = true;
             this.abrirButton.Click += new System.EventHandler(this.abrirButton_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(3, 119);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(177, 38);
+            this.panel4.TabIndex = 6;
             // 
             // modoAbpButton
             // 
@@ -287,24 +295,6 @@
             this.enviarConsole.UseVisualStyleBackColor = true;
             this.enviarConsole.Click += new System.EventHandler(this.enviarConsole_Click);
             // 
-            // consoleCmdTextBox
-            // 
-            this.consoleCmdTextBox.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.consoleCmdTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.consoleCmdTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.consoleCmdTextBox.BorderSize = 2;
-            this.consoleCmdTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.consoleCmdTextBox.ForeColor = System.Drawing.Color.White;
-            this.consoleCmdTextBox.Location = new System.Drawing.Point(5, 5);
-            this.consoleCmdTextBox.MaxLength = 32767;
-            this.consoleCmdTextBox.Multiline = false;
-            this.consoleCmdTextBox.Name = "consoleCmdTextBox";
-            this.consoleCmdTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.consoleCmdTextBox.Size = new System.Drawing.Size(858, 28);
-            this.consoleCmdTextBox.TabIndex = 1;
-            this.consoleCmdTextBox.Texts = "";
-            this.consoleCmdTextBox.UnderlinedStyle = false;
-            // 
             // consolePanel
             // 
             this.consolePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
@@ -400,23 +390,35 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // panel4
+            // consoleCmdTextBox
             // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(3, 119);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(177, 38);
-            this.panel4.TabIndex = 6;
+            this.consoleCmdTextBox.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.consoleCmdTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.consoleCmdTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.consoleCmdTextBox.BorderSize = 2;
+            this.consoleCmdTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.consoleCmdTextBox.ForeColor = System.Drawing.Color.White;
+            this.consoleCmdTextBox.Location = new System.Drawing.Point(5, 5);
+            this.consoleCmdTextBox.MaxLength = 32767;
+            this.consoleCmdTextBox.Multiline = false;
+            this.consoleCmdTextBox.Name = "consoleCmdTextBox";
+            this.consoleCmdTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.consoleCmdTextBox.Size = new System.Drawing.Size(858, 28);
+            this.consoleCmdTextBox.TabIndex = 1;
+            this.consoleCmdTextBox.Texts = "";
+            this.consoleCmdTextBox.UnderlinedStyle = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1048, 651);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.sideBarPanel);
             this.Controls.Add(this.topBarPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Activated += new System.EventHandler(this.MainForm_Activated);

@@ -53,8 +53,8 @@ namespace LoraInterface.Forms
             numeroRetentativasComboBox.SelectedIndex = 0;
 
             //Inicializando auto-join ComboBox
-            autoJoinComboBox.Items.Add("Ativado");
             autoJoinComboBox.Items.Add("Desativado");
+            autoJoinComboBox.Items.Add("Ativado");
             autoJoinComboBox.SelectedIndex = 1;
 
             //Inicializando número de tentativas join ComboBox

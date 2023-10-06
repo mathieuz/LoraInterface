@@ -69,6 +69,8 @@ namespace LoraInterface
         }
 
         //Aerosnap
+
+        /*
         protected override void WndProc(ref Message m)
         {
             const int WH_NCCALCSIZE = 0x0083;
@@ -80,6 +82,7 @@ namespace LoraInterface
 
             base.WndProc(ref m);
         }
+        */
 
         //Ajusta o Padding do form quando maximizado ou não.
         private void Form1_Resize(object sender, EventArgs e)
@@ -92,7 +95,7 @@ namespace LoraInterface
             switch (this.WindowState)
             {
                 case FormWindowState.Maximized:
-                    this.Padding = new Padding(8, 8, 8, 8);
+                    this.Padding = new Padding(0, 0, 0, 0);
                 break;
 
                 case FormWindowState.Normal:
@@ -265,7 +268,7 @@ namespace LoraInterface
                     deveui = FormModoOtaa.formInstance.acessoDeveui.Texts;
                     classe = FormModoOtaa.formInstance.acessoClasse.Texts;
                     numTentativas = FormModoOtaa.formInstance.acessoNumTentativas.SelectedItem.ToString();
-                    autoJoin = FormModoOtaa.formInstance.acessoAutoJoin.SelectedItem.ToString();
+                    autoJoin = FormModoOtaa.formInstance.acessoAutoJoin.SelectedIndex.ToString();
                     numTentativasJoin = FormModoOtaa.formInstance.acessoNumTentativasJoin.SelectedItem.ToString();
                     intervaloTentativasJoin = FormModoOtaa.formInstance.acessoIntervaloTentativasJoin.SelectedItem.ToString();
 
@@ -403,6 +406,7 @@ namespace LoraInterface
                     cComboBoxes.Add(FormModoOtaa.formInstance.acessoNumTentativasJoin);
                     cComboBoxes.Add(FormModoOtaa.formInstance.acessoIntervaloTentativasJoin);
 
+                    //Define classe e numero de tentativas
                     while (i < strConfig.Length)
                     {
                         if (strConfig[i] != '\n')
@@ -417,13 +421,53 @@ namespace LoraInterface
                             i++;
                         }
 
-                        if (comboBoxAtual == cComboBoxes.Count)
+                        if (comboBoxAtual == 2)
                         {
                             break;
                         }
                     }
 
-                    new CustomDialog($"Arquivo carregado com sucesso.").ShowDialog();
+                    //Define auto join.
+                    cComboBoxes[comboBoxAtual].SelectedIndex = int.Parse(strConfig[i].ToString());
+                    comboBoxAtual++;
+                    i++;
+                    i++;
+
+                    //Define número de tentativas e intervalo de tentatvas do join.
+                    string numTentativas = "";
+                    string numIntervalo = "";
+
+                    while (strConfig[i] != '\n')
+                    {
+                        numTentativas += strConfig[i].ToString();
+                        i++;
+                    }
+
+                    i++;
+
+                    while (i < strConfig.Length)
+                    {
+                        numIntervalo += strConfig[i].ToString();
+                        i++;
+                    }
+
+                    cComboBoxes[comboBoxAtual].SelectedIndex = cComboBoxes[comboBoxAtual].Items.IndexOf(numTentativas);
+                    comboBoxAtual++;
+                    cComboBoxes[comboBoxAtual].SelectedIndex = cComboBoxes[comboBoxAtual].Items.IndexOf(numIntervalo);
+
+                    //Verificação de campos/ativar toggles.
+                    if (FormModoOtaa.formInstance.acessoNumTentativas.SelectedIndex != 0)
+                    {
+                        FormModoOtaa.formInstance.acessoToggleModoConfirmacao.Checked = true;
+                    }
+
+                    if (FormModoOtaa.formInstance.acessoAutoJoin.SelectedIndex != 0)
+                    {
+                        FormModoOtaa.formInstance.acessoToggleConfiguracoesJoin.Checked = true;
+                    }
+
+
+                    new CustomDialog($"Arquivo carregado com sucesso.\n{numIntervalo}").ShowDialog();
 
                 } 
                 else
