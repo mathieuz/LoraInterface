@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.sideBarPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,13 +44,14 @@
             this.consoleButton = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.enviarConsole = new FontAwesome.Sharp.IconButton();
+            this.consoleCmdTextBox = new LoraInterface.CustomControls.CTextBox();
             this.consolePanel = new System.Windows.Forms.RichTextBox();
             this.fecharJanelaButton = new FontAwesome.Sharp.IconButton();
             this.maximizarJanelaButton = new FontAwesome.Sharp.IconButton();
             this.minimizarJanelaButton = new FontAwesome.Sharp.IconButton();
             this.topBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.consoleCmdTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.infoFormToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.sideBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -99,6 +101,7 @@
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(34, 29);
             this.menuButton.TabIndex = 2;
+            this.infoFormToolTip.SetToolTip(this.menuButton, "Colapsar menu");
             this.menuButton.UseVisualStyleBackColor = true;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
@@ -125,6 +128,7 @@
             this.salvarButton.TabIndex = 5;
             this.salvarButton.Tag = "Salvar";
             this.salvarButton.Text = "Salvar";
+            this.infoFormToolTip.SetToolTip(this.salvarButton, "Salvar configurações de conexão atual");
             this.salvarButton.UseVisualStyleBackColor = true;
             this.salvarButton.Click += new System.EventHandler(this.salvarButton_Click);
             // 
@@ -151,6 +155,7 @@
             this.abrirButton.TabIndex = 7;
             this.abrirButton.Tag = "Abrir";
             this.abrirButton.Text = "Abrir";
+            this.infoFormToolTip.SetToolTip(this.abrirButton, "Carregar uma configuração de conexão salva");
             this.abrirButton.UseVisualStyleBackColor = true;
             this.abrirButton.Click += new System.EventHandler(this.abrirButton_Click);
             // 
@@ -185,6 +190,7 @@
             this.modoAbpButton.TabIndex = 2;
             this.modoAbpButton.Tag = "Modo ABP";
             this.modoAbpButton.Text = "Modo ABP";
+            this.infoFormToolTip.SetToolTip(this.modoAbpButton, "Iniciar conexão no modo ABP");
             this.modoAbpButton.UseVisualStyleBackColor = true;
             this.modoAbpButton.Click += new System.EventHandler(this.modoAbpButton_Click);
             // 
@@ -211,6 +217,7 @@
             this.modoOtaaButton.TabIndex = 4;
             this.modoOtaaButton.Tag = "Modo OTAA";
             this.modoOtaaButton.Text = "Modo OTAA";
+            this.infoFormToolTip.SetToolTip(this.modoOtaaButton, "Iniciar conexão no modo OTAA");
             this.modoOtaaButton.UseVisualStyleBackColor = true;
             this.modoOtaaButton.Click += new System.EventHandler(this.modoOtaaButton_Click);
             // 
@@ -265,6 +272,7 @@
             this.consoleButton.TabIndex = 1;
             this.consoleButton.Text = "Console";
             this.consoleButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.infoFormToolTip.SetToolTip(this.consoleButton, "Colapsar Console");
             this.consoleButton.UseVisualStyleBackColor = false;
             this.consoleButton.Click += new System.EventHandler(this.consoleButton_Click);
             // 
@@ -283,17 +291,44 @@
             // 
             // enviarConsole
             // 
+            this.enviarConsole.BackColor = System.Drawing.Color.Silver;
             this.enviarConsole.Dock = System.Windows.Forms.DockStyle.Right;
+            this.enviarConsole.FlatAppearance.BorderSize = 0;
+            this.enviarConsole.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(100)))), ((int)(((byte)(10)))));
+            this.enviarConsole.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.enviarConsole.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.enviarConsole.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enviarConsole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.enviarConsole.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.enviarConsole.IconColor = System.Drawing.Color.Black;
+            this.enviarConsole.IconColor = System.Drawing.Color.White;
             this.enviarConsole.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.enviarConsole.Location = new System.Drawing.Point(792, 5);
             this.enviarConsole.Name = "enviarConsole";
             this.enviarConsole.Size = new System.Drawing.Size(71, 28);
             this.enviarConsole.TabIndex = 2;
             this.enviarConsole.Text = "Enviar";
-            this.enviarConsole.UseVisualStyleBackColor = true;
+            this.infoFormToolTip.SetToolTip(this.enviarConsole, "Enviar para o dispositivo conectado");
+            this.enviarConsole.UseVisualStyleBackColor = false;
             this.enviarConsole.Click += new System.EventHandler(this.enviarConsole_Click);
+            // 
+            // consoleCmdTextBox
+            // 
+            this.consoleCmdTextBox.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.consoleCmdTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.consoleCmdTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.consoleCmdTextBox.BorderSize = 2;
+            this.consoleCmdTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.consoleCmdTextBox.ForeColor = System.Drawing.Color.White;
+            this.consoleCmdTextBox.Location = new System.Drawing.Point(5, 5);
+            this.consoleCmdTextBox.MaxLength = 32767;
+            this.consoleCmdTextBox.Multiline = false;
+            this.consoleCmdTextBox.Name = "consoleCmdTextBox";
+            this.consoleCmdTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.consoleCmdTextBox.Size = new System.Drawing.Size(858, 28);
+            this.consoleCmdTextBox.TabIndex = 1;
+            this.consoleCmdTextBox.Texts = "";
+            this.infoFormToolTip.SetToolTip(this.consoleCmdTextBox, "Teste Textbox!!! 123");
+            this.consoleCmdTextBox.UnderlinedStyle = false;
             // 
             // consolePanel
             // 
@@ -390,23 +425,14 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // consoleCmdTextBox
+            // infoFormToolTip
             // 
-            this.consoleCmdTextBox.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.consoleCmdTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.consoleCmdTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.consoleCmdTextBox.BorderSize = 2;
-            this.consoleCmdTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.consoleCmdTextBox.ForeColor = System.Drawing.Color.White;
-            this.consoleCmdTextBox.Location = new System.Drawing.Point(5, 5);
-            this.consoleCmdTextBox.MaxLength = 32767;
-            this.consoleCmdTextBox.Multiline = false;
-            this.consoleCmdTextBox.Name = "consoleCmdTextBox";
-            this.consoleCmdTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.consoleCmdTextBox.Size = new System.Drawing.Size(858, 28);
-            this.consoleCmdTextBox.TabIndex = 1;
-            this.consoleCmdTextBox.Texts = "";
-            this.consoleCmdTextBox.UnderlinedStyle = false;
+            this.infoFormToolTip.AutomaticDelay = 0;
+            this.infoFormToolTip.AutoPopDelay = 10000;
+            this.infoFormToolTip.InitialDelay = 0;
+            this.infoFormToolTip.IsBalloon = true;
+            this.infoFormToolTip.ReshowDelay = 100;
+            this.infoFormToolTip.ShowAlways = true;
             // 
             // MainForm
             // 
@@ -458,6 +484,7 @@
         private FontAwesome.Sharp.IconButton salvarButton;
         private FontAwesome.Sharp.IconButton abrirButton;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ToolTip infoFormToolTip;
     }
 }
 

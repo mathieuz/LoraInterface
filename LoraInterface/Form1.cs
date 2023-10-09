@@ -43,8 +43,9 @@ namespace LoraInterface
 
             abrirForm(new FormModoAbp());
 
-            //Iniciando console fechado.
+            //Colapsando guias.
             ColapsarConsole();
+            ColapsarMenu();
 
             //Tornando o acesso ao console e demais controles públicos/visíveis para outros forms.
             formInstance = this;
@@ -467,7 +468,7 @@ namespace LoraInterface
                     }
 
 
-                    new CustomDialog($"Arquivo carregado com sucesso.\n{numIntervalo}").ShowDialog();
+                    new CustomDialog($"Arquivo carregado com sucesso.").ShowDialog();
 
                 } 
                 else
@@ -555,5 +556,11 @@ namespace LoraInterface
                 }
             }
         }
+
+        /******/
+
+        //Tooltips
+
+
     }
 }

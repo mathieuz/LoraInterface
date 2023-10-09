@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -40,6 +41,7 @@
             this.configuracoesJoinToggle = new LoraInterface.CustomControls.CToggle();
             this.label7 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.intervaloTentativasJoinComboBox = new LoraInterface.CustomControls.CComboBox();
@@ -50,19 +52,23 @@
             this.label10 = new System.Windows.Forms.Label();
             this.autoJoinComboBox = new LoraInterface.CustomControls.CComboBox();
             this.modoDeConfirmacaoGroup = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.modoConfirmacaoToggle = new LoraInterface.CustomControls.CToggle();
             this.label8 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.numeroRetentativasComboBox = new LoraInterface.CustomControls.CComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
             this.classeComboBox = new LoraInterface.CustomControls.CComboBox();
             this.chavesDeAtivacaoGroup = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.deviceEuiTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.label6 = new System.Windows.Forms.Label();
             this.appKeyTextBox = new LoraInterface.CustomControls.CTextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -80,6 +86,8 @@
             this.atSendTextoTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
+            this.infoOtaaToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -236,6 +244,7 @@
             // 
             // configuracoesDeJoinGroup
             // 
+            this.configuracoesDeJoinGroup.Controls.Add(this.iconButton4);
             this.configuracoesDeJoinGroup.Controls.Add(this.configuracoesJoinToggle);
             this.configuracoesDeJoinGroup.Controls.Add(this.label7);
             this.configuracoesDeJoinGroup.Controls.Add(this.panel12);
@@ -250,7 +259,7 @@
             // 
             this.configuracoesJoinToggle.AutoSize = true;
             this.configuracoesJoinToggle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.configuracoesJoinToggle.Location = new System.Drawing.Point(205, 2);
+            this.configuracoesJoinToggle.Location = new System.Drawing.Point(228, 2);
             this.configuracoesJoinToggle.MinimumSize = new System.Drawing.Size(42, 18);
             this.configuracoesJoinToggle.Name = "configuracoesJoinToggle";
             this.configuracoesJoinToggle.OffBackColor = System.Drawing.Color.Gray;
@@ -267,7 +276,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(18, 3);
+            this.label7.Location = new System.Drawing.Point(40, 3);
             this.label7.Margin = new System.Windows.Forms.Padding(3);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(181, 15);
@@ -286,6 +295,25 @@
             this.panel12.Padding = new System.Windows.Forms.Padding(10, 25, 10, 5);
             this.panel12.Size = new System.Drawing.Size(566, 251);
             this.panel12.TabIndex = 13;
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton4.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton4.IconSize = 12;
+            this.iconButton4.Location = new System.Drawing.Point(18, 3);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(17, 16);
+            this.iconButton4.TabIndex = 24;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton4, "Ao habilitar, você pode definir as condições de conexão do join");
+            this.iconButton4.UseVisualStyleBackColor = false;
             // 
             // panel15
             // 
@@ -418,6 +446,7 @@
             // 
             // modoDeConfirmacaoGroup
             // 
+            this.modoDeConfirmacaoGroup.Controls.Add(this.iconButton3);
             this.modoDeConfirmacaoGroup.Controls.Add(this.modoConfirmacaoToggle);
             this.modoDeConfirmacaoGroup.Controls.Add(this.label8);
             this.modoDeConfirmacaoGroup.Controls.Add(this.panel16);
@@ -428,11 +457,30 @@
             this.modoDeConfirmacaoGroup.Size = new System.Drawing.Size(586, 99);
             this.modoDeConfirmacaoGroup.TabIndex = 9;
             // 
+            // iconButton3
+            // 
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton3.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton3.IconSize = 12;
+            this.iconButton3.Location = new System.Drawing.Point(18, 3);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(17, 16);
+            this.iconButton3.TabIndex = 23;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton3, "Ao habilitar, você pode determinar um número de tentativas de envio de uplink");
+            this.iconButton3.UseVisualStyleBackColor = false;
+            // 
             // modoConfirmacaoToggle
             // 
             this.modoConfirmacaoToggle.AutoSize = true;
             this.modoConfirmacaoToggle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.modoConfirmacaoToggle.Location = new System.Drawing.Point(198, 2);
+            this.modoConfirmacaoToggle.Location = new System.Drawing.Point(220, 2);
             this.modoConfirmacaoToggle.MinimumSize = new System.Drawing.Size(42, 18);
             this.modoConfirmacaoToggle.Name = "modoConfirmacaoToggle";
             this.modoConfirmacaoToggle.OffBackColor = System.Drawing.Color.Gray;
@@ -449,7 +497,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(18, 3);
+            this.label8.Location = new System.Drawing.Point(40, 3);
             this.label8.Margin = new System.Windows.Forms.Padding(3);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(174, 15);
@@ -502,6 +550,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.iconButton2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.classeComboBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -511,12 +560,31 @@
             this.panel1.Size = new System.Drawing.Size(586, 58);
             this.panel1.TabIndex = 7;
             // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton2.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton2.IconSize = 12;
+            this.iconButton2.Location = new System.Drawing.Point(18, 3);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(17, 16);
+            this.iconButton2.TabIndex = 22;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton2, "Selecione uma classe de operação");
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(18, 3);
+            this.label2.Location = new System.Drawing.Point(40, 3);
             this.label2.Margin = new System.Windows.Forms.Padding(3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 15);
@@ -562,6 +630,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.iconButton1);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.deviceEuiTextBox);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -571,12 +640,31 @@
             this.panel3.Size = new System.Drawing.Size(586, 58);
             this.panel3.TabIndex = 10;
             // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton1.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton1.IconSize = 12;
+            this.iconButton1.Location = new System.Drawing.Point(18, 3);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(17, 16);
+            this.iconButton1.TabIndex = 21;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton1, "Insira aqui a sequência hexadecimal do Device EUI");
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 3);
+            this.label3.Location = new System.Drawing.Point(40, 3);
             this.label3.Margin = new System.Windows.Forms.Padding(3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 15);
@@ -605,6 +693,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.iconButton6);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.appKeyTextBox);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -614,12 +703,31 @@
             this.panel5.Size = new System.Drawing.Size(586, 58);
             this.panel5.TabIndex = 8;
             // 
+            // iconButton6
+            // 
+            this.iconButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton6.FlatAppearance.BorderSize = 0;
+            this.iconButton6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton6.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton6.IconSize = 12;
+            this.iconButton6.Location = new System.Drawing.Point(18, 3);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Size = new System.Drawing.Size(17, 16);
+            this.iconButton6.TabIndex = 20;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton6, "Insira aqui a sequência hexadecimal do AppKey");
+            this.iconButton6.UseVisualStyleBackColor = false;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(18, 3);
+            this.label6.Location = new System.Drawing.Point(40, 3);
             this.label6.Margin = new System.Windows.Forms.Padding(3);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 15);
@@ -656,7 +764,6 @@
             // 
             // comandosATGroup
             // 
-            this.comandosATGroup.Controls.Add(this.label5);
             this.comandosATGroup.Controls.Add(this.panel4);
             this.comandosATGroup.Dock = System.Windows.Forms.DockStyle.Top;
             this.comandosATGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -675,7 +782,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(28, 28);
+            this.label5.Location = new System.Drawing.Point(40, 3);
             this.label5.Margin = new System.Windows.Forms.Padding(3);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
@@ -684,6 +791,8 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.iconButton5);
             this.panel4.Controls.Add(this.panel8);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(10, 24);
@@ -843,6 +952,34 @@
             this.label13.TabIndex = 10;
             this.label13.Text = "Configurações Modo OTAA";
             // 
+            // infoOtaaToolTip
+            // 
+            this.infoOtaaToolTip.AutomaticDelay = 0;
+            this.infoOtaaToolTip.AutoPopDelay = 10000;
+            this.infoOtaaToolTip.InitialDelay = 0;
+            this.infoOtaaToolTip.IsBalloon = true;
+            this.infoOtaaToolTip.ReshowDelay = 100;
+            this.infoOtaaToolTip.ShowAlways = true;
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton5.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton5.IconSize = 12;
+            this.iconButton5.Location = new System.Drawing.Point(18, 3);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(17, 16);
+            this.iconButton5.TabIndex = 21;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton5, "AT+SEND: Envia texto via uplink em uma porta especifica.");
+            this.iconButton5.UseVisualStyleBackColor = false;
+            // 
             // FormModoOtaa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -886,8 +1023,8 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.comandosATGroup.ResumeLayout(false);
-            this.comandosATGroup.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
@@ -953,5 +1090,12 @@
         public System.Windows.Forms.GroupBox comandosATGroup;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ToolTip infoOtaaToolTip;
+        private FontAwesome.Sharp.IconButton iconButton6;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButton5;
     }
 }
