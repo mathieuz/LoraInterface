@@ -338,5 +338,20 @@ namespace LoraInterface.Forms
             MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
 
         }
+
+        private void listarGruposMulticastButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void removerGrupoMulticastButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adicionarGrupoMulticastButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
