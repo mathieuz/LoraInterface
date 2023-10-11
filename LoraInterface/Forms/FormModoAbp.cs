@@ -379,6 +379,8 @@ namespace LoraInterface.Forms
 
             MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
 
+            MainForm.formInstance.console.ScrollToCaret();
+
         }
     }
 }
