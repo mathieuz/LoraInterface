@@ -277,6 +277,43 @@ namespace LoraInterface.Forms
 
         }
 
+        private void removerGrupoMulticastButton_Click(object sender, EventArgs e)
+        {
+            string multicastAddress = multicastAddressRemoverTextBox.Texts;
+
+            if (multicastAddress.Length == multicastAddressRemoverTextBox.MaxLength)
+            {
+                //Colapsa o console.
+                if (!MainForm.formInstance.ColapsarConsole())
+                {
+                    MainForm.formInstance.ColapsarConsole();
+
+                }
+
+                serialPort.WriteLine($"AT+RMVMULC={multicastAddress}");
+
+                MainForm.formInstance.console.AppendText($"AT+RMVMULC={multicastAddress}" + Environment.NewLine);
+            }
+            else
+            {
+                new CustomDialog("Erro!", $"O campo do Multicast Address está incompleto ou vazio.\nTente novamente.", Color.OrangeRed).ShowDialog();
+            }
+            
+        }
+
+        private void listarGruposMulticastButton_Click(object sender, EventArgs e)
+        {
+            if (!MainForm.formInstance.ColapsarConsole())
+            {
+                MainForm.formInstance.ColapsarConsole();
+
+            }
+
+            serialPort.WriteLine($"AT+LSTMULC=?");
+
+            MainForm.formInstance.console.AppendText($"AT+LSTMULC=?" + Environment.NewLine);
+        }
+
         //AT+SEND
         private void atSendButton_Click(object sender, EventArgs e)
         {
