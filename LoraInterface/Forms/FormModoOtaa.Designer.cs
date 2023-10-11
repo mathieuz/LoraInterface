@@ -1292,7 +1292,7 @@
             this.multicastNwkskeyTextBox.ForeColor = System.Drawing.Color.Black;
             this.multicastNwkskeyTextBox.Location = new System.Drawing.Point(0, 10);
             this.multicastNwkskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.multicastNwkskeyTextBox.MaxLength = 8;
+            this.multicastNwkskeyTextBox.MaxLength = 32;
             this.multicastNwkskeyTextBox.Multiline = false;
             this.multicastNwkskeyTextBox.Name = "multicastNwkskeyTextBox";
             this.multicastNwkskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 10);
@@ -1324,7 +1324,7 @@
             this.multicastAppskeyTextBox.ForeColor = System.Drawing.Color.Black;
             this.multicastAppskeyTextBox.Location = new System.Drawing.Point(0, 10);
             this.multicastAppskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.multicastAppskeyTextBox.MaxLength = 8;
+            this.multicastAppskeyTextBox.MaxLength = 32;
             this.multicastAppskeyTextBox.Multiline = false;
             this.multicastAppskeyTextBox.Name = "multicastAppskeyTextBox";
             this.multicastAppskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 10);
@@ -1353,6 +1353,7 @@
             this.adicionarGrupoMulticastButton.TabIndex = 16;
             this.adicionarGrupoMulticastButton.Text = "Adicionar Grupo";
             this.adicionarGrupoMulticastButton.UseVisualStyleBackColor = false;
+            this.adicionarGrupoMulticastButton.Click += new System.EventHandler(this.adicionarGrupoMulticastButton_Click);
             // 
             // panel27
             // 
@@ -1438,6 +1439,7 @@
             this.removerGrupoMulticastButton.TabIndex = 16;
             this.removerGrupoMulticastButton.Text = "Remover Grupo";
             this.removerGrupoMulticastButton.UseVisualStyleBackColor = false;
+            this.removerGrupoMulticastButton.Click += new System.EventHandler(this.removerGrupoMulticastButton_Click);
             // 
             // label21
             // 
@@ -1521,6 +1523,7 @@
             this.listarGruposMulticastButton.TabIndex = 16;
             this.listarGruposMulticastButton.Text = "Listar Grupos";
             this.listarGruposMulticastButton.UseVisualStyleBackColor = false;
+            this.listarGruposMulticastButton.Click += new System.EventHandler(this.listarGruposMulticastButton_Click);
             // 
             // iconButton9
             // 

@@ -101,6 +101,11 @@ namespace LoraInterface.Forms
             acessoNumTentativasJoin = numeroTentativasJoinComboBox;
             acessoIntervaloTentativasJoin = intervaloTentativasJoinComboBox;
 
+            //Iniciando classes de multicast.
+            multicastClasseComboBox.Items.Add("B");
+            multicastClasseComboBox.Items.Add("C");
+            multicastClasseComboBox.SelectedIndex = 0;
+
         }
 
         //Conexão com porta COM.
@@ -271,7 +276,73 @@ namespace LoraInterface.Forms
             }
         }
 
-        //Comandos AT Modo ABP
+
+        //Comandos AT Modo OTAA
+
+        //Multicast - ADDMULC, LSTMULC e RMVMULC.
+        private void adicionarGrupoMulticastButton_Click(object sender, EventArgs e)
+        {
+            string multicastClass = multicastClasseComboBox.SelectedItem.ToString();
+            string multicastAddress = multicastAddressTextBox.Texts;
+            string multicastNwkskey = multicastNwkskeyTextBox.Texts;
+            string multicastAppskey = multicastAppskeyTextBox.Texts;
+
+            string frequencia = "923300000";
+
+            if (multicastAddress.Length == multicastAddressTextBox.MaxLength && multicastNwkskey.Length == multicastNwkskeyTextBox.MaxLength && multicastAppskey.Length == multicastNwkskeyTextBox.MaxLength)
+            {
+                //Colapsa o console.
+                if (!MainForm.formInstance.ColapsarConsole())
+                {
+                    MainForm.formInstance.ColapsarConsole();
+
+                }
+
+                serialPort.WriteLine($"AT+ADDMULC={multicastClass}:{multicastAddress}:{multicastNwkskey}:{multicastAppskey}:{frequencia}:8:0");
+
+                MainForm.formInstance.console.AppendText($"AT+ADDMULC={multicastClass}:{multicastAddress}:{multicastNwkskey}:{multicastAppskey}:{frequencia}:8:0" + Environment.NewLine);
+            }
+            else
+            {
+                new CustomDialog("Erro!", $"Erro ao adicionar grupo de multicast.\nAlguns campos não foram totalmente preenchidos. Tente novamente.", Color.OrangeRed).ShowDialog();
+            }
+        }
+
+        private void removerGrupoMulticastButton_Click(object sender, EventArgs e)
+        {
+            string multicastAddress = multicastAddressRemoverTextBox.Texts;
+
+            if (multicastAddress.Length == multicastAddressRemoverTextBox.MaxLength)
+            {
+                //Colapsa o console.
+                if (!MainForm.formInstance.ColapsarConsole())
+                {
+                    MainForm.formInstance.ColapsarConsole();
+
+                }
+
+                serialPort.WriteLine($"AT+RMVMULC={multicastAddress}");
+
+                MainForm.formInstance.console.AppendText($"AT+RMVMULC={multicastAddress}" + Environment.NewLine);
+            }
+            else
+            {
+                new CustomDialog("Erro!", $"O campo do Multicast Address está incompleto ou vazio.\nTente novamente.", Color.OrangeRed).ShowDialog();
+            }
+        }
+
+        private void listarGruposMulticastButton_Click(object sender, EventArgs e)
+        {
+            if (!MainForm.formInstance.ColapsarConsole())
+            {
+                MainForm.formInstance.ColapsarConsole();
+
+            }
+
+            serialPort.WriteLine($"AT+LSTMULC=?");
+
+            MainForm.formInstance.console.AppendText($"AT+LSTMULC=?" + Environment.NewLine);
+        }
 
         //AT+SEND
         private void atSendButton_Click(object sender, EventArgs e)
@@ -337,20 +408,7 @@ namespace LoraInterface.Forms
 
             MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
 
-        }
-
-        private void listarGruposMulticastButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void removerGrupoMulticastButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void adicionarGrupoMulticastButton_Click(object sender, EventArgs e)
-        {
+            MainForm.formInstance.console.ScrollToCaret();
 
         }
     }

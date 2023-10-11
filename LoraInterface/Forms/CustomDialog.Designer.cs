@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.topBarPanel = new System.Windows.Forms.Panel();
+            this.windowTitle = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.fecharJanelaButton = new FontAwesome.Sharp.IconButton();
             this.msgText = new System.Windows.Forms.Label();
-            this.windowTitle = new System.Windows.Forms.Label();
             this.topBarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +47,16 @@
             this.topBarPanel.Name = "topBarPanel";
             this.topBarPanel.Size = new System.Drawing.Size(334, 39);
             this.topBarPanel.TabIndex = 1;
+            // 
+            // windowTitle
+            // 
+            this.windowTitle.AutoSize = true;
+            this.windowTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windowTitle.ForeColor = System.Drawing.Color.White;
+            this.windowTitle.Location = new System.Drawing.Point(12, 9);
+            this.windowTitle.Name = "windowTitle";
+            this.windowTitle.Size = new System.Drawing.Size(0, 17);
+            this.windowTitle.TabIndex = 3;
             // 
             // label2
             // 
@@ -89,16 +99,6 @@
             this.msgText.Size = new System.Drawing.Size(334, 181);
             this.msgText.TabIndex = 0;
             this.msgText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // windowTitle
-            // 
-            this.windowTitle.AutoSize = true;
-            this.windowTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.windowTitle.ForeColor = System.Drawing.Color.White;
-            this.windowTitle.Location = new System.Drawing.Point(12, 9);
-            this.windowTitle.Name = "windowTitle";
-            this.windowTitle.Size = new System.Drawing.Size(0, 17);
-            this.windowTitle.TabIndex = 3;
             // 
             // CustomDialog
             // 
