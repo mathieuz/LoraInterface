@@ -32,12 +32,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.fecharJanelaButton = new FontAwesome.Sharp.IconButton();
             this.msgText = new System.Windows.Forms.Label();
+            this.windowTitle = new System.Windows.Forms.Label();
             this.topBarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // topBarPanel
             // 
             this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.topBarPanel.Controls.Add(this.windowTitle);
             this.topBarPanel.Controls.Add(this.label2);
             this.topBarPanel.Controls.Add(this.fecharJanelaButton);
             this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -59,13 +61,12 @@
             // 
             // fecharJanelaButton
             // 
+            this.fecharJanelaButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.fecharJanelaButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.fecharJanelaButton.FlatAppearance.BorderSize = 0;
-            this.fecharJanelaButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.fecharJanelaButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OrangeRed;
             this.fecharJanelaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fecharJanelaButton.IconChar = FontAwesome.Sharp.IconChar.X;
-            this.fecharJanelaButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.fecharJanelaButton.IconColor = System.Drawing.Color.White;
             this.fecharJanelaButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.fecharJanelaButton.IconSize = 15;
             this.fecharJanelaButton.Location = new System.Drawing.Point(289, 0);
@@ -88,6 +89,16 @@
             this.msgText.Size = new System.Drawing.Size(334, 181);
             this.msgText.TabIndex = 0;
             this.msgText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // windowTitle
+            // 
+            this.windowTitle.AutoSize = true;
+            this.windowTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windowTitle.ForeColor = System.Drawing.Color.White;
+            this.windowTitle.Location = new System.Drawing.Point(12, 9);
+            this.windowTitle.Name = "windowTitle";
+            this.windowTitle.Size = new System.Drawing.Size(0, 17);
+            this.windowTitle.TabIndex = 3;
             // 
             // CustomDialog
             // 
@@ -113,5 +124,6 @@
         private FontAwesome.Sharp.IconButton fecharJanelaButton;
         private System.Windows.Forms.Label msgText;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label windowTitle;
     }
 }

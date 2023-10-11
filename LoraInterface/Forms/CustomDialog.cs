@@ -13,12 +13,14 @@ namespace LoraInterface.Forms
     public partial class CustomDialog : Form
     {
 
-        public CustomDialog(string msg)
+        public CustomDialog(string title, string msg, Color windowColor)
         {
             InitializeComponent();
+            windowTitle.Text = title;
             msgText.Text = msg;
-            msgText.Dock = DockStyle.Fill;
+            topBarPanel.BackColor = windowColor;
 
+            msgText.Dock = DockStyle.Fill;
             
         }
 

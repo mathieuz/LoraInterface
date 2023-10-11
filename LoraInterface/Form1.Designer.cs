@@ -227,7 +227,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(180, 39);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(868, 612);
+            this.panel2.Size = new System.Drawing.Size(701, 612);
             this.panel2.TabIndex = 2;
             // 
             // desktopPanel
@@ -238,7 +238,7 @@
             this.desktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.desktopPanel.Location = new System.Drawing.Point(0, 0);
             this.desktopPanel.Name = "desktopPanel";
-            this.desktopPanel.Size = new System.Drawing.Size(868, 612);
+            this.desktopPanel.Size = new System.Drawing.Size(701, 612);
             this.desktopPanel.TabIndex = 0;
             // 
             // panel3
@@ -247,7 +247,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 331);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(868, 31);
+            this.panel3.Size = new System.Drawing.Size(701, 31);
             this.panel3.TabIndex = 2;
             // 
             // consoleButton
@@ -286,7 +286,7 @@
             this.panel5.Location = new System.Drawing.Point(0, 362);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(5);
-            this.panel5.Size = new System.Drawing.Size(868, 250);
+            this.panel5.Size = new System.Drawing.Size(701, 250);
             this.panel5.TabIndex = 0;
             // 
             // enviarConsole
@@ -302,7 +302,7 @@
             this.enviarConsole.IconChar = FontAwesome.Sharp.IconChar.None;
             this.enviarConsole.IconColor = System.Drawing.Color.White;
             this.enviarConsole.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.enviarConsole.Location = new System.Drawing.Point(792, 5);
+            this.enviarConsole.Location = new System.Drawing.Point(625, 5);
             this.enviarConsole.Name = "enviarConsole";
             this.enviarConsole.Size = new System.Drawing.Size(71, 28);
             this.enviarConsole.TabIndex = 2;
@@ -324,10 +324,9 @@
             this.consoleCmdTextBox.Multiline = false;
             this.consoleCmdTextBox.Name = "consoleCmdTextBox";
             this.consoleCmdTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.consoleCmdTextBox.Size = new System.Drawing.Size(858, 28);
+            this.consoleCmdTextBox.Size = new System.Drawing.Size(691, 28);
             this.consoleCmdTextBox.TabIndex = 1;
             this.consoleCmdTextBox.Texts = "";
-            this.infoFormToolTip.SetToolTip(this.consoleCmdTextBox, "Teste Textbox!!! 123");
             this.consoleCmdTextBox.UnderlinedStyle = false;
             // 
             // consolePanel
@@ -341,7 +340,7 @@
             this.consolePanel.Name = "consolePanel";
             this.consolePanel.ReadOnly = true;
             this.consolePanel.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.consolePanel.Size = new System.Drawing.Size(858, 212);
+            this.consolePanel.Size = new System.Drawing.Size(691, 212);
             this.consolePanel.TabIndex = 0;
             this.consolePanel.Text = "";
             // 
@@ -356,7 +355,7 @@
             this.fecharJanelaButton.IconColor = System.Drawing.Color.White;
             this.fecharJanelaButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.fecharJanelaButton.IconSize = 15;
-            this.fecharJanelaButton.Location = new System.Drawing.Point(1003, 0);
+            this.fecharJanelaButton.Location = new System.Drawing.Point(836, 0);
             this.fecharJanelaButton.Name = "fecharJanelaButton";
             this.fecharJanelaButton.Size = new System.Drawing.Size(45, 39);
             this.fecharJanelaButton.TabIndex = 2;
@@ -374,7 +373,7 @@
             this.maximizarJanelaButton.IconColor = System.Drawing.Color.White;
             this.maximizarJanelaButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.maximizarJanelaButton.IconSize = 15;
-            this.maximizarJanelaButton.Location = new System.Drawing.Point(958, 0);
+            this.maximizarJanelaButton.Location = new System.Drawing.Point(791, 0);
             this.maximizarJanelaButton.Name = "maximizarJanelaButton";
             this.maximizarJanelaButton.Size = new System.Drawing.Size(45, 39);
             this.maximizarJanelaButton.TabIndex = 3;
@@ -392,7 +391,7 @@
             this.minimizarJanelaButton.IconColor = System.Drawing.Color.White;
             this.minimizarJanelaButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.minimizarJanelaButton.IconSize = 20;
-            this.minimizarJanelaButton.Location = new System.Drawing.Point(913, 0);
+            this.minimizarJanelaButton.Location = new System.Drawing.Point(746, 0);
             this.minimizarJanelaButton.Name = "minimizarJanelaButton";
             this.minimizarJanelaButton.Size = new System.Drawing.Size(45, 39);
             this.minimizarJanelaButton.TabIndex = 4;
@@ -410,7 +409,7 @@
             this.topBarPanel.Location = new System.Drawing.Point(0, 0);
             this.topBarPanel.Name = "topBarPanel";
             this.topBarPanel.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.topBarPanel.Size = new System.Drawing.Size(1048, 39);
+            this.topBarPanel.Size = new System.Drawing.Size(881, 39);
             this.topBarPanel.TabIndex = 0;
             this.topBarPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topBarPanel_MouseDown);
             // 
@@ -428,7 +427,7 @@
             // infoFormToolTip
             // 
             this.infoFormToolTip.AutomaticDelay = 0;
-            this.infoFormToolTip.AutoPopDelay = 10000;
+            this.infoFormToolTip.AutoPopDelay = 100000;
             this.infoFormToolTip.InitialDelay = 0;
             this.infoFormToolTip.IsBalloon = true;
             this.infoFormToolTip.ReshowDelay = 100;
@@ -439,7 +438,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1048, 651);
+            this.ClientSize = new System.Drawing.Size(881, 651);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.sideBarPanel);

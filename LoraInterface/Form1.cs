@@ -26,6 +26,7 @@ namespace LoraInterface
         public IconButton acessoModoAbp;
         public IconButton acessoModoOtaa;
         public SerialPort serialPort = new SerialPort();
+        public FlowLayoutPanel acessoSideBar;
         public int modoSelecionado = 0;
 
         public MainForm()
@@ -53,6 +54,7 @@ namespace LoraInterface
             acessoAbrir = abrirButton;
             acessoModoAbp = modoAbpButton;
             acessoModoOtaa = modoOtaaButton;
+            acessoSideBar = sideBarPanel;
             
         }
 
@@ -284,7 +286,7 @@ namespace LoraInterface
 
                 }
 
-                new CustomDialog("Arquivo salvo com sucesso.").ShowDialog();
+                new CustomDialog("Sucesso!", "Arquivo salvo com sucesso.", Color.LimeGreen).ShowDialog();
             }
 
         }
@@ -365,7 +367,7 @@ namespace LoraInterface
                         FormModoAbp.formInstance.acessoToggleModoConfirmacao.Checked = true;
                     }
 
-                    new CustomDialog("Arquivo carregado com sucesso.").ShowDialog();
+                    new CustomDialog("Sucesso!", "Arquivo carregado com sucesso.", Color.LimeGreen).ShowDialog();
 
 
                 } 
@@ -468,12 +470,12 @@ namespace LoraInterface
                     }
 
 
-                    new CustomDialog($"Arquivo carregado com sucesso.").ShowDialog();
+                    new CustomDialog("Sucesso!", $"Arquivo carregado com sucesso.", Color.LimeGreen).ShowDialog();
 
                 } 
                 else
                 {
-                    new CustomDialog("Não foi possível carregar as chaves ou identifcar o modo de conexão.").ShowDialog();
+                    new CustomDialog("Erro!", "Não foi possível carregar as chaves ou identifcar o modo de conexão.", Color.OrangeRed).ShowDialog();
 
                 }
             }

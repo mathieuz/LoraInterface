@@ -38,10 +38,10 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.conectarLoraButton = new FontAwesome.Sharp.IconButton();
             this.configuracoesDeJoinGroup = new System.Windows.Forms.Panel();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.configuracoesJoinToggle = new LoraInterface.CustomControls.CToggle();
             this.label7 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.intervaloTentativasJoinComboBox = new LoraInterface.CustomControls.CComboBox();
@@ -73,8 +73,9 @@
             this.appKeyTextBox = new LoraInterface.CustomControls.CTextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.comandosATGroup = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.atSendButton = new FontAwesome.Sharp.IconButton();
@@ -87,7 +88,6 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.infoOtaaToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -122,7 +122,7 @@
             this.groupBox1.Location = new System.Drawing.Point(10, 68);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox1.Size = new System.Drawing.Size(606, 108);
+            this.groupBox1.Size = new System.Drawing.Size(527, 108);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Conectar COM";
@@ -135,7 +135,7 @@
             this.panel2.Location = new System.Drawing.Point(10, 24);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel2.Size = new System.Drawing.Size(586, 74);
+            this.panel2.Size = new System.Drawing.Size(507, 74);
             this.panel2.TabIndex = 13;
             // 
             // panel6
@@ -145,7 +145,7 @@
             this.panel6.Location = new System.Drawing.Point(10, 10);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.panel6.Size = new System.Drawing.Size(403, 54);
+            this.panel6.Size = new System.Drawing.Size(324, 54);
             this.panel6.TabIndex = 13;
             // 
             // comboBoxCOM
@@ -164,7 +164,7 @@
             this.comboBoxCOM.MinimumSize = new System.Drawing.Size(370, 53);
             this.comboBoxCOM.Name = "comboBoxCOM";
             this.comboBoxCOM.Padding = new System.Windows.Forms.Padding(1);
-            this.comboBoxCOM.Size = new System.Drawing.Size(398, 53);
+            this.comboBoxCOM.Size = new System.Drawing.Size(370, 53);
             this.comboBoxCOM.TabIndex = 15;
             this.comboBoxCOM.Texts = "";
             // 
@@ -182,7 +182,7 @@
             this.conectarCOMButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.conectarCOMButton.IconColor = System.Drawing.Color.Black;
             this.conectarCOMButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.conectarCOMButton.Location = new System.Drawing.Point(413, 10);
+            this.conectarCOMButton.Location = new System.Drawing.Point(334, 10);
             this.conectarCOMButton.Name = "conectarCOMButton";
             this.conectarCOMButton.Size = new System.Drawing.Size(163, 54);
             this.conectarCOMButton.TabIndex = 12;
@@ -204,7 +204,7 @@
             this.configuracoesConexaoGroup.Location = new System.Drawing.Point(10, 326);
             this.configuracoesConexaoGroup.Name = "configuracoesConexaoGroup";
             this.configuracoesConexaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.configuracoesConexaoGroup.Size = new System.Drawing.Size(606, 518);
+            this.configuracoesConexaoGroup.Size = new System.Drawing.Size(527, 518);
             this.configuracoesConexaoGroup.TabIndex = 5;
             this.configuracoesConexaoGroup.TabStop = false;
             this.configuracoesConexaoGroup.Text = "Configurações de Conexão";
@@ -216,7 +216,7 @@
             this.panel7.Location = new System.Drawing.Point(10, 452);
             this.panel7.Name = "panel7";
             this.panel7.Padding = new System.Windows.Forms.Padding(10);
-            this.panel7.Size = new System.Drawing.Size(586, 56);
+            this.panel7.Size = new System.Drawing.Size(507, 56);
             this.panel7.TabIndex = 13;
             // 
             // conectarLoraButton
@@ -235,7 +235,7 @@
             this.conectarLoraButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.conectarLoraButton.Location = new System.Drawing.Point(10, 10);
             this.conectarLoraButton.Name = "conectarLoraButton";
-            this.conectarLoraButton.Size = new System.Drawing.Size(566, 36);
+            this.conectarLoraButton.Size = new System.Drawing.Size(487, 36);
             this.conectarLoraButton.TabIndex = 13;
             this.conectarLoraButton.Text = "Conectar";
             this.conectarLoraButton.UseVisualStyleBackColor = false;
@@ -252,8 +252,27 @@
             this.configuracoesDeJoinGroup.Location = new System.Drawing.Point(10, 181);
             this.configuracoesDeJoinGroup.Name = "configuracoesDeJoinGroup";
             this.configuracoesDeJoinGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.configuracoesDeJoinGroup.Size = new System.Drawing.Size(586, 271);
+            this.configuracoesDeJoinGroup.Size = new System.Drawing.Size(507, 271);
             this.configuracoesDeJoinGroup.TabIndex = 14;
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton4.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton4.IconSize = 12;
+            this.iconButton4.Location = new System.Drawing.Point(18, 3);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(17, 16);
+            this.iconButton4.TabIndex = 24;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton4, "Ao habilitar, você pode definir as condições de conexão do join");
+            this.iconButton4.UseVisualStyleBackColor = false;
             // 
             // configuracoesJoinToggle
             // 
@@ -293,27 +312,8 @@
             this.panel12.Location = new System.Drawing.Point(10, 10);
             this.panel12.Name = "panel12";
             this.panel12.Padding = new System.Windows.Forms.Padding(10, 25, 10, 5);
-            this.panel12.Size = new System.Drawing.Size(566, 251);
+            this.panel12.Size = new System.Drawing.Size(487, 251);
             this.panel12.TabIndex = 13;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.iconButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.iconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Question;
-            this.iconButton4.IconColor = System.Drawing.SystemColors.Control;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton4.IconSize = 12;
-            this.iconButton4.Location = new System.Drawing.Point(18, 3);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(17, 16);
-            this.iconButton4.TabIndex = 24;
-            this.infoOtaaToolTip.SetToolTip(this.iconButton4, "Ao habilitar, você pode definir as condições de conexão do join");
-            this.iconButton4.UseVisualStyleBackColor = false;
             // 
             // panel15
             // 
@@ -323,7 +323,7 @@
             this.panel15.Location = new System.Drawing.Point(10, 168);
             this.panel15.Name = "panel15";
             this.panel15.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel15.Size = new System.Drawing.Size(544, 73);
+            this.panel15.Size = new System.Drawing.Size(465, 73);
             this.panel15.TabIndex = 22;
             // 
             // label11
@@ -354,7 +354,7 @@
             this.intervaloTentativasJoinComboBox.MinimumSize = new System.Drawing.Size(432, 61);
             this.intervaloTentativasJoinComboBox.Name = "intervaloTentativasJoinComboBox";
             this.intervaloTentativasJoinComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.intervaloTentativasJoinComboBox.Size = new System.Drawing.Size(544, 61);
+            this.intervaloTentativasJoinComboBox.Size = new System.Drawing.Size(465, 61);
             this.intervaloTentativasJoinComboBox.TabIndex = 13;
             this.intervaloTentativasJoinComboBox.Texts = "";
             // 
@@ -366,7 +366,7 @@
             this.panel17.Location = new System.Drawing.Point(10, 96);
             this.panel17.Name = "panel17";
             this.panel17.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel17.Size = new System.Drawing.Size(544, 72);
+            this.panel17.Size = new System.Drawing.Size(465, 72);
             this.panel17.TabIndex = 21;
             // 
             // label12
@@ -397,7 +397,7 @@
             this.numeroTentativasJoinComboBox.MinimumSize = new System.Drawing.Size(432, 61);
             this.numeroTentativasJoinComboBox.Name = "numeroTentativasJoinComboBox";
             this.numeroTentativasJoinComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.numeroTentativasJoinComboBox.Size = new System.Drawing.Size(544, 61);
+            this.numeroTentativasJoinComboBox.Size = new System.Drawing.Size(465, 61);
             this.numeroTentativasJoinComboBox.TabIndex = 13;
             this.numeroTentativasJoinComboBox.Texts = "";
             // 
@@ -409,7 +409,7 @@
             this.panel13.Location = new System.Drawing.Point(10, 25);
             this.panel13.Name = "panel13";
             this.panel13.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel13.Size = new System.Drawing.Size(544, 71);
+            this.panel13.Size = new System.Drawing.Size(465, 71);
             this.panel13.TabIndex = 19;
             // 
             // label10
@@ -440,7 +440,7 @@
             this.autoJoinComboBox.MinimumSize = new System.Drawing.Size(432, 61);
             this.autoJoinComboBox.Name = "autoJoinComboBox";
             this.autoJoinComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.autoJoinComboBox.Size = new System.Drawing.Size(544, 61);
+            this.autoJoinComboBox.Size = new System.Drawing.Size(465, 61);
             this.autoJoinComboBox.TabIndex = 13;
             this.autoJoinComboBox.Texts = "";
             // 
@@ -454,7 +454,7 @@
             this.modoDeConfirmacaoGroup.Location = new System.Drawing.Point(10, 82);
             this.modoDeConfirmacaoGroup.Name = "modoDeConfirmacaoGroup";
             this.modoDeConfirmacaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.modoDeConfirmacaoGroup.Size = new System.Drawing.Size(586, 99);
+            this.modoDeConfirmacaoGroup.Size = new System.Drawing.Size(507, 99);
             this.modoDeConfirmacaoGroup.TabIndex = 9;
             // 
             // iconButton3
@@ -513,7 +513,7 @@
             this.panel16.Location = new System.Drawing.Point(10, 10);
             this.panel16.Name = "panel16";
             this.panel16.Padding = new System.Windows.Forms.Padding(10, 25, 10, 10);
-            this.panel16.Size = new System.Drawing.Size(566, 79);
+            this.panel16.Size = new System.Drawing.Size(487, 79);
             this.panel16.TabIndex = 13;
             // 
             // label9
@@ -544,7 +544,7 @@
             this.numeroRetentativasComboBox.MinimumSize = new System.Drawing.Size(317, 46);
             this.numeroRetentativasComboBox.Name = "numeroRetentativasComboBox";
             this.numeroRetentativasComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.numeroRetentativasComboBox.Size = new System.Drawing.Size(544, 46);
+            this.numeroRetentativasComboBox.Size = new System.Drawing.Size(465, 46);
             this.numeroRetentativasComboBox.TabIndex = 4;
             this.numeroRetentativasComboBox.Texts = "";
             // 
@@ -557,7 +557,7 @@
             this.panel1.Location = new System.Drawing.Point(10, 24);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
-            this.panel1.Size = new System.Drawing.Size(586, 58);
+            this.panel1.Size = new System.Drawing.Size(507, 58);
             this.panel1.TabIndex = 7;
             // 
             // iconButton2
@@ -607,7 +607,7 @@
             this.classeComboBox.MinimumSize = new System.Drawing.Size(233, 35);
             this.classeComboBox.Name = "classeComboBox";
             this.classeComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.classeComboBox.Size = new System.Drawing.Size(566, 38);
+            this.classeComboBox.Size = new System.Drawing.Size(487, 38);
             this.classeComboBox.TabIndex = 3;
             this.classeComboBox.Texts = "";
             // 
@@ -623,7 +623,7 @@
             this.chavesDeAtivacaoGroup.Location = new System.Drawing.Point(10, 176);
             this.chavesDeAtivacaoGroup.Name = "chavesDeAtivacaoGroup";
             this.chavesDeAtivacaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.chavesDeAtivacaoGroup.Size = new System.Drawing.Size(606, 150);
+            this.chavesDeAtivacaoGroup.Size = new System.Drawing.Size(527, 150);
             this.chavesDeAtivacaoGroup.TabIndex = 4;
             this.chavesDeAtivacaoGroup.TabStop = false;
             this.chavesDeAtivacaoGroup.Text = "Chaves de Ativação";
@@ -637,7 +637,7 @@
             this.panel3.Location = new System.Drawing.Point(10, 82);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(10);
-            this.panel3.Size = new System.Drawing.Size(586, 58);
+            this.panel3.Size = new System.Drawing.Size(507, 58);
             this.panel3.TabIndex = 10;
             // 
             // iconButton1
@@ -686,7 +686,7 @@
             this.deviceEuiTextBox.Multiline = true;
             this.deviceEuiTextBox.Name = "deviceEuiTextBox";
             this.deviceEuiTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.deviceEuiTextBox.Size = new System.Drawing.Size(566, 38);
+            this.deviceEuiTextBox.Size = new System.Drawing.Size(487, 38);
             this.deviceEuiTextBox.TabIndex = 7;
             this.deviceEuiTextBox.Texts = "";
             this.deviceEuiTextBox.UnderlinedStyle = false;
@@ -700,7 +700,7 @@
             this.panel5.Location = new System.Drawing.Point(10, 24);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(10);
-            this.panel5.Size = new System.Drawing.Size(586, 58);
+            this.panel5.Size = new System.Drawing.Size(507, 58);
             this.panel5.TabIndex = 8;
             // 
             // iconButton6
@@ -749,7 +749,7 @@
             this.appKeyTextBox.Multiline = true;
             this.appKeyTextBox.Name = "appKeyTextBox";
             this.appKeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.appKeyTextBox.Size = new System.Drawing.Size(566, 38);
+            this.appKeyTextBox.Size = new System.Drawing.Size(487, 38);
             this.appKeyTextBox.TabIndex = 7;
             this.appKeyTextBox.Texts = "";
             this.appKeyTextBox.UnderlinedStyle = false;
@@ -759,7 +759,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(10, 844);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(606, 36);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(527, 36);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // comandosATGroup
@@ -771,11 +771,23 @@
             this.comandosATGroup.Location = new System.Drawing.Point(10, 880);
             this.comandosATGroup.Name = "comandosATGroup";
             this.comandosATGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.comandosATGroup.Size = new System.Drawing.Size(606, 253);
+            this.comandosATGroup.Size = new System.Drawing.Size(527, 253);
             this.comandosATGroup.TabIndex = 7;
             this.comandosATGroup.TabStop = false;
             this.comandosATGroup.Text = "Comandos AT";
             this.comandosATGroup.Visible = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.iconButton5);
+            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(10, 24);
+            this.panel4.Name = "panel4";
+            this.panel4.Padding = new System.Windows.Forms.Padding(10);
+            this.panel4.Size = new System.Drawing.Size(507, 217);
+            this.panel4.TabIndex = 0;
             // 
             // label5
             // 
@@ -789,17 +801,24 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "AT+SEND";
             // 
-            // panel4
+            // iconButton5
             // 
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.iconButton5);
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(10, 24);
-            this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(10);
-            this.panel4.Size = new System.Drawing.Size(586, 217);
-            this.panel4.TabIndex = 0;
+            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton5.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton5.IconSize = 12;
+            this.iconButton5.Location = new System.Drawing.Point(18, 3);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(17, 16);
+            this.iconButton5.TabIndex = 21;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton5, "AT+SEND: Envia texto via uplink em uma porta especifica");
+            this.iconButton5.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -811,7 +830,7 @@
             this.panel8.Location = new System.Drawing.Point(10, 10);
             this.panel8.Name = "panel8";
             this.panel8.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.panel8.Size = new System.Drawing.Size(566, 196);
+            this.panel8.Size = new System.Drawing.Size(487, 196);
             this.panel8.TabIndex = 0;
             // 
             // panel14
@@ -821,7 +840,7 @@
             this.panel14.Location = new System.Drawing.Point(10, 135);
             this.panel14.Name = "panel14";
             this.panel14.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.panel14.Size = new System.Drawing.Size(544, 51);
+            this.panel14.Size = new System.Drawing.Size(465, 51);
             this.panel14.TabIndex = 18;
             // 
             // atSendButton
@@ -840,7 +859,7 @@
             this.atSendButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.atSendButton.Location = new System.Drawing.Point(0, 10);
             this.atSendButton.Name = "atSendButton";
-            this.atSendButton.Size = new System.Drawing.Size(544, 36);
+            this.atSendButton.Size = new System.Drawing.Size(465, 36);
             this.atSendButton.TabIndex = 14;
             this.atSendButton.Text = "Enviar";
             this.atSendButton.UseVisualStyleBackColor = false;
@@ -854,7 +873,7 @@
             this.panel10.Location = new System.Drawing.Point(10, 78);
             this.panel10.Name = "panel10";
             this.panel10.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.panel10.Size = new System.Drawing.Size(544, 57);
+            this.panel10.Size = new System.Drawing.Size(465, 57);
             this.panel10.TabIndex = 1;
             // 
             // label4
@@ -885,7 +904,7 @@
             this.atSendPortaComboBox.MinimumSize = new System.Drawing.Size(317, 46);
             this.atSendPortaComboBox.Name = "atSendPortaComboBox";
             this.atSendPortaComboBox.Padding = new System.Windows.Forms.Padding(1);
-            this.atSendPortaComboBox.Size = new System.Drawing.Size(544, 46);
+            this.atSendPortaComboBox.Size = new System.Drawing.Size(465, 46);
             this.atSendPortaComboBox.TabIndex = 10;
             this.atSendPortaComboBox.Texts = "";
             // 
@@ -897,7 +916,7 @@
             this.panel9.Location = new System.Drawing.Point(10, 20);
             this.panel9.Name = "panel9";
             this.panel9.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.panel9.Size = new System.Drawing.Size(544, 58);
+            this.panel9.Size = new System.Drawing.Size(465, 58);
             this.panel9.TabIndex = 0;
             // 
             // label1
@@ -927,7 +946,7 @@
             this.atSendTextoTextBox.Multiline = false;
             this.atSendTextoTextBox.Name = "atSendTextoTextBox";
             this.atSendTextoTextBox.Padding = new System.Windows.Forms.Padding(12, 13, 3, 3);
-            this.atSendTextoTextBox.Size = new System.Drawing.Size(544, 32);
+            this.atSendTextoTextBox.Size = new System.Drawing.Size(465, 32);
             this.atSendTextoTextBox.TabIndex = 8;
             this.atSendTextoTextBox.Texts = "";
             this.atSendTextoTextBox.UnderlinedStyle = false;
@@ -937,7 +956,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(10, 32);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(606, 36);
+            this.panel11.Size = new System.Drawing.Size(527, 36);
             this.panel11.TabIndex = 9;
             // 
             // label13
@@ -955,30 +974,11 @@
             // infoOtaaToolTip
             // 
             this.infoOtaaToolTip.AutomaticDelay = 0;
-            this.infoOtaaToolTip.AutoPopDelay = 10000;
+            this.infoOtaaToolTip.AutoPopDelay = 100000;
             this.infoOtaaToolTip.InitialDelay = 0;
             this.infoOtaaToolTip.IsBalloon = true;
             this.infoOtaaToolTip.ReshowDelay = 100;
             this.infoOtaaToolTip.ShowAlways = true;
-            // 
-            // iconButton5
-            // 
-            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.iconButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.iconButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Question;
-            this.iconButton5.IconColor = System.Drawing.SystemColors.Control;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton5.IconSize = 12;
-            this.iconButton5.Location = new System.Drawing.Point(18, 3);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(17, 16);
-            this.iconButton5.TabIndex = 21;
-            this.infoOtaaToolTip.SetToolTip(this.iconButton5, "AT+SEND: Envia texto via uplink em uma porta especifica.");
-            this.iconButton5.UseVisualStyleBackColor = false;
             // 
             // FormModoOtaa
             // 
@@ -986,7 +986,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(643, 557);
+            this.ClientSize = new System.Drawing.Size(564, 557);
             this.ControlBox = false;
             this.Controls.Add(this.comandosATGroup);
             this.Controls.Add(this.flowLayoutPanel1);

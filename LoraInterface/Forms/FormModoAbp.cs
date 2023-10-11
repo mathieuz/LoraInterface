@@ -11,6 +11,7 @@ using System.IO.Ports;
 using LoraInterface.Forms;
 using System.Threading;
 using LoraInterface.CustomControls;
+using System.Security.Cryptography.X509Certificates;
 
 namespace LoraInterface.Forms
 {
@@ -77,6 +78,11 @@ namespace LoraInterface.Forms
             acessoToggleModoConfirmacao = modoConfirmacaoToggle;
             acessoNumTentativas = numeroRetentativasComboBox;
 
+            //Iniciando classes de multicast.
+            multicastClasseComboBox.Items.Add("B");
+            multicastClasseComboBox.Items.Add("C");
+            multicastClasseComboBox.SelectedIndex = 0;
+
         }
 
         //Conexão com porta COM.
@@ -113,12 +119,14 @@ namespace LoraInterface.Forms
                         MainForm.formInstance.acessoModoAbp.Enabled = false;
                         MainForm.formInstance.acessoModoOtaa.Enabled = false;
 
-                        new CustomDialog($"Conectado em '{portSelecionado}' com sucesso.").ShowDialog();
+                        MainForm.formInstance.acessoSideBar.Cursor = Cursors.No;
+
+                        new CustomDialog("Sucesso!", $"Conectado em '{portSelecionado}' com sucesso.", Color.LimeGreen).ShowDialog();
 
                     }
                     catch (Exception err)
                     {
-                        new CustomDialog($"Não foi possível se conectar na porta '{portSelecionado}':\n" + err.Message).ShowDialog();
+                        new CustomDialog("Erro!", $"Não foi possível se conectar na porta '{portSelecionado}':\n" + err.Message, Color.OrangeRed).ShowDialog();
                     }
 
                 }
@@ -144,7 +152,9 @@ namespace LoraInterface.Forms
                 MainForm.formInstance.acessoModoAbp.Enabled = true;
                 MainForm.formInstance.acessoModoOtaa.Enabled = true;
 
-                new CustomDialog($"Desconectado com sucesso.").ShowDialog();
+                MainForm.formInstance.acessoSideBar.Cursor = Cursors.Default;
+
+                new CustomDialog("Sucesso!", $"Desconectado com sucesso.", Color.LimeGreen).ShowDialog();
 
             }
 
@@ -167,48 +177,58 @@ namespace LoraInterface.Forms
         //Envia as chaves e configurações de conexão com o Lora.
         private void conectarLoraButton_Click(object sender, EventArgs e)
         {
-            //Colapsa o console.
-            if (!MainForm.formInstance.ColapsarConsole())
+
+            //Verifica se os campos das chaves estão preenchidos.
+            if (deviceAddressTextBox.Texts.Length == deviceAddressTextBox.MaxLength && appskeyTextBox.Texts.Length == appskeyTextBox.MaxLength && nwkskeyTextBox.Texts.Length == nwkskeyTextBox.MaxLength && deviceEuiTextBox.Texts.Length == deviceEuiTextBox.MaxLength)
             {
-                MainForm.formInstance.ColapsarConsole();
+                //Colapsa o console.
+                if (!MainForm.formInstance.ColapsarConsole())
+                {
+                    MainForm.formInstance.ColapsarConsole();
 
+                }
+
+                //Envia as chaves e configurações de conexão.
+                string deviceAddress = deviceAddressTextBox.Texts;
+                string appskey = appskeyTextBox.Texts;
+                string nwkskey = nwkskeyTextBox.Texts;
+                string deviceEui = deviceEuiTextBox.Texts;
+                string classe = classeComboBox.SelectedItem.ToString();
+                string cfm = modoConfirmacaoToggle.Checked ? "1" : "0";
+                string rety = numeroRetentativasComboBox.SelectedItem.ToString();
+
+                serialPort.WriteLine("AT+NJM=0");
+                serialPort.WriteLine($"AT+DEVADDR={deviceAddress}");
+                serialPort.WriteLine($"AT+APPSKEY={appskey}");
+                serialPort.WriteLine($"AT+NWKSKEY={nwkskey}");
+
+                serialPort.BaseStream.Flush();
+                Thread.Sleep(500);
+
+                serialPort.WriteLine($"AT+DEVEUI={deviceEui}");
+                serialPort.WriteLine($"AT+CLASS={classe}");
+                serialPort.WriteLine($"AT+CFM={cfm}");
+                serialPort.WriteLine($"AT+RETY={rety}");
+
+                serialPort.BaseStream.Flush();
+                Thread.Sleep(500);
+
+                serialPort.WriteLine($"AT+BAND=6");
+
+                serialPort.BaseStream.Flush();
+                Thread.Sleep(300);
+
+                //Habilita painel de comandos AT.
+                comandosATGroup.Visible = true;
+
+                //Exibe mensagem no console.
+                MainForm.formInstance.console.AppendText("Conexão no Modo ABP bem-sucedida!" + Environment.NewLine);
+            
             }
-
-            //Envia as chaves e configurações de conexão.
-            string deviceAddress = deviceAddressTextBox.Texts;
-            string appskey = appskeyTextBox.Texts;
-            string nwkskey = nwkskeyTextBox.Texts;
-            string deviceEui = deviceEuiTextBox.Texts;
-            string classe = classeComboBox.SelectedItem.ToString();
-            string cfm = modoConfirmacaoToggle.Checked ? "1" : "0";
-            string rety = numeroRetentativasComboBox.SelectedItem.ToString();
-
-            serialPort.WriteLine("AT+NJM=0");
-            serialPort.WriteLine($"AT+DEVADDR={deviceAddress}");
-            serialPort.WriteLine($"AT+APPSKEY={appskey}");
-            serialPort.WriteLine($"AT+NWKSKEY={nwkskey}");
-
-            serialPort.BaseStream.Flush();
-            Thread.Sleep(500);
-
-            serialPort.WriteLine($"AT+DEVEUI={deviceEui}");
-            serialPort.WriteLine($"AT+CLASS={classe}");
-            serialPort.WriteLine($"AT+CFM={cfm}");
-            serialPort.WriteLine($"AT+RETY={rety}");
-
-            serialPort.BaseStream.Flush();
-            Thread.Sleep(500);
-
-            serialPort.WriteLine($"AT+BAND=6");
-
-            serialPort.BaseStream.Flush();
-            Thread.Sleep(300);
-
-            //Habilita painel de comandos AT.
-            comandosATGroup.Visible = true;
-
-            //Exibe mensagem no console.
-            MainForm.formInstance.console.AppendText("Conexão no Modo ABP bem-sucedida!" + Environment.NewLine);
+            else
+            {
+                new CustomDialog("Erro!", "Alguns dos campos não foram totalmente preenchidos.\nTente novamente.", Color.OrangeRed).ShowDialog();
+            }
         }
 
         //Colapsa a aba de modo de confirmação.
@@ -226,6 +246,36 @@ namespace LoraInterface.Forms
 
 
         //Comandos AT Modo ABP
+
+        //Multicast - ADDMULC, LSTMULC e RMVMULC.
+        private void adicionarGrupoMulticastButton_Click(object sender, EventArgs e)
+        {
+            string multicastClass = multicastClasseComboBox.SelectedItem.ToString();
+            string multicastAddress = multicastAddressTextBox.Texts;
+            string multicastNwkskey = multicastNwkskeyTextBox.Texts;
+            string multicastAppskey = multicastAppskeyTextBox.Texts;
+
+            string frequencia = "923300000";
+
+            if (multicastAddress.Length == multicastAddressTextBox.MaxLength && multicastNwkskey.Length == multicastNwkskeyTextBox.MaxLength && multicastAppskey.Length == multicastNwkskeyTextBox.MaxLength)
+            {
+                //Colapsa o console.
+                if (!MainForm.formInstance.ColapsarConsole())
+                {
+                    MainForm.formInstance.ColapsarConsole();
+
+                }
+
+                serialPort.WriteLine($"AT+ADDMULC={multicastClass}:{multicastAddress}:{multicastNwkskey}:{multicastAppskey}:{frequencia}:8:0");
+                
+                MainForm.formInstance.console.AppendText($"AT+ADDMULC={multicastClass}:{multicastAddress}:{multicastNwkskey}:{multicastAppskey}:{frequencia}:8:0" + Environment.NewLine);
+            }
+            else
+            {
+                new CustomDialog("Erro!", $"Erro ao adicionar grupo de multicast.\nAlguns campos não foram totalmente preenchidos. Tente novamente.", Color.OrangeRed).ShowDialog();
+            }
+
+        }
 
         //AT+SEND
         private void atSendButton_Click(object sender, EventArgs e)
@@ -281,8 +331,6 @@ namespace LoraInterface.Forms
                 MainForm.formInstance.console.AppendText(ex.Message + Environment.NewLine);
             }
         }
-
-        //AT+LPSEND
 
 
         //Evento assíncrono serial port: retorna dados da placa à partir do momento em que um comando

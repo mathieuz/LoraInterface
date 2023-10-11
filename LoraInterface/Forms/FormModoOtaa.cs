@@ -137,12 +137,12 @@ namespace LoraInterface.Forms
                         MainForm.formInstance.acessoModoAbp.Enabled = false;
                         MainForm.formInstance.acessoModoOtaa.Enabled = false;
 
-                        new CustomDialog($"Conectado em '{portSelecionado}' com sucesso.").ShowDialog();
+                        new CustomDialog("Sucesso!", $"Conectado em '{portSelecionado}' com sucesso.", Color.LimeGreen).ShowDialog();
 
                     }
                     catch (Exception err)
                     {
-                        new CustomDialog($"Não foi possível se conectar na porta '{portSelecionado}':\n" + err.Message).ShowDialog();
+                        new CustomDialog("Erro!", $"Não foi possível se conectar na porta '{portSelecionado}':\n" + err.Message, Color.OrangeRed).ShowDialog();
                     }
 
                 }
@@ -168,7 +168,7 @@ namespace LoraInterface.Forms
                 MainForm.formInstance.acessoModoAbp.Enabled = true;
                 MainForm.formInstance.acessoModoOtaa.Enabled = true;
 
-                new CustomDialog($"Desconectado com sucesso.").ShowDialog();
+                new CustomDialog("Sucesso!", $"Desconectado com sucesso.", Color.LimeGreen).ShowDialog();
 
             }
 
@@ -191,49 +191,58 @@ namespace LoraInterface.Forms
         //Envia as chaves e configurações de conexão com o Lora.
         private void conectarLoraButton_Click(object sender, EventArgs e)
         {
-            //Colapsa o console.
-            if (!MainForm.formInstance.ColapsarConsole())
+
+            //Verifica se os campos das chaves estão preenchidos.
+            if (appKeyTextBox.Texts.Length == appKeyTextBox.MaxLength && deviceEuiTextBox.Texts.Length == deviceEuiTextBox.MaxLength)
             {
-                MainForm.formInstance.ColapsarConsole();
+                //Colapsa o console.
+                if (!MainForm.formInstance.ColapsarConsole())
+                {
+                    MainForm.formInstance.ColapsarConsole();
 
+                }
+
+                //Envia as chaves e configurações de conexão.
+                string appkey = appKeyTextBox.Texts;
+                string deviceEui = deviceEuiTextBox.Texts;
+
+                string classe = classeComboBox.SelectedItem.ToString();
+                string cfm = modoConfirmacaoToggle.Checked ? "1" : "0";
+                string rety = numeroRetentativasComboBox.SelectedItem.ToString();
+
+                string autoJoinConfig = autoJoinComboBox.SelectedItem.ToString() == "Ativado" ? "1" : "0";
+                string intervaloJoinConfig = intervaloTentativasJoinComboBox.SelectedItem.ToString();
+                string numTentativasJoin = numeroTentativasJoinComboBox.SelectedItem.ToString();
+
+                serialPort.WriteLine("AT+NJM=1");
+                serialPort.WriteLine($"AT+APPKEY={appkey}");
+                serialPort.WriteLine($"AT+DEVEUI={deviceEui}");
+
+                serialPort.BaseStream.Flush();
+                Thread.Sleep(500);
+
+                serialPort.WriteLine($"AT+CLASS={classe}");
+                serialPort.WriteLine($"AT+CFM={cfm}");
+                serialPort.WriteLine($"AT+RETY={rety}");
+
+                serialPort.WriteLine($"AT+BAND=6");
+
+                serialPort.BaseStream.Flush();
+                Thread.Sleep(500);
+
+                serialPort.WriteLine($"AT+JOIN=1:{autoJoinConfig}:{intervaloJoinConfig}:{numTentativasJoin}");
+
+                serialPort.BaseStream.Flush();
+
+                comandosATGroup.Visible = true;
+
+                //Exibe mensagem no console.
+                MainForm.formInstance.console.AppendText("Conectando no Modo OTAA. Aguarde..." + Environment.NewLine);
             }
-
-            //Envia as chaves e configurações de conexão.
-            string appkey = appKeyTextBox.Texts;
-            string deviceEui = deviceEuiTextBox.Texts;
-
-            string classe = classeComboBox.SelectedItem.ToString();
-            string cfm = modoConfirmacaoToggle.Checked ? "1" : "0";
-            string rety = numeroRetentativasComboBox.SelectedItem.ToString();
-
-            string autoJoinConfig = autoJoinComboBox.SelectedItem.ToString() == "Ativado" ? "1" : "0";
-            string intervaloJoinConfig = intervaloTentativasJoinComboBox.SelectedItem.ToString();
-            string numTentativasJoin = numeroTentativasJoinComboBox.SelectedItem.ToString();
-
-            serialPort.WriteLine("AT+NJM=1");
-            serialPort.WriteLine($"AT+APPKEY={appkey}");
-            serialPort.WriteLine($"AT+DEVEUI={deviceEui}");
-
-            serialPort.BaseStream.Flush();
-            Thread.Sleep(500);
-
-            serialPort.WriteLine($"AT+CLASS={classe}");
-            serialPort.WriteLine($"AT+CFM={cfm}");
-            serialPort.WriteLine($"AT+RETY={rety}");
-
-            serialPort.WriteLine($"AT+BAND=6");
-
-            serialPort.BaseStream.Flush();
-            Thread.Sleep(500);
-
-            serialPort.WriteLine($"AT+JOIN=1:{autoJoinConfig}:{intervaloJoinConfig}:{numTentativasJoin}");
-
-            serialPort.BaseStream.Flush();
-
-            comandosATGroup.Visible = true;
-
-            //Exibe mensagem no console.
-            MainForm.formInstance.console.AppendText("Conectando no Modo OTAA. Aguarde..." + Environment.NewLine);
+            else
+            {
+                new CustomDialog("Erro!", "Alguns dos campos não foram totalmente preenchidos.\nTente novamente.", Color.OrangeRed).ShowDialog();
+            }
         }
 
         //Colapsa a aba de modo de confirmação.
