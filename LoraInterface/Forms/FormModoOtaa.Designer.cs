@@ -73,6 +73,16 @@
             this.appKeyTextBox = new LoraInterface.CustomControls.CTextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.comandosATGroup = new System.Windows.Forms.GroupBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.painelATBat = new System.Windows.Forms.Panel();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.atBatButton = new FontAwesome.Sharp.IconButton();
+            this.iconButton10 = new FontAwesome.Sharp.IconButton();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
@@ -85,45 +95,49 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.atSendTextoTextBox = new LoraInterface.CustomControls.CTextBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.infoOtaaToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.iconButton11 = new FontAwesome.Sharp.IconButton();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.multicastClasseComboBox = new LoraInterface.CustomControls.CComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.multicastAddressTextBox = new LoraInterface.CustomControls.CTextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.multicastNwkskeyTextBox = new LoraInterface.CustomControls.CTextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.multicastAppskeyTextBox = new LoraInterface.CustomControls.CTextBox();
-            this.adicionarGrupoMulticastButton = new FontAwesome.Sharp.IconButton();
-            this.panel27 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.listarGruposMulticastButton = new FontAwesome.Sharp.IconButton();
+            this.panel30 = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.label20 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
             this.removerGrupoMulticastButton = new FontAwesome.Sharp.IconButton();
             this.label21 = new System.Windows.Forms.Label();
             this.multicastAddressRemoverTextBox = new LoraInterface.CustomControls.CTextBox();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.listarGruposMulticastButton = new FontAwesome.Sharp.IconButton();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
-            this.label22 = new System.Windows.Forms.Label();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.iconButton11 = new FontAwesome.Sharp.IconButton();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.adicionarGrupoMulticastButton = new FontAwesome.Sharp.IconButton();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.multicastAppskeyTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.multicastNwkskeyTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.multicastAddressTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.multicastClasseComboBox = new LoraInterface.CustomControls.CComboBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.infoOtaaToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.atSleepButton = new FontAwesome.Sharp.IconButton();
+            this.label24 = new System.Windows.Forms.Label();
+            this.atSleepTempoTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.iconButton12 = new FontAwesome.Sharp.IconButton();
+            this.label25 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -141,6 +155,8 @@
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.comandosATGroup.SuspendLayout();
+            this.painelATBat.SuspendLayout();
+            this.panel34.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -148,16 +164,18 @@
             this.panel9.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.panel29.SuspendLayout();
             this.panel31.SuspendLayout();
             this.panel32.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel26.SuspendLayout();
+            this.panel25.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel23.SuspendLayout();
+            this.panel22.SuspendLayout();
+            this.panel36.SuspendLayout();
+            this.panel37.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -812,6 +830,14 @@
             // 
             // comandosATGroup
             // 
+            this.comandosATGroup.Controls.Add(this.label25);
+            this.comandosATGroup.Controls.Add(this.iconButton12);
+            this.comandosATGroup.Controls.Add(this.panel36);
+            this.comandosATGroup.Controls.Add(this.panel35);
+            this.comandosATGroup.Controls.Add(this.iconButton10);
+            this.comandosATGroup.Controls.Add(this.label23);
+            this.comandosATGroup.Controls.Add(this.painelATBat);
+            this.comandosATGroup.Controls.Add(this.panel33);
             this.comandosATGroup.Controls.Add(this.label22);
             this.comandosATGroup.Controls.Add(this.label20);
             this.comandosATGroup.Controls.Add(this.iconButton7);
@@ -825,11 +851,157 @@
             this.comandosATGroup.Location = new System.Drawing.Point(10, 884);
             this.comandosATGroup.Name = "comandosATGroup";
             this.comandosATGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.comandosATGroup.Size = new System.Drawing.Size(547, 927);
+            this.comandosATGroup.Size = new System.Drawing.Size(547, 1171);
             this.comandosATGroup.TabIndex = 7;
             this.comandosATGroup.TabStop = false;
             this.comandosATGroup.Text = "Comandos AT";
             this.comandosATGroup.Visible = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(45, 938);
+            this.label23.Margin = new System.Windows.Forms.Padding(3);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(54, 13);
+            this.label23.TabIndex = 34;
+            this.label23.Text = "AT+BAT";
+            // 
+            // painelATBat
+            // 
+            this.painelATBat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.painelATBat.Controls.Add(this.panel34);
+            this.painelATBat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.painelATBat.Location = new System.Drawing.Point(10, 945);
+            this.painelATBat.Name = "painelATBat";
+            this.painelATBat.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            this.painelATBat.Size = new System.Drawing.Size(527, 84);
+            this.painelATBat.TabIndex = 33;
+            // 
+            // panel34
+            // 
+            this.panel34.Controls.Add(this.atBatButton);
+            this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel34.Location = new System.Drawing.Point(10, 20);
+            this.panel34.Name = "panel34";
+            this.panel34.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
+            this.panel34.Size = new System.Drawing.Size(505, 51);
+            this.panel34.TabIndex = 18;
+            // 
+            // atBatButton
+            // 
+            this.atBatButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.atBatButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.atBatButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atBatButton.FlatAppearance.BorderSize = 0;
+            this.atBatButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.atBatButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.atBatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.atBatButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.atBatButton.ForeColor = System.Drawing.Color.White;
+            this.atBatButton.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.atBatButton.IconColor = System.Drawing.Color.Black;
+            this.atBatButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.atBatButton.Location = new System.Drawing.Point(0, 10);
+            this.atBatButton.Name = "atBatButton";
+            this.atBatButton.Size = new System.Drawing.Size(505, 36);
+            this.atBatButton.TabIndex = 14;
+            this.atBatButton.Text = "Enviar";
+            this.atBatButton.UseVisualStyleBackColor = false;
+            this.atBatButton.Click += new System.EventHandler(this.atBatButton_Click);
+            // 
+            // iconButton10
+            // 
+            this.iconButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton10.FlatAppearance.BorderSize = 0;
+            this.iconButton10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton10.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton10.IconSize = 12;
+            this.iconButton10.Location = new System.Drawing.Point(20, 937);
+            this.iconButton10.Name = "iconButton10";
+            this.iconButton10.Size = new System.Drawing.Size(17, 16);
+            this.iconButton10.TabIndex = 35;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton10, "AT+BAT: Retorna o nível de bateria do dispositivo");
+            this.iconButton10.UseVisualStyleBackColor = false;
+            // 
+            // panel33
+            // 
+            this.panel33.BackColor = System.Drawing.Color.Transparent;
+            this.panel33.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel33.Location = new System.Drawing.Point(10, 895);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(527, 50);
+            this.panel33.TabIndex = 32;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(65, 514);
+            this.label22.Margin = new System.Windows.Forms.Padding(3);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(94, 13);
+            this.label22.TabIndex = 31;
+            this.label22.Text = "LISTAR GRUPOS";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(65, 397);
+            this.label20.Margin = new System.Windows.Forms.Padding(3);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(103, 13);
+            this.label20.TabIndex = 28;
+            this.label20.Text = "REMOVER GRUPO";
+            // 
+            // iconButton7
+            // 
+            this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton7.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton7.IconSize = 12;
+            this.iconButton7.Location = new System.Drawing.Point(40, 395);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Size = new System.Drawing.Size(17, 16);
+            this.iconButton7.TabIndex = 28;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton7, "Remova um grupo de multicast informando o seu Multicast Address");
+            this.iconButton7.UseVisualStyleBackColor = false;
+            // 
+            // iconButton8
+            // 
+            this.iconButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton8.FlatAppearance.BorderSize = 0;
+            this.iconButton8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton8.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton8.IconSize = 12;
+            this.iconButton8.Location = new System.Drawing.Point(30, 27);
+            this.iconButton8.Name = "iconButton8";
+            this.iconButton8.Size = new System.Drawing.Size(17, 16);
+            this.iconButton8.TabIndex = 22;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton8, "Adicione, liste ou remova grupos de multicast");
+            this.iconButton8.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -837,7 +1009,7 @@
             this.panel4.Controls.Add(this.iconButton5);
             this.panel4.Controls.Add(this.panel8);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(10, 688);
+            this.panel4.Location = new System.Drawing.Point(10, 678);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(10);
             this.panel4.Size = new System.Drawing.Size(527, 217);
@@ -848,7 +1020,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(40, 3);
+            this.label5.Location = new System.Drawing.Point(45, 3);
             this.label5.Margin = new System.Windows.Forms.Padding(3);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
@@ -1005,42 +1177,13 @@
             this.atSendTextoTextBox.Texts = "";
             this.atSendTextoTextBox.UnderlinedStyle = false;
             // 
-            // panel11
-            // 
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(10, 32);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(547, 36);
-            this.panel11.TabIndex = 9;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(10, 10);
-            this.label13.Name = "label13";
-            this.label13.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.label13.Size = new System.Drawing.Size(235, 22);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "Configurações Modo OTAA";
-            // 
-            // infoOtaaToolTip
-            // 
-            this.infoOtaaToolTip.AutomaticDelay = 0;
-            this.infoOtaaToolTip.AutoPopDelay = 100000;
-            this.infoOtaaToolTip.InitialDelay = 0;
-            this.infoOtaaToolTip.IsBalloon = true;
-            this.infoOtaaToolTip.ReshowDelay = 100;
-            this.infoOtaaToolTip.ShowAlways = true;
-            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.Transparent;
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(10, 613);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(527, 75);
+            this.panel18.Size = new System.Drawing.Size(527, 65);
             this.panel18.TabIndex = 22;
             // 
             // panel19
@@ -1055,6 +1198,37 @@
             this.panel19.Padding = new System.Windows.Forms.Padding(10);
             this.panel19.Size = new System.Drawing.Size(527, 589);
             this.panel19.TabIndex = 23;
+            // 
+            // iconButton9
+            // 
+            this.iconButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton9.FlatAppearance.BorderSize = 0;
+            this.iconButton9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton9.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton9.IconSize = 12;
+            this.iconButton9.Location = new System.Drawing.Point(30, 488);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Size = new System.Drawing.Size(17, 16);
+            this.iconButton9.TabIndex = 30;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton9, "Listar todos os grupos de Multicast");
+            this.iconButton9.UseVisualStyleBackColor = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(43, 3);
+            this.label14.Margin = new System.Windows.Forms.Padding(3);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(77, 13);
+            this.label14.TabIndex = 24;
+            this.label14.Text = "MULTICAST";
             // 
             // panel20
             // 
@@ -1073,296 +1247,57 @@
             this.panel20.Size = new System.Drawing.Size(507, 572);
             this.panel20.TabIndex = 0;
             // 
-            // iconButton8
+            // panel31
             // 
-            this.iconButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.iconButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton8.FlatAppearance.BorderSize = 0;
-            this.iconButton8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.iconButton8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Question;
-            this.iconButton8.IconColor = System.Drawing.SystemColors.Control;
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton8.IconSize = 12;
-            this.iconButton8.Location = new System.Drawing.Point(30, 27);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Size = new System.Drawing.Size(17, 16);
-            this.iconButton8.TabIndex = 22;
-            this.infoOtaaToolTip.SetToolTip(this.iconButton8, "Adicione, liste ou remova grupos de multicast");
-            this.iconButton8.UseVisualStyleBackColor = false;
+            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel31.Controls.Add(this.panel32);
+            this.panel31.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel31.Location = new System.Drawing.Point(10, 486);
+            this.panel31.Name = "panel31";
+            this.panel31.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
+            this.panel31.Size = new System.Drawing.Size(485, 72);
+            this.panel31.TabIndex = 29;
             // 
-            // label14
+            // panel32
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(43, 3);
-            this.label14.Margin = new System.Windows.Forms.Padding(3);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 13);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "MULTICAST";
+            this.panel32.Controls.Add(this.listarGruposMulticastButton);
+            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel32.Location = new System.Drawing.Point(5, 15);
+            this.panel32.Name = "panel32";
+            this.panel32.Padding = new System.Windows.Forms.Padding(0, 10, 0, 7);
+            this.panel32.Size = new System.Drawing.Size(473, 49);
+            this.panel32.TabIndex = 5;
             // 
-            // panel21
+            // listarGruposMulticastButton
             // 
-            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Controls.Add(this.panel26);
-            this.panel21.Controls.Add(this.panel25);
-            this.panel21.Controls.Add(this.panel24);
-            this.panel21.Controls.Add(this.panel23);
-            this.panel21.Controls.Add(this.panel22);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(10, 40);
-            this.panel21.Name = "panel21";
-            this.panel21.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
-            this.panel21.Size = new System.Drawing.Size(485, 284);
-            this.panel21.TabIndex = 25;
+            this.listarGruposMulticastButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.listarGruposMulticastButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listarGruposMulticastButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listarGruposMulticastButton.FlatAppearance.BorderSize = 0;
+            this.listarGruposMulticastButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.listarGruposMulticastButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.listarGruposMulticastButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.listarGruposMulticastButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listarGruposMulticastButton.ForeColor = System.Drawing.Color.White;
+            this.listarGruposMulticastButton.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.listarGruposMulticastButton.IconColor = System.Drawing.Color.Black;
+            this.listarGruposMulticastButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.listarGruposMulticastButton.Location = new System.Drawing.Point(0, 10);
+            this.listarGruposMulticastButton.Name = "listarGruposMulticastButton";
+            this.listarGruposMulticastButton.Size = new System.Drawing.Size(473, 32);
+            this.listarGruposMulticastButton.TabIndex = 16;
+            this.listarGruposMulticastButton.Text = "Listar Grupos";
+            this.listarGruposMulticastButton.UseVisualStyleBackColor = false;
+            this.listarGruposMulticastButton.Click += new System.EventHandler(this.listarGruposMulticastButton_Click);
             // 
-            // iconButton11
+            // panel30
             // 
-            this.iconButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.iconButton11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton11.FlatAppearance.BorderSize = 0;
-            this.iconButton11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.iconButton11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.iconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton11.IconChar = FontAwesome.Sharp.IconChar.Question;
-            this.iconButton11.IconColor = System.Drawing.SystemColors.Control;
-            this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton11.IconSize = 12;
-            this.iconButton11.Location = new System.Drawing.Point(18, 31);
-            this.iconButton11.Name = "iconButton11";
-            this.iconButton11.Size = new System.Drawing.Size(17, 16);
-            this.iconButton11.TabIndex = 25;
-            this.infoOtaaToolTip.SetToolTip(this.iconButton11, "Adicione um grupo de multicast adicionando as chaves de ativação de um grupo exis" +
-        "tente");
-            this.iconButton11.UseVisualStyleBackColor = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(41, 33);
-            this.label15.Margin = new System.Windows.Forms.Padding(3);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(108, 13);
-            this.label15.TabIndex = 25;
-            this.label15.Text = "ADICIONAR GRUPO";
-            // 
-            // panel22
-            // 
-            this.panel22.Controls.Add(this.label17);
-            this.panel22.Controls.Add(this.multicastClasseComboBox);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel22.Location = new System.Drawing.Point(5, 15);
-            this.panel22.Name = "panel22";
-            this.panel22.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel22.Size = new System.Drawing.Size(473, 52);
-            this.panel22.TabIndex = 4;
-            // 
-            // panel23
-            // 
-            this.panel23.Controls.Add(this.label16);
-            this.panel23.Controls.Add(this.multicastAddressTextBox);
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel23.Location = new System.Drawing.Point(5, 67);
-            this.panel23.Name = "panel23";
-            this.panel23.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel23.Size = new System.Drawing.Size(473, 52);
-            this.panel23.TabIndex = 5;
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.label18);
-            this.panel24.Controls.Add(this.multicastNwkskeyTextBox);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(5, 119);
-            this.panel24.Name = "panel24";
-            this.panel24.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel24.Size = new System.Drawing.Size(473, 52);
-            this.panel24.TabIndex = 6;
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.label19);
-            this.panel25.Controls.Add(this.multicastAppskeyTextBox);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel25.Location = new System.Drawing.Point(5, 171);
-            this.panel25.Name = "panel25";
-            this.panel25.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel25.Size = new System.Drawing.Size(473, 52);
-            this.panel25.TabIndex = 7;
-            // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.adicionarGrupoMulticastButton);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel26.Location = new System.Drawing.Point(5, 223);
-            this.panel26.Name = "panel26";
-            this.panel26.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel26.Size = new System.Drawing.Size(473, 52);
-            this.panel26.TabIndex = 8;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(7, 3);
-            this.label17.Margin = new System.Windows.Forms.Padding(3);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(50, 15);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Classe";
-            // 
-            // multicastClasseComboBox
-            // 
-            this.multicastClasseComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.multicastClasseComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.multicastClasseComboBox.BorderSize = 2;
-            this.multicastClasseComboBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.multicastClasseComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.multicastClasseComboBox.ForeColor = System.Drawing.Color.DimGray;
-            this.multicastClasseComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.multicastClasseComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.multicastClasseComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.multicastClasseComboBox.Location = new System.Drawing.Point(0, 10);
-            this.multicastClasseComboBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.multicastClasseComboBox.MinimumSize = new System.Drawing.Size(272, 40);
-            this.multicastClasseComboBox.Name = "multicastClasseComboBox";
-            this.multicastClasseComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.multicastClasseComboBox.Size = new System.Drawing.Size(473, 40);
-            this.multicastClasseComboBox.TabIndex = 11;
-            this.multicastClasseComboBox.Texts = "";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(7, 3);
-            this.label16.Margin = new System.Windows.Forms.Padding(3);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(120, 15);
-            this.label16.TabIndex = 11;
-            this.label16.Text = "Multicast Address";
-            // 
-            // multicastAddressTextBox
-            // 
-            this.multicastAddressTextBox.AutoSize = true;
-            this.multicastAddressTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.multicastAddressTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.multicastAddressTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.multicastAddressTextBox.BorderSize = 2;
-            this.multicastAddressTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.multicastAddressTextBox.ForeColor = System.Drawing.Color.Black;
-            this.multicastAddressTextBox.Location = new System.Drawing.Point(0, 10);
-            this.multicastAddressTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.multicastAddressTextBox.MaxLength = 8;
-            this.multicastAddressTextBox.Multiline = false;
-            this.multicastAddressTextBox.Name = "multicastAddressTextBox";
-            this.multicastAddressTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 10);
-            this.multicastAddressTextBox.Size = new System.Drawing.Size(473, 36);
-            this.multicastAddressTextBox.TabIndex = 10;
-            this.multicastAddressTextBox.Texts = "";
-            this.multicastAddressTextBox.UnderlinedStyle = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(7, 5);
-            this.label18.Margin = new System.Windows.Forms.Padding(3);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(135, 15);
-            this.label18.TabIndex = 13;
-            this.label18.Text = "Multicast NWKSKEY";
-            // 
-            // multicastNwkskeyTextBox
-            // 
-            this.multicastNwkskeyTextBox.AutoSize = true;
-            this.multicastNwkskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.multicastNwkskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.multicastNwkskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.multicastNwkskeyTextBox.BorderSize = 2;
-            this.multicastNwkskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.multicastNwkskeyTextBox.ForeColor = System.Drawing.Color.Black;
-            this.multicastNwkskeyTextBox.Location = new System.Drawing.Point(0, 10);
-            this.multicastNwkskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.multicastNwkskeyTextBox.MaxLength = 32;
-            this.multicastNwkskeyTextBox.Multiline = false;
-            this.multicastNwkskeyTextBox.Name = "multicastNwkskeyTextBox";
-            this.multicastNwkskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 10);
-            this.multicastNwkskeyTextBox.Size = new System.Drawing.Size(473, 36);
-            this.multicastNwkskeyTextBox.TabIndex = 12;
-            this.multicastNwkskeyTextBox.Texts = "";
-            this.multicastNwkskeyTextBox.UnderlinedStyle = false;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(7, 5);
-            this.label19.Margin = new System.Windows.Forms.Padding(3);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(130, 15);
-            this.label19.TabIndex = 13;
-            this.label19.Text = "Multicast APPSKEY";
-            // 
-            // multicastAppskeyTextBox
-            // 
-            this.multicastAppskeyTextBox.AutoSize = true;
-            this.multicastAppskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.multicastAppskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.multicastAppskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.multicastAppskeyTextBox.BorderSize = 2;
-            this.multicastAppskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.multicastAppskeyTextBox.ForeColor = System.Drawing.Color.Black;
-            this.multicastAppskeyTextBox.Location = new System.Drawing.Point(0, 10);
-            this.multicastAppskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.multicastAppskeyTextBox.MaxLength = 32;
-            this.multicastAppskeyTextBox.Multiline = false;
-            this.multicastAppskeyTextBox.Name = "multicastAppskeyTextBox";
-            this.multicastAppskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 10);
-            this.multicastAppskeyTextBox.Size = new System.Drawing.Size(473, 36);
-            this.multicastAppskeyTextBox.TabIndex = 12;
-            this.multicastAppskeyTextBox.Texts = "";
-            this.multicastAppskeyTextBox.UnderlinedStyle = false;
-            // 
-            // adicionarGrupoMulticastButton
-            // 
-            this.adicionarGrupoMulticastButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.adicionarGrupoMulticastButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.adicionarGrupoMulticastButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.adicionarGrupoMulticastButton.FlatAppearance.BorderSize = 0;
-            this.adicionarGrupoMulticastButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.adicionarGrupoMulticastButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.adicionarGrupoMulticastButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.adicionarGrupoMulticastButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adicionarGrupoMulticastButton.ForeColor = System.Drawing.Color.White;
-            this.adicionarGrupoMulticastButton.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.adicionarGrupoMulticastButton.IconColor = System.Drawing.Color.Black;
-            this.adicionarGrupoMulticastButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.adicionarGrupoMulticastButton.Location = new System.Drawing.Point(0, 10);
-            this.adicionarGrupoMulticastButton.Name = "adicionarGrupoMulticastButton";
-            this.adicionarGrupoMulticastButton.Size = new System.Drawing.Size(473, 32);
-            this.adicionarGrupoMulticastButton.TabIndex = 16;
-            this.adicionarGrupoMulticastButton.Text = "Adicionar Grupo";
-            this.adicionarGrupoMulticastButton.UseVisualStyleBackColor = false;
-            this.adicionarGrupoMulticastButton.Click += new System.EventHandler(this.adicionarGrupoMulticastButton_Click);
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.Transparent;
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel27.Location = new System.Drawing.Point(10, 324);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(485, 45);
-            this.panel27.TabIndex = 26;
+            this.panel30.BackColor = System.Drawing.Color.Transparent;
+            this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel30.Location = new System.Drawing.Point(10, 441);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(485, 45);
+            this.panel30.TabIndex = 28;
             // 
             // panel28
             // 
@@ -1374,38 +1309,6 @@
             this.panel28.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
             this.panel28.Size = new System.Drawing.Size(485, 72);
             this.panel28.TabIndex = 27;
-            // 
-            // iconButton7
-            // 
-            this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.iconButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.iconButton7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Question;
-            this.iconButton7.IconColor = System.Drawing.SystemColors.Control;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton7.IconSize = 12;
-            this.iconButton7.Location = new System.Drawing.Point(40, 395);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Size = new System.Drawing.Size(17, 16);
-            this.iconButton7.TabIndex = 28;
-            this.infoOtaaToolTip.SetToolTip(this.iconButton7, "Remova um grupo de multicast informando o seu Multicast Address");
-            this.iconButton7.UseVisualStyleBackColor = false;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(65, 397);
-            this.label20.Margin = new System.Windows.Forms.Padding(3);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(103, 13);
-            this.label20.TabIndex = 28;
-            this.label20.Text = "REMOVER GRUPO";
             // 
             // panel29
             // 
@@ -1473,88 +1376,412 @@
             this.multicastAddressRemoverTextBox.Texts = "";
             this.multicastAddressRemoverTextBox.UnderlinedStyle = false;
             // 
-            // panel30
+            // panel27
             // 
-            this.panel30.BackColor = System.Drawing.Color.Transparent;
-            this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel30.Location = new System.Drawing.Point(10, 441);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(485, 45);
-            this.panel30.TabIndex = 28;
+            this.panel27.BackColor = System.Drawing.Color.Transparent;
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel27.Location = new System.Drawing.Point(10, 324);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(485, 45);
+            this.panel27.TabIndex = 26;
             // 
-            // panel31
+            // label15
             // 
-            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel31.Controls.Add(this.panel32);
-            this.panel31.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel31.Location = new System.Drawing.Point(10, 486);
-            this.panel31.Name = "panel31";
-            this.panel31.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
-            this.panel31.Size = new System.Drawing.Size(485, 72);
-            this.panel31.TabIndex = 29;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(41, 33);
+            this.label15.Margin = new System.Windows.Forms.Padding(3);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(108, 13);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "ADICIONAR GRUPO";
             // 
-            // panel32
+            // iconButton11
             // 
-            this.panel32.Controls.Add(this.listarGruposMulticastButton);
-            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel32.Location = new System.Drawing.Point(5, 15);
-            this.panel32.Name = "panel32";
-            this.panel32.Padding = new System.Windows.Forms.Padding(0, 10, 0, 7);
-            this.panel32.Size = new System.Drawing.Size(473, 49);
-            this.panel32.TabIndex = 5;
+            this.iconButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton11.FlatAppearance.BorderSize = 0;
+            this.iconButton11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton11.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton11.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton11.IconSize = 12;
+            this.iconButton11.Location = new System.Drawing.Point(18, 31);
+            this.iconButton11.Name = "iconButton11";
+            this.iconButton11.Size = new System.Drawing.Size(17, 16);
+            this.iconButton11.TabIndex = 25;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton11, "Adicione um grupo de multicast adicionando as chaves de ativação de um grupo exis" +
+        "tente");
+            this.iconButton11.UseVisualStyleBackColor = false;
             // 
-            // listarGruposMulticastButton
+            // panel21
             // 
-            this.listarGruposMulticastButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.listarGruposMulticastButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.listarGruposMulticastButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listarGruposMulticastButton.FlatAppearance.BorderSize = 0;
-            this.listarGruposMulticastButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.listarGruposMulticastButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.listarGruposMulticastButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.listarGruposMulticastButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listarGruposMulticastButton.ForeColor = System.Drawing.Color.White;
-            this.listarGruposMulticastButton.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.listarGruposMulticastButton.IconColor = System.Drawing.Color.Black;
-            this.listarGruposMulticastButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.listarGruposMulticastButton.Location = new System.Drawing.Point(0, 10);
-            this.listarGruposMulticastButton.Name = "listarGruposMulticastButton";
-            this.listarGruposMulticastButton.Size = new System.Drawing.Size(473, 32);
-            this.listarGruposMulticastButton.TabIndex = 16;
-            this.listarGruposMulticastButton.Text = "Listar Grupos";
-            this.listarGruposMulticastButton.UseVisualStyleBackColor = false;
-            this.listarGruposMulticastButton.Click += new System.EventHandler(this.listarGruposMulticastButton_Click);
+            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel21.Controls.Add(this.panel26);
+            this.panel21.Controls.Add(this.panel25);
+            this.panel21.Controls.Add(this.panel24);
+            this.panel21.Controls.Add(this.panel23);
+            this.panel21.Controls.Add(this.panel22);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel21.Location = new System.Drawing.Point(10, 40);
+            this.panel21.Name = "panel21";
+            this.panel21.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
+            this.panel21.Size = new System.Drawing.Size(485, 284);
+            this.panel21.TabIndex = 25;
             // 
-            // iconButton9
+            // panel26
             // 
-            this.iconButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.iconButton9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton9.FlatAppearance.BorderSize = 0;
-            this.iconButton9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.iconButton9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Question;
-            this.iconButton9.IconColor = System.Drawing.SystemColors.Control;
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton9.IconSize = 12;
-            this.iconButton9.Location = new System.Drawing.Point(30, 488);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Size = new System.Drawing.Size(17, 16);
-            this.iconButton9.TabIndex = 30;
-            this.infoOtaaToolTip.SetToolTip(this.iconButton9, "Listar todos os grupos de Multicast");
-            this.iconButton9.UseVisualStyleBackColor = false;
+            this.panel26.Controls.Add(this.adicionarGrupoMulticastButton);
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel26.Location = new System.Drawing.Point(5, 223);
+            this.panel26.Name = "panel26";
+            this.panel26.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.panel26.Size = new System.Drawing.Size(473, 52);
+            this.panel26.TabIndex = 8;
             // 
-            // label22
+            // adicionarGrupoMulticastButton
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(65, 514);
-            this.label22.Margin = new System.Windows.Forms.Padding(3);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(94, 13);
-            this.label22.TabIndex = 31;
-            this.label22.Text = "LISTAR GRUPOS";
+            this.adicionarGrupoMulticastButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.adicionarGrupoMulticastButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.adicionarGrupoMulticastButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.adicionarGrupoMulticastButton.FlatAppearance.BorderSize = 0;
+            this.adicionarGrupoMulticastButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.adicionarGrupoMulticastButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.adicionarGrupoMulticastButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.adicionarGrupoMulticastButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adicionarGrupoMulticastButton.ForeColor = System.Drawing.Color.White;
+            this.adicionarGrupoMulticastButton.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.adicionarGrupoMulticastButton.IconColor = System.Drawing.Color.Black;
+            this.adicionarGrupoMulticastButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.adicionarGrupoMulticastButton.Location = new System.Drawing.Point(0, 10);
+            this.adicionarGrupoMulticastButton.Name = "adicionarGrupoMulticastButton";
+            this.adicionarGrupoMulticastButton.Size = new System.Drawing.Size(473, 32);
+            this.adicionarGrupoMulticastButton.TabIndex = 16;
+            this.adicionarGrupoMulticastButton.Text = "Adicionar Grupo";
+            this.adicionarGrupoMulticastButton.UseVisualStyleBackColor = false;
+            this.adicionarGrupoMulticastButton.Click += new System.EventHandler(this.adicionarGrupoMulticastButton_Click);
+            // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.label19);
+            this.panel25.Controls.Add(this.multicastAppskeyTextBox);
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel25.Location = new System.Drawing.Point(5, 171);
+            this.panel25.Name = "panel25";
+            this.panel25.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.panel25.Size = new System.Drawing.Size(473, 52);
+            this.panel25.TabIndex = 7;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(7, 5);
+            this.label19.Margin = new System.Windows.Forms.Padding(3);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(130, 15);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "Multicast APPSKEY";
+            // 
+            // multicastAppskeyTextBox
+            // 
+            this.multicastAppskeyTextBox.AutoSize = true;
+            this.multicastAppskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.multicastAppskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.multicastAppskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.multicastAppskeyTextBox.BorderSize = 2;
+            this.multicastAppskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.multicastAppskeyTextBox.ForeColor = System.Drawing.Color.Black;
+            this.multicastAppskeyTextBox.Location = new System.Drawing.Point(0, 10);
+            this.multicastAppskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.multicastAppskeyTextBox.MaxLength = 32;
+            this.multicastAppskeyTextBox.Multiline = false;
+            this.multicastAppskeyTextBox.Name = "multicastAppskeyTextBox";
+            this.multicastAppskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 10);
+            this.multicastAppskeyTextBox.Size = new System.Drawing.Size(473, 36);
+            this.multicastAppskeyTextBox.TabIndex = 12;
+            this.multicastAppskeyTextBox.Texts = "";
+            this.multicastAppskeyTextBox.UnderlinedStyle = false;
+            // 
+            // panel24
+            // 
+            this.panel24.Controls.Add(this.label18);
+            this.panel24.Controls.Add(this.multicastNwkskeyTextBox);
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel24.Location = new System.Drawing.Point(5, 119);
+            this.panel24.Name = "panel24";
+            this.panel24.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.panel24.Size = new System.Drawing.Size(473, 52);
+            this.panel24.TabIndex = 6;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(7, 5);
+            this.label18.Margin = new System.Windows.Forms.Padding(3);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(135, 15);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "Multicast NWKSKEY";
+            // 
+            // multicastNwkskeyTextBox
+            // 
+            this.multicastNwkskeyTextBox.AutoSize = true;
+            this.multicastNwkskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.multicastNwkskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.multicastNwkskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.multicastNwkskeyTextBox.BorderSize = 2;
+            this.multicastNwkskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.multicastNwkskeyTextBox.ForeColor = System.Drawing.Color.Black;
+            this.multicastNwkskeyTextBox.Location = new System.Drawing.Point(0, 10);
+            this.multicastNwkskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.multicastNwkskeyTextBox.MaxLength = 32;
+            this.multicastNwkskeyTextBox.Multiline = false;
+            this.multicastNwkskeyTextBox.Name = "multicastNwkskeyTextBox";
+            this.multicastNwkskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 10);
+            this.multicastNwkskeyTextBox.Size = new System.Drawing.Size(473, 36);
+            this.multicastNwkskeyTextBox.TabIndex = 12;
+            this.multicastNwkskeyTextBox.Texts = "";
+            this.multicastNwkskeyTextBox.UnderlinedStyle = false;
+            // 
+            // panel23
+            // 
+            this.panel23.Controls.Add(this.label16);
+            this.panel23.Controls.Add(this.multicastAddressTextBox);
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel23.Location = new System.Drawing.Point(5, 67);
+            this.panel23.Name = "panel23";
+            this.panel23.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.panel23.Size = new System.Drawing.Size(473, 52);
+            this.panel23.TabIndex = 5;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(7, 3);
+            this.label16.Margin = new System.Windows.Forms.Padding(3);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(120, 15);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "Multicast Address";
+            // 
+            // multicastAddressTextBox
+            // 
+            this.multicastAddressTextBox.AutoSize = true;
+            this.multicastAddressTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.multicastAddressTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.multicastAddressTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.multicastAddressTextBox.BorderSize = 2;
+            this.multicastAddressTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.multicastAddressTextBox.ForeColor = System.Drawing.Color.Black;
+            this.multicastAddressTextBox.Location = new System.Drawing.Point(0, 10);
+            this.multicastAddressTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.multicastAddressTextBox.MaxLength = 8;
+            this.multicastAddressTextBox.Multiline = false;
+            this.multicastAddressTextBox.Name = "multicastAddressTextBox";
+            this.multicastAddressTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 10);
+            this.multicastAddressTextBox.Size = new System.Drawing.Size(473, 36);
+            this.multicastAddressTextBox.TabIndex = 10;
+            this.multicastAddressTextBox.Texts = "";
+            this.multicastAddressTextBox.UnderlinedStyle = false;
+            // 
+            // panel22
+            // 
+            this.panel22.Controls.Add(this.label17);
+            this.panel22.Controls.Add(this.multicastClasseComboBox);
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel22.Location = new System.Drawing.Point(5, 15);
+            this.panel22.Name = "panel22";
+            this.panel22.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.panel22.Size = new System.Drawing.Size(473, 52);
+            this.panel22.TabIndex = 4;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(7, 3);
+            this.label17.Margin = new System.Windows.Forms.Padding(3);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(50, 15);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "Classe";
+            // 
+            // multicastClasseComboBox
+            // 
+            this.multicastClasseComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.multicastClasseComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.multicastClasseComboBox.BorderSize = 2;
+            this.multicastClasseComboBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.multicastClasseComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.multicastClasseComboBox.ForeColor = System.Drawing.Color.DimGray;
+            this.multicastClasseComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.multicastClasseComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.multicastClasseComboBox.ListTextColor = System.Drawing.Color.DimGray;
+            this.multicastClasseComboBox.Location = new System.Drawing.Point(0, 10);
+            this.multicastClasseComboBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.multicastClasseComboBox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.multicastClasseComboBox.Name = "multicastClasseComboBox";
+            this.multicastClasseComboBox.Padding = new System.Windows.Forms.Padding(2);
+            this.multicastClasseComboBox.Size = new System.Drawing.Size(473, 40);
+            this.multicastClasseComboBox.TabIndex = 11;
+            this.multicastClasseComboBox.Texts = "";
+            // 
+            // panel11
+            // 
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(10, 32);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(547, 36);
+            this.panel11.TabIndex = 9;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(10, 10);
+            this.label13.Name = "label13";
+            this.label13.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.label13.Size = new System.Drawing.Size(235, 22);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Configurações Modo OTAA";
+            // 
+            // infoOtaaToolTip
+            // 
+            this.infoOtaaToolTip.AutomaticDelay = 0;
+            this.infoOtaaToolTip.AutoPopDelay = 100000;
+            this.infoOtaaToolTip.InitialDelay = 0;
+            this.infoOtaaToolTip.IsBalloon = true;
+            this.infoOtaaToolTip.ReshowDelay = 100;
+            this.infoOtaaToolTip.ShowAlways = true;
+            // 
+            // panel35
+            // 
+            this.panel35.BackColor = System.Drawing.Color.Transparent;
+            this.panel35.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel35.Location = new System.Drawing.Point(10, 1029);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(527, 50);
+            this.panel35.TabIndex = 36;
+            // 
+            // panel36
+            // 
+            this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel36.Controls.Add(this.panel37);
+            this.panel36.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel36.Location = new System.Drawing.Point(10, 1079);
+            this.panel36.Name = "panel36";
+            this.panel36.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            this.panel36.Size = new System.Drawing.Size(527, 84);
+            this.panel36.TabIndex = 37;
+            // 
+            // panel37
+            // 
+            this.panel37.Controls.Add(this.atSleepButton);
+            this.panel37.Controls.Add(this.label24);
+            this.panel37.Controls.Add(this.atSleepTempoTextBox);
+            this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel37.Location = new System.Drawing.Point(10, 20);
+            this.panel37.Name = "panel37";
+            this.panel37.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.panel37.Size = new System.Drawing.Size(505, 49);
+            this.panel37.TabIndex = 5;
+            // 
+            // atSleepButton
+            // 
+            this.atSleepButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.atSleepButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.atSleepButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.atSleepButton.FlatAppearance.BorderSize = 0;
+            this.atSleepButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.atSleepButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.atSleepButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.atSleepButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.atSleepButton.ForeColor = System.Drawing.Color.White;
+            this.atSleepButton.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.atSleepButton.IconColor = System.Drawing.Color.Black;
+            this.atSleepButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.atSleepButton.Location = new System.Drawing.Point(388, 10);
+            this.atSleepButton.Name = "atSleepButton";
+            this.atSleepButton.Size = new System.Drawing.Size(117, 29);
+            this.atSleepButton.TabIndex = 16;
+            this.atSleepButton.Text = "Enviar";
+            this.atSleepButton.UseVisualStyleBackColor = false;
+            this.atSleepButton.Click += new System.EventHandler(this.atSleepButton_Click);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(7, 3);
+            this.label24.Margin = new System.Windows.Forms.Padding(3);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(182, 15);
+            this.label24.TabIndex = 10;
+            this.label24.Text = "Tempo (em milissegundos)";
+            // 
+            // atSleepTempoTextBox
+            // 
+            this.atSleepTempoTextBox.AutoSize = true;
+            this.atSleepTempoTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.atSleepTempoTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.atSleepTempoTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.atSleepTempoTextBox.BorderSize = 2;
+            this.atSleepTempoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atSleepTempoTextBox.ForeColor = System.Drawing.Color.Black;
+            this.atSleepTempoTextBox.Location = new System.Drawing.Point(0, 10);
+            this.atSleepTempoTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.atSleepTempoTextBox.MaxLength = 5;
+            this.atSleepTempoTextBox.Multiline = false;
+            this.atSleepTempoTextBox.Name = "atSleepTempoTextBox";
+            this.atSleepTempoTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.atSleepTempoTextBox.Size = new System.Drawing.Size(505, 29);
+            this.atSleepTempoTextBox.TabIndex = 17;
+            this.atSleepTempoTextBox.Texts = "";
+            this.atSleepTempoTextBox.UnderlinedStyle = false;
+            // 
+            // iconButton12
+            // 
+            this.iconButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton12.FlatAppearance.BorderSize = 0;
+            this.iconButton12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton12.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton12.IconSize = 12;
+            this.iconButton12.Location = new System.Drawing.Point(20, 1070);
+            this.iconButton12.Name = "iconButton12";
+            this.iconButton12.Size = new System.Drawing.Size(17, 16);
+            this.iconButton12.TabIndex = 38;
+            this.infoOtaaToolTip.SetToolTip(this.iconButton12, "AT+SLEEP: habilita o modo sleep do dispositivo por um valor de tempo em milissegu" +
+        "ndos");
+            this.iconButton12.UseVisualStyleBackColor = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(45, 1072);
+            this.label25.Margin = new System.Windows.Forms.Padding(3);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(69, 13);
+            this.label25.TabIndex = 39;
+            this.label25.Text = "AT+SLEEP";
             // 
             // FormModoOtaa
             // 
@@ -1600,6 +1827,8 @@
             this.panel5.PerformLayout();
             this.comandosATGroup.ResumeLayout(false);
             this.comandosATGroup.PerformLayout();
+            this.painelATBat.ResumeLayout(false);
+            this.panel34.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -1612,21 +1841,24 @@
             this.panel19.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
-            this.panel21.ResumeLayout(false);
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
-            this.panel26.ResumeLayout(false);
+            this.panel31.ResumeLayout(false);
+            this.panel32.ResumeLayout(false);
             this.panel28.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
-            this.panel31.ResumeLayout(false);
-            this.panel32.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
+            this.panel25.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel24.PerformLayout();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            this.panel36.ResumeLayout(false);
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1729,5 +1961,19 @@
         private FontAwesome.Sharp.IconButton listarGruposMulticastButton;
         private FontAwesome.Sharp.IconButton iconButton9;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.Panel painelATBat;
+        private System.Windows.Forms.Panel panel34;
+        private FontAwesome.Sharp.IconButton atBatButton;
+        private System.Windows.Forms.Label label23;
+        private FontAwesome.Sharp.IconButton iconButton10;
+        private System.Windows.Forms.Panel panel35;
+        private System.Windows.Forms.Label label25;
+        private FontAwesome.Sharp.IconButton iconButton12;
+        private System.Windows.Forms.Panel panel36;
+        private System.Windows.Forms.Panel panel37;
+        private FontAwesome.Sharp.IconButton atSleepButton;
+        private System.Windows.Forms.Label label24;
+        private CustomControls.CTextBox atSleepTempoTextBox;
     }
 }

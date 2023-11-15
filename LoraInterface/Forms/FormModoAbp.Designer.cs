@@ -60,12 +60,25 @@
             this.label10 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.comandosATGroup = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton12 = new FontAwesome.Sharp.IconButton();
             this.iconButton11 = new FontAwesome.Sharp.IconButton();
             this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.painelAT = new System.Windows.Forms.Panel();
+            this.iconButton13 = new FontAwesome.Sharp.IconButton();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.atSleepButton = new FontAwesome.Sharp.IconButton();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.painelATBat = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.atBatButton = new FontAwesome.Sharp.IconButton();
+            this.panel26 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.iconButton14 = new FontAwesome.Sharp.IconButton();
             this.painelATSend = new System.Windows.Forms.Panel();
@@ -103,6 +116,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.infoAbpToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.atSleepTempoTextBox = new LoraInterface.CustomControls.CTextBox();
             this.atSendPortaComboBox = new LoraInterface.CustomControls.CComboBox();
             this.atSendTextoTextBox = new LoraInterface.CustomControls.CTextBox();
             this.multicastAddressRemoverTextBox = new LoraInterface.CustomControls.CTextBox();
@@ -133,6 +147,10 @@
             this.panel10.SuspendLayout();
             this.comandosATGroup.SuspendLayout();
             this.painelAT.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel30.SuspendLayout();
+            this.painelATBat.SuspendLayout();
+            this.panel27.SuspendLayout();
             this.painelATSend.SuspendLayout();
             this.painelB.SuspendLayout();
             this.painelA.SuspendLayout();
@@ -165,7 +183,7 @@
             this.groupBox1.Location = new System.Drawing.Point(10, 68);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox1.Size = new System.Drawing.Size(652, 108);
+            this.groupBox1.Size = new System.Drawing.Size(555, 108);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Conectar COM";
@@ -178,7 +196,7 @@
             this.panel5.Location = new System.Drawing.Point(10, 24);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(10);
-            this.panel5.Size = new System.Drawing.Size(632, 74);
+            this.panel5.Size = new System.Drawing.Size(535, 74);
             this.panel5.TabIndex = 12;
             // 
             // panel6
@@ -188,7 +206,7 @@
             this.panel6.Location = new System.Drawing.Point(10, 10);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.panel6.Size = new System.Drawing.Size(449, 54);
+            this.panel6.Size = new System.Drawing.Size(352, 54);
             this.panel6.TabIndex = 13;
             // 
             // conectarCOMButton
@@ -205,7 +223,7 @@
             this.conectarCOMButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.conectarCOMButton.IconColor = System.Drawing.Color.Black;
             this.conectarCOMButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.conectarCOMButton.Location = new System.Drawing.Point(459, 10);
+            this.conectarCOMButton.Location = new System.Drawing.Point(362, 10);
             this.conectarCOMButton.Name = "conectarCOMButton";
             this.conectarCOMButton.Size = new System.Drawing.Size(163, 54);
             this.conectarCOMButton.TabIndex = 12;
@@ -227,7 +245,7 @@
             this.chavesDeAtivacaoGroup.Location = new System.Drawing.Point(10, 176);
             this.chavesDeAtivacaoGroup.Name = "chavesDeAtivacaoGroup";
             this.chavesDeAtivacaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.chavesDeAtivacaoGroup.Size = new System.Drawing.Size(652, 266);
+            this.chavesDeAtivacaoGroup.Size = new System.Drawing.Size(555, 266);
             this.chavesDeAtivacaoGroup.TabIndex = 3;
             this.chavesDeAtivacaoGroup.TabStop = false;
             this.chavesDeAtivacaoGroup.Text = "Chaves de Ativação";
@@ -241,7 +259,7 @@
             this.panel1.Location = new System.Drawing.Point(10, 198);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
-            this.panel1.Size = new System.Drawing.Size(632, 58);
+            this.panel1.Size = new System.Drawing.Size(535, 58);
             this.panel1.TabIndex = 14;
             // 
             // iconButton4
@@ -284,7 +302,7 @@
             this.panel2.Location = new System.Drawing.Point(10, 140);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel2.Size = new System.Drawing.Size(632, 58);
+            this.panel2.Size = new System.Drawing.Size(535, 58);
             this.panel2.TabIndex = 13;
             // 
             // iconButton3
@@ -327,7 +345,7 @@
             this.panel3.Location = new System.Drawing.Point(10, 82);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(10);
-            this.panel3.Size = new System.Drawing.Size(632, 58);
+            this.panel3.Size = new System.Drawing.Size(535, 58);
             this.panel3.TabIndex = 12;
             // 
             // iconButton2
@@ -370,7 +388,7 @@
             this.panel4.Location = new System.Drawing.Point(10, 24);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(10);
-            this.panel4.Size = new System.Drawing.Size(632, 58);
+            this.panel4.Size = new System.Drawing.Size(535, 58);
             this.panel4.TabIndex = 11;
             // 
             // iconButton1
@@ -417,7 +435,7 @@
             this.configuracoesConexaoGroup.Location = new System.Drawing.Point(10, 442);
             this.configuracoesConexaoGroup.Name = "configuracoesConexaoGroup";
             this.configuracoesConexaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.configuracoesConexaoGroup.Size = new System.Drawing.Size(652, 247);
+            this.configuracoesConexaoGroup.Size = new System.Drawing.Size(555, 247);
             this.configuracoesConexaoGroup.TabIndex = 4;
             this.configuracoesConexaoGroup.TabStop = false;
             this.configuracoesConexaoGroup.Text = "Configurações de Conexão";
@@ -429,7 +447,7 @@
             this.panel7.Location = new System.Drawing.Point(10, 181);
             this.panel7.Name = "panel7";
             this.panel7.Padding = new System.Windows.Forms.Padding(10);
-            this.panel7.Size = new System.Drawing.Size(632, 56);
+            this.panel7.Size = new System.Drawing.Size(535, 56);
             this.panel7.TabIndex = 12;
             // 
             // conectarLoraButton
@@ -448,7 +466,7 @@
             this.conectarLoraButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.conectarLoraButton.Location = new System.Drawing.Point(10, 10);
             this.conectarLoraButton.Name = "conectarLoraButton";
-            this.conectarLoraButton.Size = new System.Drawing.Size(612, 36);
+            this.conectarLoraButton.Size = new System.Drawing.Size(515, 36);
             this.conectarLoraButton.TabIndex = 13;
             this.conectarLoraButton.Text = "Conectar";
             this.conectarLoraButton.UseVisualStyleBackColor = false;
@@ -464,7 +482,7 @@
             this.modoDeConfirmacaoGroup.Location = new System.Drawing.Point(10, 82);
             this.modoDeConfirmacaoGroup.Name = "modoDeConfirmacaoGroup";
             this.modoDeConfirmacaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.modoDeConfirmacaoGroup.Size = new System.Drawing.Size(632, 99);
+            this.modoDeConfirmacaoGroup.Size = new System.Drawing.Size(535, 99);
             this.modoDeConfirmacaoGroup.TabIndex = 8;
             // 
             // iconButton7
@@ -507,7 +525,7 @@
             this.panel16.Location = new System.Drawing.Point(10, 10);
             this.panel16.Name = "panel16";
             this.panel16.Padding = new System.Windows.Forms.Padding(10, 25, 10, 10);
-            this.panel16.Size = new System.Drawing.Size(612, 79);
+            this.panel16.Size = new System.Drawing.Size(515, 79);
             this.panel16.TabIndex = 13;
             // 
             // label9
@@ -531,7 +549,7 @@
             this.panel10.Location = new System.Drawing.Point(10, 24);
             this.panel10.Name = "panel10";
             this.panel10.Padding = new System.Windows.Forms.Padding(10);
-            this.panel10.Size = new System.Drawing.Size(632, 58);
+            this.panel10.Size = new System.Drawing.Size(535, 58);
             this.panel10.TabIndex = 7;
             // 
             // iconButton6
@@ -570,12 +588,14 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(10, 689);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(652, 36);
+            this.panel8.Size = new System.Drawing.Size(555, 36);
             this.panel8.TabIndex = 5;
             // 
             // comandosATGroup
             // 
             this.comandosATGroup.AutoSize = true;
+            this.comandosATGroup.Controls.Add(this.label22);
+            this.comandosATGroup.Controls.Add(this.label21);
             this.comandosATGroup.Controls.Add(this.label20);
             this.comandosATGroup.Controls.Add(this.iconButton5);
             this.comandosATGroup.Controls.Add(this.iconButton12);
@@ -588,18 +608,42 @@
             this.comandosATGroup.Location = new System.Drawing.Point(10, 725);
             this.comandosATGroup.Name = "comandosATGroup";
             this.comandosATGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.comandosATGroup.Size = new System.Drawing.Size(652, 926);
+            this.comandosATGroup.Size = new System.Drawing.Size(555, 1158);
             this.comandosATGroup.TabIndex = 6;
             this.comandosATGroup.TabStop = false;
             this.comandosATGroup.Text = "Comandos AT";
             this.comandosATGroup.Visible = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(55, 1045);
+            this.label22.Margin = new System.Windows.Forms.Padding(3);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(69, 13);
+            this.label22.TabIndex = 26;
+            this.label22.Text = "AT+SLEEP";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(55, 912);
+            this.label21.Margin = new System.Windows.Forms.Padding(3);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(54, 13);
+            this.label21.TabIndex = 25;
+            this.label21.Text = "AT+BAT";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(55, 665);
+            this.label20.Location = new System.Drawing.Point(55, 655);
             this.label20.Margin = new System.Windows.Forms.Padding(3);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(64, 13);
@@ -685,6 +729,12 @@
             // 
             // painelAT
             // 
+            this.painelAT.Controls.Add(this.iconButton13);
+            this.painelAT.Controls.Add(this.panel29);
+            this.painelAT.Controls.Add(this.panel28);
+            this.painelAT.Controls.Add(this.iconButton9);
+            this.painelAT.Controls.Add(this.painelATBat);
+            this.painelAT.Controls.Add(this.panel26);
             this.painelAT.Controls.Add(this.label12);
             this.painelAT.Controls.Add(this.iconButton14);
             this.painelAT.Controls.Add(this.painelATSend);
@@ -694,8 +744,165 @@
             this.painelAT.Location = new System.Drawing.Point(10, 24);
             this.painelAT.Name = "painelAT";
             this.painelAT.Padding = new System.Windows.Forms.Padding(10);
-            this.painelAT.Size = new System.Drawing.Size(632, 892);
+            this.painelAT.Size = new System.Drawing.Size(535, 1124);
             this.painelAT.TabIndex = 8;
+            // 
+            // iconButton13
+            // 
+            this.iconButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton13.FlatAppearance.BorderSize = 0;
+            this.iconButton13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton13.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton13.IconSize = 12;
+            this.iconButton13.Location = new System.Drawing.Point(20, 1020);
+            this.iconButton13.Name = "iconButton13";
+            this.iconButton13.Size = new System.Drawing.Size(17, 16);
+            this.iconButton13.TabIndex = 28;
+            this.infoAbpToolTip.SetToolTip(this.iconButton13, "AT+SLEEP: habilita o modo sleep do dispositivo por um valor de tempo em milissegu" +
+        "ndos");
+            this.iconButton13.UseVisualStyleBackColor = false;
+            // 
+            // panel29
+            // 
+            this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel29.Controls.Add(this.panel30);
+            this.panel29.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel29.Location = new System.Drawing.Point(10, 1029);
+            this.panel29.Name = "panel29";
+            this.panel29.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            this.panel29.Size = new System.Drawing.Size(515, 84);
+            this.panel29.TabIndex = 27;
+            // 
+            // panel30
+            // 
+            this.panel30.Controls.Add(this.atSleepButton);
+            this.panel30.Controls.Add(this.label23);
+            this.panel30.Controls.Add(this.atSleepTempoTextBox);
+            this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel30.Location = new System.Drawing.Point(10, 20);
+            this.panel30.Name = "panel30";
+            this.panel30.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.panel30.Size = new System.Drawing.Size(493, 49);
+            this.panel30.TabIndex = 5;
+            // 
+            // atSleepButton
+            // 
+            this.atSleepButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.atSleepButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.atSleepButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.atSleepButton.FlatAppearance.BorderSize = 0;
+            this.atSleepButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.atSleepButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.atSleepButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.atSleepButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.atSleepButton.ForeColor = System.Drawing.Color.White;
+            this.atSleepButton.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.atSleepButton.IconColor = System.Drawing.Color.Black;
+            this.atSleepButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.atSleepButton.Location = new System.Drawing.Point(376, 10);
+            this.atSleepButton.Name = "atSleepButton";
+            this.atSleepButton.Size = new System.Drawing.Size(117, 29);
+            this.atSleepButton.TabIndex = 16;
+            this.atSleepButton.Text = "Enviar";
+            this.atSleepButton.UseVisualStyleBackColor = false;
+            this.atSleepButton.Click += new System.EventHandler(this.iconButton10_Click);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(7, 3);
+            this.label23.Margin = new System.Windows.Forms.Padding(3);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(182, 15);
+            this.label23.TabIndex = 10;
+            this.label23.Text = "Tempo (em milissegundos)";
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.Transparent;
+            this.panel28.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel28.Location = new System.Drawing.Point(10, 979);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(515, 50);
+            this.panel28.TabIndex = 26;
+            // 
+            // iconButton9
+            // 
+            this.iconButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.iconButton9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton9.FlatAppearance.BorderSize = 0;
+            this.iconButton9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.iconButton9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.iconButton9.IconColor = System.Drawing.SystemColors.Control;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton9.IconSize = 12;
+            this.iconButton9.Location = new System.Drawing.Point(20, 887);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Size = new System.Drawing.Size(17, 16);
+            this.iconButton9.TabIndex = 25;
+            this.infoAbpToolTip.SetToolTip(this.iconButton9, "AT+BAT: Retorna o nível de bateria do dispositivo");
+            this.iconButton9.UseVisualStyleBackColor = false;
+            // 
+            // painelATBat
+            // 
+            this.painelATBat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.painelATBat.Controls.Add(this.panel27);
+            this.painelATBat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.painelATBat.Location = new System.Drawing.Point(10, 895);
+            this.painelATBat.Name = "painelATBat";
+            this.painelATBat.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            this.painelATBat.Size = new System.Drawing.Size(515, 84);
+            this.painelATBat.TabIndex = 18;
+            // 
+            // panel27
+            // 
+            this.panel27.Controls.Add(this.atBatButton);
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel27.Location = new System.Drawing.Point(10, 20);
+            this.panel27.Name = "panel27";
+            this.panel27.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
+            this.panel27.Size = new System.Drawing.Size(493, 51);
+            this.panel27.TabIndex = 18;
+            // 
+            // atBatButton
+            // 
+            this.atBatButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.atBatButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.atBatButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atBatButton.FlatAppearance.BorderSize = 0;
+            this.atBatButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.atBatButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.atBatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.atBatButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.atBatButton.ForeColor = System.Drawing.Color.White;
+            this.atBatButton.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.atBatButton.IconColor = System.Drawing.Color.Black;
+            this.atBatButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.atBatButton.Location = new System.Drawing.Point(0, 10);
+            this.atBatButton.Name = "atBatButton";
+            this.atBatButton.Size = new System.Drawing.Size(493, 36);
+            this.atBatButton.TabIndex = 14;
+            this.atBatButton.Text = "Enviar";
+            this.atBatButton.UseVisualStyleBackColor = false;
+            this.atBatButton.Click += new System.EventHandler(this.atBatButton_Click);
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.Transparent;
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel26.Location = new System.Drawing.Point(10, 845);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(515, 50);
+            this.panel26.TabIndex = 24;
             // 
             // label12
             // 
@@ -721,7 +928,7 @@
             this.iconButton14.IconColor = System.Drawing.SystemColors.Control;
             this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton14.IconSize = 12;
-            this.iconButton14.Location = new System.Drawing.Point(20, 640);
+            this.iconButton14.Location = new System.Drawing.Point(20, 630);
             this.iconButton14.Name = "iconButton14";
             this.iconButton14.Size = new System.Drawing.Size(17, 16);
             this.iconButton14.TabIndex = 22;
@@ -735,10 +942,10 @@
             this.painelATSend.Controls.Add(this.painelA);
             this.painelATSend.Controls.Add(this.painel123);
             this.painelATSend.Dock = System.Windows.Forms.DockStyle.Top;
-            this.painelATSend.Location = new System.Drawing.Point(10, 648);
+            this.painelATSend.Location = new System.Drawing.Point(10, 638);
             this.painelATSend.Name = "painelATSend";
             this.painelATSend.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.painelATSend.Size = new System.Drawing.Size(612, 207);
+            this.painelATSend.Size = new System.Drawing.Size(515, 207);
             this.painelATSend.TabIndex = 9;
             // 
             // painelB
@@ -748,7 +955,7 @@
             this.painelB.Location = new System.Drawing.Point(10, 142);
             this.painelB.Name = "painelB";
             this.painelB.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.painelB.Size = new System.Drawing.Size(590, 51);
+            this.painelB.Size = new System.Drawing.Size(493, 51);
             this.painelB.TabIndex = 17;
             // 
             // atSendButton
@@ -767,7 +974,7 @@
             this.atSendButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.atSendButton.Location = new System.Drawing.Point(0, 10);
             this.atSendButton.Name = "atSendButton";
-            this.atSendButton.Size = new System.Drawing.Size(590, 36);
+            this.atSendButton.Size = new System.Drawing.Size(493, 36);
             this.atSendButton.TabIndex = 14;
             this.atSendButton.Text = "Enviar";
             this.atSendButton.UseVisualStyleBackColor = false;
@@ -781,7 +988,7 @@
             this.painelA.Location = new System.Drawing.Point(10, 78);
             this.painelA.Name = "painelA";
             this.painelA.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.painelA.Size = new System.Drawing.Size(590, 64);
+            this.painelA.Size = new System.Drawing.Size(493, 64);
             this.painelA.TabIndex = 16;
             // 
             // label7
@@ -804,7 +1011,7 @@
             this.painel123.Location = new System.Drawing.Point(10, 20);
             this.painel123.Name = "painel123";
             this.painel123.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.painel123.Size = new System.Drawing.Size(590, 58);
+            this.painel123.Size = new System.Drawing.Size(493, 58);
             this.painel123.TabIndex = 15;
             // 
             // label6
@@ -825,7 +1032,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(10, 573);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(612, 75);
+            this.panel9.Size = new System.Drawing.Size(515, 65);
             this.panel9.TabIndex = 21;
             // 
             // panel11
@@ -844,7 +1051,7 @@
             this.panel11.Location = new System.Drawing.Point(10, 10);
             this.panel11.Name = "panel11";
             this.panel11.Padding = new System.Windows.Forms.Padding(10, 40, 10, 10);
-            this.panel11.Size = new System.Drawing.Size(612, 563);
+            this.panel11.Size = new System.Drawing.Size(515, 563);
             this.panel11.TabIndex = 22;
             // 
             // label5
@@ -867,7 +1074,7 @@
             this.panel24.Location = new System.Drawing.Point(10, 481);
             this.panel24.Name = "panel24";
             this.panel24.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
-            this.panel24.Size = new System.Drawing.Size(590, 70);
+            this.panel24.Size = new System.Drawing.Size(493, 70);
             this.panel24.TabIndex = 29;
             // 
             // panel25
@@ -877,7 +1084,7 @@
             this.panel25.Location = new System.Drawing.Point(5, 15);
             this.panel25.Name = "panel25";
             this.panel25.Padding = new System.Windows.Forms.Padding(0, 10, 0, 7);
-            this.panel25.Size = new System.Drawing.Size(578, 49);
+            this.panel25.Size = new System.Drawing.Size(481, 49);
             this.panel25.TabIndex = 4;
             // 
             // listarGruposMulticastButton
@@ -896,7 +1103,7 @@
             this.listarGruposMulticastButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.listarGruposMulticastButton.Location = new System.Drawing.Point(0, 10);
             this.listarGruposMulticastButton.Name = "listarGruposMulticastButton";
-            this.listarGruposMulticastButton.Size = new System.Drawing.Size(578, 32);
+            this.listarGruposMulticastButton.Size = new System.Drawing.Size(481, 32);
             this.listarGruposMulticastButton.TabIndex = 16;
             this.listarGruposMulticastButton.Text = "Listar Grupos";
             this.listarGruposMulticastButton.UseVisualStyleBackColor = false;
@@ -908,7 +1115,7 @@
             this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel23.Location = new System.Drawing.Point(10, 436);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(590, 45);
+            this.panel23.Size = new System.Drawing.Size(493, 45);
             this.panel23.TabIndex = 28;
             // 
             // label18
@@ -931,7 +1138,7 @@
             this.panel21.Location = new System.Drawing.Point(10, 366);
             this.panel21.Name = "panel21";
             this.panel21.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
-            this.panel21.Size = new System.Drawing.Size(590, 70);
+            this.panel21.Size = new System.Drawing.Size(493, 70);
             this.panel21.TabIndex = 26;
             // 
             // panel22
@@ -943,7 +1150,7 @@
             this.panel22.Location = new System.Drawing.Point(5, 15);
             this.panel22.Name = "panel22";
             this.panel22.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel22.Size = new System.Drawing.Size(578, 49);
+            this.panel22.Size = new System.Drawing.Size(481, 49);
             this.panel22.TabIndex = 4;
             // 
             // removerGrupoMulticastButton
@@ -960,7 +1167,7 @@
             this.removerGrupoMulticastButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.removerGrupoMulticastButton.IconColor = System.Drawing.Color.Black;
             this.removerGrupoMulticastButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.removerGrupoMulticastButton.Location = new System.Drawing.Point(461, 10);
+            this.removerGrupoMulticastButton.Location = new System.Drawing.Point(364, 10);
             this.removerGrupoMulticastButton.Name = "removerGrupoMulticastButton";
             this.removerGrupoMulticastButton.Size = new System.Drawing.Size(117, 29);
             this.removerGrupoMulticastButton.TabIndex = 16;
@@ -986,7 +1193,7 @@
             this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel19.Location = new System.Drawing.Point(10, 321);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(590, 45);
+            this.panel19.Size = new System.Drawing.Size(493, 45);
             this.panel19.TabIndex = 25;
             // 
             // label13
@@ -1013,7 +1220,7 @@
             this.panel12.Location = new System.Drawing.Point(10, 40);
             this.panel12.Name = "panel12";
             this.panel12.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
-            this.panel12.Size = new System.Drawing.Size(590, 281);
+            this.panel12.Size = new System.Drawing.Size(493, 281);
             this.panel12.TabIndex = 0;
             // 
             // panel20
@@ -1023,7 +1230,7 @@
             this.panel20.Location = new System.Drawing.Point(5, 223);
             this.panel20.Name = "panel20";
             this.panel20.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel20.Size = new System.Drawing.Size(578, 52);
+            this.panel20.Size = new System.Drawing.Size(481, 52);
             this.panel20.TabIndex = 4;
             // 
             // adicionarGrupoMulticastButton
@@ -1042,7 +1249,7 @@
             this.adicionarGrupoMulticastButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.adicionarGrupoMulticastButton.Location = new System.Drawing.Point(0, 10);
             this.adicionarGrupoMulticastButton.Name = "adicionarGrupoMulticastButton";
-            this.adicionarGrupoMulticastButton.Size = new System.Drawing.Size(578, 32);
+            this.adicionarGrupoMulticastButton.Size = new System.Drawing.Size(481, 32);
             this.adicionarGrupoMulticastButton.TabIndex = 15;
             this.adicionarGrupoMulticastButton.Text = "Adicionar Grupo";
             this.adicionarGrupoMulticastButton.UseVisualStyleBackColor = false;
@@ -1056,7 +1263,7 @@
             this.panel17.Location = new System.Drawing.Point(5, 171);
             this.panel17.Name = "panel17";
             this.panel17.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel17.Size = new System.Drawing.Size(578, 52);
+            this.panel17.Size = new System.Drawing.Size(481, 52);
             this.panel17.TabIndex = 2;
             // 
             // label16
@@ -1079,7 +1286,7 @@
             this.panel14.Location = new System.Drawing.Point(5, 119);
             this.panel14.Name = "panel14";
             this.panel14.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel14.Size = new System.Drawing.Size(578, 52);
+            this.panel14.Size = new System.Drawing.Size(481, 52);
             this.panel14.TabIndex = 1;
             // 
             // label15
@@ -1102,7 +1309,7 @@
             this.panel13.Location = new System.Drawing.Point(5, 67);
             this.panel13.Name = "panel13";
             this.panel13.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel13.Size = new System.Drawing.Size(578, 52);
+            this.panel13.Size = new System.Drawing.Size(481, 52);
             this.panel13.TabIndex = 0;
             // 
             // label14
@@ -1125,7 +1332,7 @@
             this.panel18.Location = new System.Drawing.Point(5, 15);
             this.panel18.Name = "panel18";
             this.panel18.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel18.Size = new System.Drawing.Size(578, 52);
+            this.panel18.Size = new System.Drawing.Size(481, 52);
             this.panel18.TabIndex = 3;
             // 
             // label17
@@ -1157,7 +1364,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(10, 32);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(652, 36);
+            this.panel15.Size = new System.Drawing.Size(555, 36);
             this.panel15.TabIndex = 8;
             // 
             // infoAbpToolTip
@@ -1168,6 +1375,26 @@
             this.infoAbpToolTip.IsBalloon = true;
             this.infoAbpToolTip.ReshowDelay = 100;
             this.infoAbpToolTip.ShowAlways = true;
+            // 
+            // atSleepTempoTextBox
+            // 
+            this.atSleepTempoTextBox.AutoSize = true;
+            this.atSleepTempoTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.atSleepTempoTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.atSleepTempoTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.atSleepTempoTextBox.BorderSize = 2;
+            this.atSleepTempoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atSleepTempoTextBox.ForeColor = System.Drawing.Color.Black;
+            this.atSleepTempoTextBox.Location = new System.Drawing.Point(0, 10);
+            this.atSleepTempoTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.atSleepTempoTextBox.MaxLength = 5;
+            this.atSleepTempoTextBox.Multiline = false;
+            this.atSleepTempoTextBox.Name = "atSleepTempoTextBox";
+            this.atSleepTempoTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.atSleepTempoTextBox.Size = new System.Drawing.Size(493, 29);
+            this.atSleepTempoTextBox.TabIndex = 17;
+            this.atSleepTempoTextBox.Texts = "";
+            this.atSleepTempoTextBox.UnderlinedStyle = false;
             // 
             // atSendPortaComboBox
             // 
@@ -1185,7 +1412,7 @@
             this.atSendPortaComboBox.MinimumSize = new System.Drawing.Size(272, 40);
             this.atSendPortaComboBox.Name = "atSendPortaComboBox";
             this.atSendPortaComboBox.Padding = new System.Windows.Forms.Padding(1);
-            this.atSendPortaComboBox.Size = new System.Drawing.Size(590, 49);
+            this.atSendPortaComboBox.Size = new System.Drawing.Size(493, 49);
             this.atSendPortaComboBox.TabIndex = 9;
             this.atSendPortaComboBox.Texts = "";
             // 
@@ -1204,7 +1431,7 @@
             this.atSendTextoTextBox.Multiline = false;
             this.atSendTextoTextBox.Name = "atSendTextoTextBox";
             this.atSendTextoTextBox.Padding = new System.Windows.Forms.Padding(12, 13, 3, 3);
-            this.atSendTextoTextBox.Size = new System.Drawing.Size(590, 32);
+            this.atSendTextoTextBox.Size = new System.Drawing.Size(493, 32);
             this.atSendTextoTextBox.TabIndex = 7;
             this.atSendTextoTextBox.Texts = "";
             this.atSendTextoTextBox.UnderlinedStyle = false;
@@ -1224,7 +1451,7 @@
             this.multicastAddressRemoverTextBox.Multiline = false;
             this.multicastAddressRemoverTextBox.Name = "multicastAddressRemoverTextBox";
             this.multicastAddressRemoverTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.multicastAddressRemoverTextBox.Size = new System.Drawing.Size(578, 29);
+            this.multicastAddressRemoverTextBox.Size = new System.Drawing.Size(481, 29);
             this.multicastAddressRemoverTextBox.TabIndex = 17;
             this.multicastAddressRemoverTextBox.Texts = "";
             this.multicastAddressRemoverTextBox.UnderlinedStyle = false;
@@ -1244,7 +1471,7 @@
             this.multicastAppskeyTextBox.Multiline = false;
             this.multicastAppskeyTextBox.Name = "multicastAppskeyTextBox";
             this.multicastAppskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.multicastAppskeyTextBox.Size = new System.Drawing.Size(578, 29);
+            this.multicastAppskeyTextBox.Size = new System.Drawing.Size(481, 29);
             this.multicastAppskeyTextBox.TabIndex = 10;
             this.multicastAppskeyTextBox.Texts = "";
             this.multicastAppskeyTextBox.UnderlinedStyle = false;
@@ -1264,7 +1491,7 @@
             this.multicastNwkskeyTextBox.Multiline = false;
             this.multicastNwkskeyTextBox.Name = "multicastNwkskeyTextBox";
             this.multicastNwkskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.multicastNwkskeyTextBox.Size = new System.Drawing.Size(578, 29);
+            this.multicastNwkskeyTextBox.Size = new System.Drawing.Size(481, 29);
             this.multicastNwkskeyTextBox.TabIndex = 9;
             this.multicastNwkskeyTextBox.Texts = "";
             this.multicastNwkskeyTextBox.UnderlinedStyle = false;
@@ -1284,7 +1511,7 @@
             this.multicastAddressTextBox.Multiline = false;
             this.multicastAddressTextBox.Name = "multicastAddressTextBox";
             this.multicastAddressTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.multicastAddressTextBox.Size = new System.Drawing.Size(578, 29);
+            this.multicastAddressTextBox.Size = new System.Drawing.Size(481, 29);
             this.multicastAddressTextBox.TabIndex = 8;
             this.multicastAddressTextBox.Texts = "";
             this.multicastAddressTextBox.UnderlinedStyle = false;
@@ -1305,7 +1532,7 @@
             this.multicastClasseComboBox.MinimumSize = new System.Drawing.Size(233, 35);
             this.multicastClasseComboBox.Name = "multicastClasseComboBox";
             this.multicastClasseComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.multicastClasseComboBox.Size = new System.Drawing.Size(578, 35);
+            this.multicastClasseComboBox.Size = new System.Drawing.Size(481, 35);
             this.multicastClasseComboBox.TabIndex = 4;
             this.multicastClasseComboBox.Texts = "";
             // 
@@ -1341,7 +1568,7 @@
             this.numeroRetentativasComboBox.MinimumSize = new System.Drawing.Size(317, 46);
             this.numeroRetentativasComboBox.Name = "numeroRetentativasComboBox";
             this.numeroRetentativasComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.numeroRetentativasComboBox.Size = new System.Drawing.Size(590, 46);
+            this.numeroRetentativasComboBox.Size = new System.Drawing.Size(493, 46);
             this.numeroRetentativasComboBox.TabIndex = 4;
             this.numeroRetentativasComboBox.Texts = "";
             // 
@@ -1361,7 +1588,7 @@
             this.classeComboBox.MinimumSize = new System.Drawing.Size(233, 35);
             this.classeComboBox.Name = "classeComboBox";
             this.classeComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.classeComboBox.Size = new System.Drawing.Size(612, 38);
+            this.classeComboBox.Size = new System.Drawing.Size(515, 38);
             this.classeComboBox.TabIndex = 3;
             this.classeComboBox.Texts = "";
             // 
@@ -1380,7 +1607,7 @@
             this.deviceEuiTextBox.Multiline = false;
             this.deviceEuiTextBox.Name = "deviceEuiTextBox";
             this.deviceEuiTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.deviceEuiTextBox.Size = new System.Drawing.Size(612, 29);
+            this.deviceEuiTextBox.Size = new System.Drawing.Size(515, 29);
             this.deviceEuiTextBox.TabIndex = 7;
             this.deviceEuiTextBox.Texts = "";
             this.deviceEuiTextBox.UnderlinedStyle = false;
@@ -1400,7 +1627,7 @@
             this.nwkskeyTextBox.Multiline = false;
             this.nwkskeyTextBox.Name = "nwkskeyTextBox";
             this.nwkskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.nwkskeyTextBox.Size = new System.Drawing.Size(612, 29);
+            this.nwkskeyTextBox.Size = new System.Drawing.Size(515, 29);
             this.nwkskeyTextBox.TabIndex = 7;
             this.nwkskeyTextBox.Texts = "";
             this.nwkskeyTextBox.UnderlinedStyle = false;
@@ -1420,7 +1647,7 @@
             this.appskeyTextBox.Multiline = false;
             this.appskeyTextBox.Name = "appskeyTextBox";
             this.appskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.appskeyTextBox.Size = new System.Drawing.Size(612, 29);
+            this.appskeyTextBox.Size = new System.Drawing.Size(515, 29);
             this.appskeyTextBox.TabIndex = 7;
             this.appskeyTextBox.Texts = "";
             this.appskeyTextBox.UnderlinedStyle = false;
@@ -1440,7 +1667,7 @@
             this.deviceAddressTextBox.Multiline = false;
             this.deviceAddressTextBox.Name = "deviceAddressTextBox";
             this.deviceAddressTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.deviceAddressTextBox.Size = new System.Drawing.Size(612, 29);
+            this.deviceAddressTextBox.Size = new System.Drawing.Size(515, 29);
             this.deviceAddressTextBox.TabIndex = 6;
             this.deviceAddressTextBox.Texts = "";
             this.deviceAddressTextBox.UnderlinedStyle = false;
@@ -1461,7 +1688,7 @@
             this.comboBoxCOM.MinimumSize = new System.Drawing.Size(370, 53);
             this.comboBoxCOM.Name = "comboBoxCOM";
             this.comboBoxCOM.Padding = new System.Windows.Forms.Padding(1);
-            this.comboBoxCOM.Size = new System.Drawing.Size(444, 53);
+            this.comboBoxCOM.Size = new System.Drawing.Size(370, 53);
             this.comboBoxCOM.TabIndex = 15;
             this.comboBoxCOM.Texts = "";
             // 
@@ -1471,7 +1698,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(689, 533);
+            this.ClientSize = new System.Drawing.Size(592, 539);
             this.ControlBox = false;
             this.Controls.Add(this.comandosATGroup);
             this.Controls.Add(this.panel8);
@@ -1506,6 +1733,11 @@
             this.comandosATGroup.PerformLayout();
             this.painelAT.ResumeLayout(false);
             this.painelAT.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel30.ResumeLayout(false);
+            this.panel30.PerformLayout();
+            this.painelATBat.ResumeLayout(false);
+            this.panel27.ResumeLayout(false);
             this.painelATSend.ResumeLayout(false);
             this.painelB.ResumeLayout(false);
             this.painelA.ResumeLayout(false);
@@ -1625,5 +1857,19 @@
         private System.Windows.Forms.Panel panel23;
         private FontAwesome.Sharp.IconButton iconButton14;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private FontAwesome.Sharp.IconButton iconButton9;
+        private System.Windows.Forms.Panel painelATBat;
+        private System.Windows.Forms.Panel panel27;
+        private FontAwesome.Sharp.IconButton atBatButton;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Label label22;
+        private FontAwesome.Sharp.IconButton iconButton13;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Panel panel30;
+        private FontAwesome.Sharp.IconButton atSleepButton;
+        private System.Windows.Forms.Label label23;
+        private CustomControls.CTextBox atSleepTempoTextBox;
+        private System.Windows.Forms.Panel panel28;
     }
 }

@@ -399,6 +399,55 @@ namespace LoraInterface.Forms
             }
         }
 
+        //AT+BAT
+        private void atBatButton_Click(object sender, EventArgs e)
+        {
+            if (!MainForm.formInstance.ColapsarConsole())
+            {
+                MainForm.formInstance.ColapsarConsole();
+
+            }
+
+            MainForm.formInstance.console.AppendText($"AT+BAT=?" + Environment.NewLine);
+
+            try
+            {
+                serialPort.WriteLine($"AT+BAT=?");
+            }
+            catch (Exception ex)
+            {
+                MainForm.formInstance.console.AppendText(ex.Message + Environment.NewLine);
+            }
+
+        }
+
+        //AT+SLEEP
+        private void atSleepButton_Click(object sender, EventArgs e)
+        {
+
+            //Atribuindo o valor de tempo de sleep. Se o campo estiver vazio, considera tempo igual a 0.
+            string tempo = atSleepTempoTextBox.Texts.Length > 0 ? atSleepTempoTextBox.Texts : "0";
+
+            //Compara se o valor da string pode ser convertido para um tipo numérico inteiro.
+            if (int.TryParse(tempo, out _))
+            {
+                if (!MainForm.formInstance.ColapsarConsole())
+                {
+                    MainForm.formInstance.ColapsarConsole();
+
+                }
+
+                serialPort.WriteLine($"AT+SLEEP={tempo}");
+
+                MainForm.formInstance.console.AppendText($"AT+SLEEP={tempo}" + Environment.NewLine);
+
+            } else
+            {
+                new CustomDialog("Erro!", "O valor de tempo do modo sleep não é um valor numérico válido.", Color.OrangeRed).ShowDialog();
+
+            }
+        }
+
         //Evento assíncrono serial port: retorna dados da placa à partir do momento em que um comando
         //AT é enviado ou um programa upado está rodando e escrevendo algo.
         private static void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
