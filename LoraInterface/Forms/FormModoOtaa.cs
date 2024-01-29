@@ -79,6 +79,9 @@ namespace LoraInterface.Forms
             }
             atSendPortaComboBox.SelectedIndex = 7;
 
+            //Inicializando AT+MASK Channel Mask
+            atMaskChannelMaskComboBox.SelectedIndex = 1;
+
             //Definindo classes de conexão
             classeComboBox.Items.Add("A");
             classeComboBox.Items.Add("B");
@@ -446,6 +449,29 @@ namespace LoraInterface.Forms
             {
                 new CustomDialog("Erro!", "O valor de tempo do modo sleep não é um valor numérico válido.", Color.OrangeRed).ShowDialog();
 
+            }
+        }
+
+        //AT+MASK
+        private void atMaskButton_Click(object sender, EventArgs e)
+        {
+            if (!MainForm.formInstance.ColapsarConsole())
+            {
+                MainForm.formInstance.ColapsarConsole();
+
+            }
+
+            string channelMask = atMaskChannelMaskComboBox.SelectedItem.ToString();
+
+            MainForm.formInstance.console.AppendText($"AT+MASK={channelMask}" + Environment.NewLine);
+
+            try
+            {
+                serialPort.WriteLine($"AT+MASK={channelMask}");
+            }
+            catch (Exception ex)
+            {
+                MainForm.formInstance.console.AppendText(ex.Message + Environment.NewLine);
             }
         }
 
