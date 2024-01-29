@@ -231,6 +231,7 @@ namespace LoraInterface.Forms
                 serialPort.WriteLine($"AT+RETY={rety}");
 
                 serialPort.WriteLine($"AT+BAND=6");
+                serialPort.WriteLine($"AT+MASK=0001");
 
                 serialPort.BaseStream.Flush();
                 Thread.Sleep(500);
