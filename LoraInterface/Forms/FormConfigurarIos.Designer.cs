@@ -28,21 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // iconButton1
+            // label11
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.Tomato;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(203, 237);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(164, 78);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Teste";
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.label11.AutoSize = true;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(10, 10);
+            this.label11.Name = "label11";
+            this.label11.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.label11.Size = new System.Drawing.Size(290, 22);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Configurar modos e zonas dos IOs";
             // 
             // FormConfigurarIos
             // 
@@ -51,15 +50,16 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(582, 597);
             this.ControlBox = false;
-            this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.label11);
             this.Name = "FormConfigurarIos";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label label11;
     }
 }

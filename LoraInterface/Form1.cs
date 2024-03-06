@@ -25,6 +25,7 @@ namespace LoraInterface
         public IconButton acessoAbrir;
         public IconButton acessoModoAbp;
         public IconButton acessoModoOtaa;
+        public IconButton acessoConfigurarIos;
         public SerialPort serialPort = new SerialPort();
         public FlowLayoutPanel acessoSideBar;
         public int modoSelecionado = 0;
@@ -54,6 +55,7 @@ namespace LoraInterface
             acessoAbrir = abrirButton;
             acessoModoAbp = modoAbpButton;
             acessoModoOtaa = modoOtaaButton;
+            acessoConfigurarIos = configurarIosButton;
             acessoSideBar = sideBarPanel;
             
         }
