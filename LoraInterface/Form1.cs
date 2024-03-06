@@ -22,6 +22,7 @@ namespace LoraInterface
 
         public static MainForm formInstance;
         public RichTextBox console;
+        public IconButton acessoSalvar;
         public IconButton acessoAbrir;
         public IconButton acessoModoAbp;
         public IconButton acessoModoOtaa;
@@ -52,6 +53,7 @@ namespace LoraInterface
             //Tornando o acesso ao console e demais controles públicos/visíveis para outros forms.
             formInstance = this;
             console = consolePanel;
+            acessoSalvar = salvarButton;
             acessoAbrir = abrirButton;
             acessoModoAbp = modoAbpButton;
             acessoModoOtaa = modoOtaaButton;
