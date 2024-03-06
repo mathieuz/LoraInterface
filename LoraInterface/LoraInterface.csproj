@@ -80,6 +80,12 @@
     <Compile Include="Forms\CustomDialog.Designer.cs">
       <DependentUpon>CustomDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormConfigurarIos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormConfigurarIos.Designer.cs">
+      <DependentUpon>FormConfigurarIos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormModoAbp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomDialog.resx">
       <DependentUpon>CustomDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormConfigurarIos.resx">
+      <DependentUpon>FormConfigurarIos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormModoAbp.resx">
       <DependentUpon>FormModoAbp.cs</DependentUpon>

@@ -52,6 +52,7 @@
             this.topBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.infoFormToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.configurarIosButton = new FontAwesome.Sharp.IconButton();
             this.sideBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,13 +65,14 @@
             // 
             // sideBarPanel
             // 
-            this.sideBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.sideBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(178)))), ((int)(((byte)(19)))));
             this.sideBarPanel.Controls.Add(this.panel1);
             this.sideBarPanel.Controls.Add(this.salvarButton);
             this.sideBarPanel.Controls.Add(this.abrirButton);
             this.sideBarPanel.Controls.Add(this.panel4);
             this.sideBarPanel.Controls.Add(this.modoAbpButton);
             this.sideBarPanel.Controls.Add(this.modoOtaaButton);
+            this.sideBarPanel.Controls.Add(this.configurarIosButton);
             this.sideBarPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBarPanel.Location = new System.Drawing.Point(0, 39);
             this.sideBarPanel.Name = "sideBarPanel";
@@ -433,6 +435,33 @@
             this.infoFormToolTip.ReshowDelay = 100;
             this.infoFormToolTip.ShowAlways = true;
             // 
+            // configurarIosButton
+            // 
+            this.configurarIosButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.configurarIosButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.configurarIosButton.FlatAppearance.BorderSize = 0;
+            this.configurarIosButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Goldenrod;
+            this.configurarIosButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.configurarIosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.configurarIosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.configurarIosButton.ForeColor = System.Drawing.Color.White;
+            this.configurarIosButton.IconChar = FontAwesome.Sharp.IconChar.Gear;
+            this.configurarIosButton.IconColor = System.Drawing.Color.White;
+            this.configurarIosButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.configurarIosButton.IconSize = 25;
+            this.configurarIosButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.configurarIosButton.Location = new System.Drawing.Point(0, 232);
+            this.configurarIosButton.Margin = new System.Windows.Forms.Padding(0);
+            this.configurarIosButton.Name = "configurarIosButton";
+            this.configurarIosButton.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.configurarIosButton.Size = new System.Drawing.Size(180, 36);
+            this.configurarIosButton.TabIndex = 8;
+            this.configurarIosButton.Tag = "Configurar IOs";
+            this.configurarIosButton.Text = "Configurar IOs";
+            this.infoFormToolTip.SetToolTip(this.configurarIosButton, "Configurar modos e zonas dos IOs");
+            this.configurarIosButton.UseVisualStyleBackColor = true;
+            this.configurarIosButton.Click += new System.EventHandler(this.configurarIosButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -484,6 +513,7 @@
         private FontAwesome.Sharp.IconButton abrirButton;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ToolTip infoFormToolTip;
+        private FontAwesome.Sharp.IconButton configurarIosButton;
     }
 }
 
