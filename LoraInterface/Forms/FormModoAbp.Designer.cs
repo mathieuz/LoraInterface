@@ -33,39 +33,31 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.comboBoxCOM = new LoraInterface.CustomControls.CComboBox();
             this.conectarCOMButton = new FontAwesome.Sharp.IconButton();
             this.chavesDeAtivacaoGroup = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.deviceEuiTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.nwkskeyTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.appskeyTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.deviceAddressTextBox = new LoraInterface.CustomControls.CTextBox();
             this.configuracoesConexaoGroup = new System.Windows.Forms.GroupBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.conectarLoraButton = new FontAwesome.Sharp.IconButton();
             this.modoDeConfirmacaoGroup = new System.Windows.Forms.Panel();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.modoConfirmacaoToggle = new LoraInterface.CustomControls.CToggle();
             this.label8 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.numeroRetentativasComboBox = new LoraInterface.CustomControls.CComboBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.label10 = new System.Windows.Forms.Label();
-            this.classeComboBox = new LoraInterface.CustomControls.CComboBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.comandosATGroup = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -81,7 +73,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.panel32 = new System.Windows.Forms.Panel();
             this.panel33 = new System.Windows.Forms.Panel();
-            this.atMaskChannelMaskComboBox = new LoraInterface.CustomControls.CComboBox();
             this.atMaskButton = new FontAwesome.Sharp.IconButton();
             this.panel31 = new System.Windows.Forms.Panel();
             this.iconButton13 = new FontAwesome.Sharp.IconButton();
@@ -89,7 +80,6 @@
             this.panel30 = new System.Windows.Forms.Panel();
             this.atSleepButton = new FontAwesome.Sharp.IconButton();
             this.label23 = new System.Windows.Forms.Label();
-            this.atSleepTempoTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel28 = new System.Windows.Forms.Panel();
             this.iconButton9 = new FontAwesome.Sharp.IconButton();
             this.painelATBat = new System.Windows.Forms.Panel();
@@ -103,10 +93,8 @@
             this.atSendButton = new FontAwesome.Sharp.IconButton();
             this.painelA = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.atSendPortaComboBox = new LoraInterface.CustomControls.CComboBox();
             this.painel123 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.atSendTextoTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -119,7 +107,6 @@
             this.panel22 = new System.Windows.Forms.Panel();
             this.removerGrupoMulticastButton = new FontAwesome.Sharp.IconButton();
             this.label19 = new System.Windows.Forms.Label();
-            this.multicastAddressRemoverTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -127,19 +114,32 @@
             this.adicionarGrupoMulticastButton = new FontAwesome.Sharp.IconButton();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.multicastAppskeyTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.multicastNwkskeyTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.multicastAddressTextBox = new LoraInterface.CustomControls.CTextBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.multicastClasseComboBox = new LoraInterface.CustomControls.CComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.infoAbpToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.atMaskChannelMaskComboBox = new LoraInterface.CustomControls.CComboBox();
+            this.atSleepTempoTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.atSendPortaComboBox = new LoraInterface.CustomControls.CComboBox();
+            this.atSendTextoTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.multicastAddressRemoverTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.multicastAppskeyTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.multicastNwkskeyTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.multicastAddressTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.multicastClasseComboBox = new LoraInterface.CustomControls.CComboBox();
+            this.modoConfirmacaoToggle = new LoraInterface.CustomControls.CToggle();
+            this.numeroRetentativasComboBox = new LoraInterface.CustomControls.CComboBox();
+            this.classeComboBox = new LoraInterface.CustomControls.CComboBox();
+            this.deviceEuiTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.nwkskeyTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.appskeyTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.deviceAddressTextBox = new LoraInterface.CustomControls.CTextBox();
+            this.comboBoxCOM = new LoraInterface.CustomControls.CComboBox();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -193,7 +193,7 @@
             this.groupBox1.Location = new System.Drawing.Point(10, 68);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox1.Size = new System.Drawing.Size(691, 108);
+            this.groupBox1.Size = new System.Drawing.Size(585, 108);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Conectar COM";
@@ -206,7 +206,7 @@
             this.panel5.Location = new System.Drawing.Point(10, 24);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(10);
-            this.panel5.Size = new System.Drawing.Size(671, 74);
+            this.panel5.Size = new System.Drawing.Size(565, 74);
             this.panel5.TabIndex = 12;
             // 
             // panel6
@@ -216,28 +216,8 @@
             this.panel6.Location = new System.Drawing.Point(10, 10);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.panel6.Size = new System.Drawing.Size(488, 54);
+            this.panel6.Size = new System.Drawing.Size(382, 54);
             this.panel6.TabIndex = 13;
-            // 
-            // comboBoxCOM
-            // 
-            this.comboBoxCOM.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.comboBoxCOM.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboBoxCOM.BorderSize = 1;
-            this.comboBoxCOM.Dock = System.Windows.Forms.DockStyle.Top;
-            this.comboBoxCOM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.comboBoxCOM.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBoxCOM.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboBoxCOM.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.comboBoxCOM.ListTextColor = System.Drawing.Color.DimGray;
-            this.comboBoxCOM.Location = new System.Drawing.Point(0, 0);
-            this.comboBoxCOM.Margin = new System.Windows.Forms.Padding(7, 3, 7, 3);
-            this.comboBoxCOM.MinimumSize = new System.Drawing.Size(370, 53);
-            this.comboBoxCOM.Name = "comboBoxCOM";
-            this.comboBoxCOM.Padding = new System.Windows.Forms.Padding(1);
-            this.comboBoxCOM.Size = new System.Drawing.Size(483, 53);
-            this.comboBoxCOM.TabIndex = 15;
-            this.comboBoxCOM.Texts = "";
             // 
             // conectarCOMButton
             // 
@@ -253,7 +233,7 @@
             this.conectarCOMButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.conectarCOMButton.IconColor = System.Drawing.Color.Black;
             this.conectarCOMButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.conectarCOMButton.Location = new System.Drawing.Point(498, 10);
+            this.conectarCOMButton.Location = new System.Drawing.Point(392, 10);
             this.conectarCOMButton.Name = "conectarCOMButton";
             this.conectarCOMButton.Size = new System.Drawing.Size(163, 54);
             this.conectarCOMButton.TabIndex = 12;
@@ -275,7 +255,7 @@
             this.chavesDeAtivacaoGroup.Location = new System.Drawing.Point(10, 176);
             this.chavesDeAtivacaoGroup.Name = "chavesDeAtivacaoGroup";
             this.chavesDeAtivacaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.chavesDeAtivacaoGroup.Size = new System.Drawing.Size(691, 266);
+            this.chavesDeAtivacaoGroup.Size = new System.Drawing.Size(585, 266);
             this.chavesDeAtivacaoGroup.TabIndex = 3;
             this.chavesDeAtivacaoGroup.TabStop = false;
             this.chavesDeAtivacaoGroup.Text = "Chaves de Ativação";
@@ -289,7 +269,7 @@
             this.panel1.Location = new System.Drawing.Point(10, 198);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
-            this.panel1.Size = new System.Drawing.Size(671, 58);
+            this.panel1.Size = new System.Drawing.Size(565, 58);
             this.panel1.TabIndex = 14;
             // 
             // iconButton4
@@ -323,26 +303,6 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "DEVICE EUI";
             // 
-            // deviceEuiTextBox
-            // 
-            this.deviceEuiTextBox.AutoSize = true;
-            this.deviceEuiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.deviceEuiTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.deviceEuiTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.deviceEuiTextBox.BorderSize = 2;
-            this.deviceEuiTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.deviceEuiTextBox.ForeColor = System.Drawing.Color.Black;
-            this.deviceEuiTextBox.Location = new System.Drawing.Point(10, 10);
-            this.deviceEuiTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.deviceEuiTextBox.MaxLength = 16;
-            this.deviceEuiTextBox.Multiline = false;
-            this.deviceEuiTextBox.Name = "deviceEuiTextBox";
-            this.deviceEuiTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.deviceEuiTextBox.Size = new System.Drawing.Size(651, 29);
-            this.deviceEuiTextBox.TabIndex = 7;
-            this.deviceEuiTextBox.Texts = "";
-            this.deviceEuiTextBox.UnderlinedStyle = false;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.iconButton3);
@@ -352,7 +312,7 @@
             this.panel2.Location = new System.Drawing.Point(10, 140);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel2.Size = new System.Drawing.Size(671, 58);
+            this.panel2.Size = new System.Drawing.Size(565, 58);
             this.panel2.TabIndex = 13;
             // 
             // iconButton3
@@ -386,26 +346,6 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "NWKSKEY";
             // 
-            // nwkskeyTextBox
-            // 
-            this.nwkskeyTextBox.AutoSize = true;
-            this.nwkskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.nwkskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.nwkskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.nwkskeyTextBox.BorderSize = 2;
-            this.nwkskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nwkskeyTextBox.ForeColor = System.Drawing.Color.Black;
-            this.nwkskeyTextBox.Location = new System.Drawing.Point(10, 10);
-            this.nwkskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.nwkskeyTextBox.MaxLength = 32;
-            this.nwkskeyTextBox.Multiline = false;
-            this.nwkskeyTextBox.Name = "nwkskeyTextBox";
-            this.nwkskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.nwkskeyTextBox.Size = new System.Drawing.Size(651, 29);
-            this.nwkskeyTextBox.TabIndex = 7;
-            this.nwkskeyTextBox.Texts = "";
-            this.nwkskeyTextBox.UnderlinedStyle = false;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.iconButton2);
@@ -415,7 +355,7 @@
             this.panel3.Location = new System.Drawing.Point(10, 82);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(10);
-            this.panel3.Size = new System.Drawing.Size(671, 58);
+            this.panel3.Size = new System.Drawing.Size(565, 58);
             this.panel3.TabIndex = 12;
             // 
             // iconButton2
@@ -449,26 +389,6 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "APPSKEY";
             // 
-            // appskeyTextBox
-            // 
-            this.appskeyTextBox.AutoSize = true;
-            this.appskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.appskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.appskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.appskeyTextBox.BorderSize = 2;
-            this.appskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.appskeyTextBox.ForeColor = System.Drawing.Color.Black;
-            this.appskeyTextBox.Location = new System.Drawing.Point(10, 10);
-            this.appskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.appskeyTextBox.MaxLength = 32;
-            this.appskeyTextBox.Multiline = false;
-            this.appskeyTextBox.Name = "appskeyTextBox";
-            this.appskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.appskeyTextBox.Size = new System.Drawing.Size(651, 29);
-            this.appskeyTextBox.TabIndex = 7;
-            this.appskeyTextBox.Texts = "";
-            this.appskeyTextBox.UnderlinedStyle = false;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.iconButton1);
@@ -478,7 +398,7 @@
             this.panel4.Location = new System.Drawing.Point(10, 24);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(10);
-            this.panel4.Size = new System.Drawing.Size(671, 58);
+            this.panel4.Size = new System.Drawing.Size(565, 58);
             this.panel4.TabIndex = 11;
             // 
             // iconButton1
@@ -512,26 +432,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "DEVICE ADDRESS";
             // 
-            // deviceAddressTextBox
-            // 
-            this.deviceAddressTextBox.AutoSize = true;
-            this.deviceAddressTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.deviceAddressTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.deviceAddressTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.deviceAddressTextBox.BorderSize = 2;
-            this.deviceAddressTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.deviceAddressTextBox.ForeColor = System.Drawing.Color.Black;
-            this.deviceAddressTextBox.Location = new System.Drawing.Point(10, 10);
-            this.deviceAddressTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.deviceAddressTextBox.MaxLength = 8;
-            this.deviceAddressTextBox.Multiline = false;
-            this.deviceAddressTextBox.Name = "deviceAddressTextBox";
-            this.deviceAddressTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.deviceAddressTextBox.Size = new System.Drawing.Size(651, 29);
-            this.deviceAddressTextBox.TabIndex = 6;
-            this.deviceAddressTextBox.Texts = "";
-            this.deviceAddressTextBox.UnderlinedStyle = false;
-            // 
             // configuracoesConexaoGroup
             // 
             this.configuracoesConexaoGroup.AutoSize = true;
@@ -545,7 +445,7 @@
             this.configuracoesConexaoGroup.Location = new System.Drawing.Point(10, 442);
             this.configuracoesConexaoGroup.Name = "configuracoesConexaoGroup";
             this.configuracoesConexaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.configuracoesConexaoGroup.Size = new System.Drawing.Size(691, 247);
+            this.configuracoesConexaoGroup.Size = new System.Drawing.Size(585, 247);
             this.configuracoesConexaoGroup.TabIndex = 4;
             this.configuracoesConexaoGroup.TabStop = false;
             this.configuracoesConexaoGroup.Text = "Configurações de Conexão";
@@ -557,7 +457,7 @@
             this.panel7.Location = new System.Drawing.Point(10, 181);
             this.panel7.Name = "panel7";
             this.panel7.Padding = new System.Windows.Forms.Padding(10);
-            this.panel7.Size = new System.Drawing.Size(671, 56);
+            this.panel7.Size = new System.Drawing.Size(565, 56);
             this.panel7.TabIndex = 12;
             // 
             // conectarLoraButton
@@ -576,7 +476,7 @@
             this.conectarLoraButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.conectarLoraButton.Location = new System.Drawing.Point(10, 10);
             this.conectarLoraButton.Name = "conectarLoraButton";
-            this.conectarLoraButton.Size = new System.Drawing.Size(651, 36);
+            this.conectarLoraButton.Size = new System.Drawing.Size(545, 36);
             this.conectarLoraButton.TabIndex = 13;
             this.conectarLoraButton.Text = "Conectar";
             this.conectarLoraButton.UseVisualStyleBackColor = false;
@@ -592,7 +492,7 @@
             this.modoDeConfirmacaoGroup.Location = new System.Drawing.Point(10, 82);
             this.modoDeConfirmacaoGroup.Name = "modoDeConfirmacaoGroup";
             this.modoDeConfirmacaoGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.modoDeConfirmacaoGroup.Size = new System.Drawing.Size(671, 99);
+            this.modoDeConfirmacaoGroup.Size = new System.Drawing.Size(565, 99);
             this.modoDeConfirmacaoGroup.TabIndex = 8;
             // 
             // iconButton7
@@ -613,22 +513,6 @@
             this.iconButton7.TabIndex = 20;
             this.infoAbpToolTip.SetToolTip(this.iconButton7, "Ao habilitar, você pode determinar um número de tentativas de envio do uplink\r\n");
             this.iconButton7.UseVisualStyleBackColor = false;
-            // 
-            // modoConfirmacaoToggle
-            // 
-            this.modoConfirmacaoToggle.AutoSize = true;
-            this.modoConfirmacaoToggle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.modoConfirmacaoToggle.Location = new System.Drawing.Point(220, 2);
-            this.modoConfirmacaoToggle.MinimumSize = new System.Drawing.Size(42, 18);
-            this.modoConfirmacaoToggle.Name = "modoConfirmacaoToggle";
-            this.modoConfirmacaoToggle.OffBackColor = System.Drawing.Color.Gray;
-            this.modoConfirmacaoToggle.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.modoConfirmacaoToggle.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.modoConfirmacaoToggle.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.modoConfirmacaoToggle.Size = new System.Drawing.Size(42, 18);
-            this.modoConfirmacaoToggle.TabIndex = 12;
-            this.modoConfirmacaoToggle.UseVisualStyleBackColor = true;
-            this.modoConfirmacaoToggle.CheckedChanged += new System.EventHandler(this.cToggle1_CheckedChanged);
             // 
             // label8
             // 
@@ -651,7 +535,7 @@
             this.panel16.Location = new System.Drawing.Point(10, 10);
             this.panel16.Name = "panel16";
             this.panel16.Padding = new System.Windows.Forms.Padding(10, 25, 10, 10);
-            this.panel16.Size = new System.Drawing.Size(651, 79);
+            this.panel16.Size = new System.Drawing.Size(545, 79);
             this.panel16.TabIndex = 13;
             // 
             // label9
@@ -666,26 +550,6 @@
             this.label9.TabIndex = 11;
             this.label9.Text = "Número de Tentativas";
             // 
-            // numeroRetentativasComboBox
-            // 
-            this.numeroRetentativasComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.numeroRetentativasComboBox.BorderColor = System.Drawing.Color.Gainsboro;
-            this.numeroRetentativasComboBox.BorderSize = 2;
-            this.numeroRetentativasComboBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.numeroRetentativasComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.numeroRetentativasComboBox.ForeColor = System.Drawing.Color.DimGray;
-            this.numeroRetentativasComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.numeroRetentativasComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.numeroRetentativasComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.numeroRetentativasComboBox.Location = new System.Drawing.Point(10, 25);
-            this.numeroRetentativasComboBox.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
-            this.numeroRetentativasComboBox.MinimumSize = new System.Drawing.Size(317, 46);
-            this.numeroRetentativasComboBox.Name = "numeroRetentativasComboBox";
-            this.numeroRetentativasComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.numeroRetentativasComboBox.Size = new System.Drawing.Size(629, 46);
-            this.numeroRetentativasComboBox.TabIndex = 4;
-            this.numeroRetentativasComboBox.Texts = "";
-            // 
             // panel10
             // 
             this.panel10.Controls.Add(this.iconButton6);
@@ -695,7 +559,7 @@
             this.panel10.Location = new System.Drawing.Point(10, 24);
             this.panel10.Name = "panel10";
             this.panel10.Padding = new System.Windows.Forms.Padding(10);
-            this.panel10.Size = new System.Drawing.Size(671, 58);
+            this.panel10.Size = new System.Drawing.Size(565, 58);
             this.panel10.TabIndex = 7;
             // 
             // iconButton6
@@ -729,32 +593,12 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "CLASSE";
             // 
-            // classeComboBox
-            // 
-            this.classeComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.classeComboBox.BorderColor = System.Drawing.Color.Gainsboro;
-            this.classeComboBox.BorderSize = 2;
-            this.classeComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.classeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.classeComboBox.ForeColor = System.Drawing.Color.DimGray;
-            this.classeComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.classeComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.classeComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.classeComboBox.Location = new System.Drawing.Point(10, 10);
-            this.classeComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.classeComboBox.MinimumSize = new System.Drawing.Size(233, 35);
-            this.classeComboBox.Name = "classeComboBox";
-            this.classeComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.classeComboBox.Size = new System.Drawing.Size(651, 38);
-            this.classeComboBox.TabIndex = 3;
-            this.classeComboBox.Texts = "";
-            // 
             // panel8
             // 
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(10, 689);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(691, 36);
+            this.panel8.Size = new System.Drawing.Size(585, 36);
             this.panel8.TabIndex = 5;
             // 
             // comandosATGroup
@@ -774,7 +618,7 @@
             this.comandosATGroup.Location = new System.Drawing.Point(10, 725);
             this.comandosATGroup.Name = "comandosATGroup";
             this.comandosATGroup.Padding = new System.Windows.Forms.Padding(10);
-            this.comandosATGroup.Size = new System.Drawing.Size(691, 1292);
+            this.comandosATGroup.Size = new System.Drawing.Size(585, 1292);
             this.comandosATGroup.TabIndex = 6;
             this.comandosATGroup.TabStop = false;
             this.comandosATGroup.Text = "Comandos AT";
@@ -915,7 +759,7 @@
             this.painelAT.Location = new System.Drawing.Point(10, 24);
             this.painelAT.Name = "painelAT";
             this.painelAT.Padding = new System.Windows.Forms.Padding(10);
-            this.painelAT.Size = new System.Drawing.Size(671, 1258);
+            this.painelAT.Size = new System.Drawing.Size(565, 1258);
             this.painelAT.TabIndex = 8;
             // 
             // iconButton15
@@ -969,7 +813,7 @@
             this.panel32.Location = new System.Drawing.Point(10, 1163);
             this.panel32.Name = "panel32";
             this.panel32.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.panel32.Size = new System.Drawing.Size(651, 84);
+            this.panel32.Size = new System.Drawing.Size(545, 84);
             this.panel32.TabIndex = 30;
             // 
             // panel33
@@ -980,42 +824,8 @@
             this.panel33.Location = new System.Drawing.Point(10, 20);
             this.panel33.Name = "panel33";
             this.panel33.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel33.Size = new System.Drawing.Size(629, 56);
+            this.panel33.Size = new System.Drawing.Size(523, 56);
             this.panel33.TabIndex = 5;
-            // 
-            // atMaskChannelMaskComboBox
-            // 
-            this.atMaskChannelMaskComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.atMaskChannelMaskComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.atMaskChannelMaskComboBox.BorderSize = 2;
-            this.atMaskChannelMaskComboBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.atMaskChannelMaskComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.atMaskChannelMaskComboBox.ForeColor = System.Drawing.Color.DimGray;
-            this.atMaskChannelMaskComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.atMaskChannelMaskComboBox.Items.AddRange(new object[] {
-            "0000",
-            "0001",
-            "0002",
-            "0004",
-            "0008",
-            "0010",
-            "0020",
-            "0040",
-            "0080",
-            "0100",
-            "0200",
-            "0400",
-            "0800"});
-            this.atMaskChannelMaskComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.atMaskChannelMaskComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.atMaskChannelMaskComboBox.Location = new System.Drawing.Point(0, 10);
-            this.atMaskChannelMaskComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.atMaskChannelMaskComboBox.MinimumSize = new System.Drawing.Size(233, 35);
-            this.atMaskChannelMaskComboBox.Name = "atMaskChannelMaskComboBox";
-            this.atMaskChannelMaskComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.atMaskChannelMaskComboBox.Size = new System.Drawing.Size(512, 36);
-            this.atMaskChannelMaskComboBox.TabIndex = 17;
-            this.atMaskChannelMaskComboBox.Texts = "";
             // 
             // atMaskButton
             // 
@@ -1031,7 +841,7 @@
             this.atMaskButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.atMaskButton.IconColor = System.Drawing.Color.Black;
             this.atMaskButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.atMaskButton.Location = new System.Drawing.Point(512, 10);
+            this.atMaskButton.Location = new System.Drawing.Point(406, 10);
             this.atMaskButton.Name = "atMaskButton";
             this.atMaskButton.Size = new System.Drawing.Size(117, 36);
             this.atMaskButton.TabIndex = 16;
@@ -1045,7 +855,7 @@
             this.panel31.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel31.Location = new System.Drawing.Point(10, 1113);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(651, 50);
+            this.panel31.Size = new System.Drawing.Size(545, 50);
             this.panel31.TabIndex = 29;
             // 
             // iconButton13
@@ -1076,7 +886,7 @@
             this.panel29.Location = new System.Drawing.Point(10, 1029);
             this.panel29.Name = "panel29";
             this.panel29.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.panel29.Size = new System.Drawing.Size(651, 84);
+            this.panel29.Size = new System.Drawing.Size(545, 84);
             this.panel29.TabIndex = 27;
             // 
             // panel30
@@ -1088,7 +898,7 @@
             this.panel30.Location = new System.Drawing.Point(10, 20);
             this.panel30.Name = "panel30";
             this.panel30.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel30.Size = new System.Drawing.Size(629, 49);
+            this.panel30.Size = new System.Drawing.Size(523, 49);
             this.panel30.TabIndex = 5;
             // 
             // atSleepButton
@@ -1105,7 +915,7 @@
             this.atSleepButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.atSleepButton.IconColor = System.Drawing.Color.Black;
             this.atSleepButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.atSleepButton.Location = new System.Drawing.Point(512, 10);
+            this.atSleepButton.Location = new System.Drawing.Point(406, 10);
             this.atSleepButton.Name = "atSleepButton";
             this.atSleepButton.Size = new System.Drawing.Size(117, 29);
             this.atSleepButton.TabIndex = 16;
@@ -1125,33 +935,13 @@
             this.label23.TabIndex = 10;
             this.label23.Text = "Tempo (em milissegundos)";
             // 
-            // atSleepTempoTextBox
-            // 
-            this.atSleepTempoTextBox.AutoSize = true;
-            this.atSleepTempoTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.atSleepTempoTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.atSleepTempoTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.atSleepTempoTextBox.BorderSize = 2;
-            this.atSleepTempoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.atSleepTempoTextBox.ForeColor = System.Drawing.Color.Black;
-            this.atSleepTempoTextBox.Location = new System.Drawing.Point(0, 10);
-            this.atSleepTempoTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.atSleepTempoTextBox.MaxLength = 5;
-            this.atSleepTempoTextBox.Multiline = false;
-            this.atSleepTempoTextBox.Name = "atSleepTempoTextBox";
-            this.atSleepTempoTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.atSleepTempoTextBox.Size = new System.Drawing.Size(629, 29);
-            this.atSleepTempoTextBox.TabIndex = 17;
-            this.atSleepTempoTextBox.Texts = "";
-            this.atSleepTempoTextBox.UnderlinedStyle = false;
-            // 
             // panel28
             // 
             this.panel28.BackColor = System.Drawing.Color.Transparent;
             this.panel28.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel28.Location = new System.Drawing.Point(10, 979);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(651, 50);
+            this.panel28.Size = new System.Drawing.Size(545, 50);
             this.panel28.TabIndex = 26;
             // 
             // iconButton9
@@ -1181,7 +971,7 @@
             this.painelATBat.Location = new System.Drawing.Point(10, 895);
             this.painelATBat.Name = "painelATBat";
             this.painelATBat.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.painelATBat.Size = new System.Drawing.Size(651, 84);
+            this.painelATBat.Size = new System.Drawing.Size(545, 84);
             this.painelATBat.TabIndex = 18;
             // 
             // panel27
@@ -1191,7 +981,7 @@
             this.panel27.Location = new System.Drawing.Point(10, 20);
             this.panel27.Name = "panel27";
             this.panel27.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.panel27.Size = new System.Drawing.Size(629, 51);
+            this.panel27.Size = new System.Drawing.Size(523, 51);
             this.panel27.TabIndex = 18;
             // 
             // atBatButton
@@ -1210,7 +1000,7 @@
             this.atBatButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.atBatButton.Location = new System.Drawing.Point(0, 10);
             this.atBatButton.Name = "atBatButton";
-            this.atBatButton.Size = new System.Drawing.Size(629, 36);
+            this.atBatButton.Size = new System.Drawing.Size(523, 36);
             this.atBatButton.TabIndex = 14;
             this.atBatButton.Text = "Enviar";
             this.atBatButton.UseVisualStyleBackColor = false;
@@ -1222,7 +1012,7 @@
             this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel26.Location = new System.Drawing.Point(10, 845);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(651, 50);
+            this.panel26.Size = new System.Drawing.Size(545, 50);
             this.panel26.TabIndex = 24;
             // 
             // label12
@@ -1266,7 +1056,7 @@
             this.painelATSend.Location = new System.Drawing.Point(10, 638);
             this.painelATSend.Name = "painelATSend";
             this.painelATSend.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.painelATSend.Size = new System.Drawing.Size(651, 207);
+            this.painelATSend.Size = new System.Drawing.Size(545, 207);
             this.painelATSend.TabIndex = 9;
             // 
             // painelB
@@ -1276,7 +1066,7 @@
             this.painelB.Location = new System.Drawing.Point(10, 142);
             this.painelB.Name = "painelB";
             this.painelB.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.painelB.Size = new System.Drawing.Size(629, 51);
+            this.painelB.Size = new System.Drawing.Size(523, 51);
             this.painelB.TabIndex = 17;
             // 
             // atSendButton
@@ -1295,7 +1085,7 @@
             this.atSendButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.atSendButton.Location = new System.Drawing.Point(0, 10);
             this.atSendButton.Name = "atSendButton";
-            this.atSendButton.Size = new System.Drawing.Size(629, 36);
+            this.atSendButton.Size = new System.Drawing.Size(523, 36);
             this.atSendButton.TabIndex = 14;
             this.atSendButton.Text = "Enviar";
             this.atSendButton.UseVisualStyleBackColor = false;
@@ -1309,7 +1099,7 @@
             this.painelA.Location = new System.Drawing.Point(10, 78);
             this.painelA.Name = "painelA";
             this.painelA.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.painelA.Size = new System.Drawing.Size(629, 64);
+            this.painelA.Size = new System.Drawing.Size(523, 64);
             this.painelA.TabIndex = 16;
             // 
             // label7
@@ -1324,26 +1114,6 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Porta";
             // 
-            // atSendPortaComboBox
-            // 
-            this.atSendPortaComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.atSendPortaComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.atSendPortaComboBox.BorderSize = 1;
-            this.atSendPortaComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.atSendPortaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.atSendPortaComboBox.ForeColor = System.Drawing.Color.DimGray;
-            this.atSendPortaComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.atSendPortaComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.atSendPortaComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.atSendPortaComboBox.Location = new System.Drawing.Point(0, 10);
-            this.atSendPortaComboBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.atSendPortaComboBox.MinimumSize = new System.Drawing.Size(272, 40);
-            this.atSendPortaComboBox.Name = "atSendPortaComboBox";
-            this.atSendPortaComboBox.Padding = new System.Windows.Forms.Padding(1);
-            this.atSendPortaComboBox.Size = new System.Drawing.Size(629, 49);
-            this.atSendPortaComboBox.TabIndex = 9;
-            this.atSendPortaComboBox.Texts = "";
-            // 
             // painel123
             // 
             this.painel123.Controls.Add(this.label6);
@@ -1352,7 +1122,7 @@
             this.painel123.Location = new System.Drawing.Point(10, 20);
             this.painel123.Name = "painel123";
             this.painel123.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.painel123.Size = new System.Drawing.Size(629, 58);
+            this.painel123.Size = new System.Drawing.Size(523, 58);
             this.painel123.TabIndex = 15;
             // 
             // label6
@@ -1367,33 +1137,13 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Texto";
             // 
-            // atSendTextoTextBox
-            // 
-            this.atSendTextoTextBox.AutoSize = true;
-            this.atSendTextoTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.atSendTextoTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.atSendTextoTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.atSendTextoTextBox.BorderSize = 1;
-            this.atSendTextoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.atSendTextoTextBox.ForeColor = System.Drawing.Color.Black;
-            this.atSendTextoTextBox.Location = new System.Drawing.Point(0, 10);
-            this.atSendTextoTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.atSendTextoTextBox.MaxLength = 32767;
-            this.atSendTextoTextBox.Multiline = false;
-            this.atSendTextoTextBox.Name = "atSendTextoTextBox";
-            this.atSendTextoTextBox.Padding = new System.Windows.Forms.Padding(12, 13, 3, 3);
-            this.atSendTextoTextBox.Size = new System.Drawing.Size(629, 32);
-            this.atSendTextoTextBox.TabIndex = 7;
-            this.atSendTextoTextBox.Texts = "";
-            this.atSendTextoTextBox.UnderlinedStyle = false;
-            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Transparent;
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(10, 573);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(651, 65);
+            this.panel9.Size = new System.Drawing.Size(545, 65);
             this.panel9.TabIndex = 21;
             // 
             // panel11
@@ -1412,7 +1162,7 @@
             this.panel11.Location = new System.Drawing.Point(10, 10);
             this.panel11.Name = "panel11";
             this.panel11.Padding = new System.Windows.Forms.Padding(10, 40, 10, 10);
-            this.panel11.Size = new System.Drawing.Size(651, 563);
+            this.panel11.Size = new System.Drawing.Size(545, 563);
             this.panel11.TabIndex = 22;
             // 
             // label5
@@ -1435,7 +1185,7 @@
             this.panel24.Location = new System.Drawing.Point(10, 481);
             this.panel24.Name = "panel24";
             this.panel24.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
-            this.panel24.Size = new System.Drawing.Size(629, 70);
+            this.panel24.Size = new System.Drawing.Size(523, 70);
             this.panel24.TabIndex = 29;
             // 
             // panel25
@@ -1445,7 +1195,7 @@
             this.panel25.Location = new System.Drawing.Point(5, 15);
             this.panel25.Name = "panel25";
             this.panel25.Padding = new System.Windows.Forms.Padding(0, 10, 0, 7);
-            this.panel25.Size = new System.Drawing.Size(617, 49);
+            this.panel25.Size = new System.Drawing.Size(511, 49);
             this.panel25.TabIndex = 4;
             // 
             // listarGruposMulticastButton
@@ -1464,7 +1214,7 @@
             this.listarGruposMulticastButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.listarGruposMulticastButton.Location = new System.Drawing.Point(0, 10);
             this.listarGruposMulticastButton.Name = "listarGruposMulticastButton";
-            this.listarGruposMulticastButton.Size = new System.Drawing.Size(617, 32);
+            this.listarGruposMulticastButton.Size = new System.Drawing.Size(511, 32);
             this.listarGruposMulticastButton.TabIndex = 16;
             this.listarGruposMulticastButton.Text = "Listar Grupos";
             this.listarGruposMulticastButton.UseVisualStyleBackColor = false;
@@ -1476,7 +1226,7 @@
             this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel23.Location = new System.Drawing.Point(10, 436);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(629, 45);
+            this.panel23.Size = new System.Drawing.Size(523, 45);
             this.panel23.TabIndex = 28;
             // 
             // label18
@@ -1499,7 +1249,7 @@
             this.panel21.Location = new System.Drawing.Point(10, 366);
             this.panel21.Name = "panel21";
             this.panel21.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
-            this.panel21.Size = new System.Drawing.Size(629, 70);
+            this.panel21.Size = new System.Drawing.Size(523, 70);
             this.panel21.TabIndex = 26;
             // 
             // panel22
@@ -1511,7 +1261,7 @@
             this.panel22.Location = new System.Drawing.Point(5, 15);
             this.panel22.Name = "panel22";
             this.panel22.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel22.Size = new System.Drawing.Size(617, 49);
+            this.panel22.Size = new System.Drawing.Size(511, 49);
             this.panel22.TabIndex = 4;
             // 
             // removerGrupoMulticastButton
@@ -1528,7 +1278,7 @@
             this.removerGrupoMulticastButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.removerGrupoMulticastButton.IconColor = System.Drawing.Color.Black;
             this.removerGrupoMulticastButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.removerGrupoMulticastButton.Location = new System.Drawing.Point(500, 10);
+            this.removerGrupoMulticastButton.Location = new System.Drawing.Point(394, 10);
             this.removerGrupoMulticastButton.Name = "removerGrupoMulticastButton";
             this.removerGrupoMulticastButton.Size = new System.Drawing.Size(117, 29);
             this.removerGrupoMulticastButton.TabIndex = 16;
@@ -1548,33 +1298,13 @@
             this.label19.TabIndex = 10;
             this.label19.Text = "Multicast Address";
             // 
-            // multicastAddressRemoverTextBox
-            // 
-            this.multicastAddressRemoverTextBox.AutoSize = true;
-            this.multicastAddressRemoverTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.multicastAddressRemoverTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.multicastAddressRemoverTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.multicastAddressRemoverTextBox.BorderSize = 2;
-            this.multicastAddressRemoverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.multicastAddressRemoverTextBox.ForeColor = System.Drawing.Color.Black;
-            this.multicastAddressRemoverTextBox.Location = new System.Drawing.Point(0, 10);
-            this.multicastAddressRemoverTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.multicastAddressRemoverTextBox.MaxLength = 8;
-            this.multicastAddressRemoverTextBox.Multiline = false;
-            this.multicastAddressRemoverTextBox.Name = "multicastAddressRemoverTextBox";
-            this.multicastAddressRemoverTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.multicastAddressRemoverTextBox.Size = new System.Drawing.Size(617, 29);
-            this.multicastAddressRemoverTextBox.TabIndex = 17;
-            this.multicastAddressRemoverTextBox.Texts = "";
-            this.multicastAddressRemoverTextBox.UnderlinedStyle = false;
-            // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.Transparent;
             this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel19.Location = new System.Drawing.Point(10, 321);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(629, 45);
+            this.panel19.Size = new System.Drawing.Size(523, 45);
             this.panel19.TabIndex = 25;
             // 
             // label13
@@ -1601,7 +1331,7 @@
             this.panel12.Location = new System.Drawing.Point(10, 40);
             this.panel12.Name = "panel12";
             this.panel12.Padding = new System.Windows.Forms.Padding(5, 15, 5, 0);
-            this.panel12.Size = new System.Drawing.Size(629, 281);
+            this.panel12.Size = new System.Drawing.Size(523, 281);
             this.panel12.TabIndex = 0;
             // 
             // panel20
@@ -1611,7 +1341,7 @@
             this.panel20.Location = new System.Drawing.Point(5, 223);
             this.panel20.Name = "panel20";
             this.panel20.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel20.Size = new System.Drawing.Size(617, 52);
+            this.panel20.Size = new System.Drawing.Size(511, 52);
             this.panel20.TabIndex = 4;
             // 
             // adicionarGrupoMulticastButton
@@ -1630,7 +1360,7 @@
             this.adicionarGrupoMulticastButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.adicionarGrupoMulticastButton.Location = new System.Drawing.Point(0, 10);
             this.adicionarGrupoMulticastButton.Name = "adicionarGrupoMulticastButton";
-            this.adicionarGrupoMulticastButton.Size = new System.Drawing.Size(617, 32);
+            this.adicionarGrupoMulticastButton.Size = new System.Drawing.Size(511, 32);
             this.adicionarGrupoMulticastButton.TabIndex = 15;
             this.adicionarGrupoMulticastButton.Text = "Adicionar Grupo";
             this.adicionarGrupoMulticastButton.UseVisualStyleBackColor = false;
@@ -1644,7 +1374,7 @@
             this.panel17.Location = new System.Drawing.Point(5, 171);
             this.panel17.Name = "panel17";
             this.panel17.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel17.Size = new System.Drawing.Size(617, 52);
+            this.panel17.Size = new System.Drawing.Size(511, 52);
             this.panel17.TabIndex = 2;
             // 
             // label16
@@ -1659,26 +1389,6 @@
             this.label16.TabIndex = 11;
             this.label16.Text = "Multicast APPSKEY";
             // 
-            // multicastAppskeyTextBox
-            // 
-            this.multicastAppskeyTextBox.AutoSize = true;
-            this.multicastAppskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.multicastAppskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.multicastAppskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.multicastAppskeyTextBox.BorderSize = 2;
-            this.multicastAppskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.multicastAppskeyTextBox.ForeColor = System.Drawing.Color.Black;
-            this.multicastAppskeyTextBox.Location = new System.Drawing.Point(0, 10);
-            this.multicastAppskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.multicastAppskeyTextBox.MaxLength = 32;
-            this.multicastAppskeyTextBox.Multiline = false;
-            this.multicastAppskeyTextBox.Name = "multicastAppskeyTextBox";
-            this.multicastAppskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.multicastAppskeyTextBox.Size = new System.Drawing.Size(617, 29);
-            this.multicastAppskeyTextBox.TabIndex = 10;
-            this.multicastAppskeyTextBox.Texts = "";
-            this.multicastAppskeyTextBox.UnderlinedStyle = false;
-            // 
             // panel14
             // 
             this.panel14.Controls.Add(this.label15);
@@ -1687,7 +1397,7 @@
             this.panel14.Location = new System.Drawing.Point(5, 119);
             this.panel14.Name = "panel14";
             this.panel14.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel14.Size = new System.Drawing.Size(617, 52);
+            this.panel14.Size = new System.Drawing.Size(511, 52);
             this.panel14.TabIndex = 1;
             // 
             // label15
@@ -1702,26 +1412,6 @@
             this.label15.TabIndex = 10;
             this.label15.Text = "Multicast NWKSKEY";
             // 
-            // multicastNwkskeyTextBox
-            // 
-            this.multicastNwkskeyTextBox.AutoSize = true;
-            this.multicastNwkskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.multicastNwkskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.multicastNwkskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.multicastNwkskeyTextBox.BorderSize = 2;
-            this.multicastNwkskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.multicastNwkskeyTextBox.ForeColor = System.Drawing.Color.Black;
-            this.multicastNwkskeyTextBox.Location = new System.Drawing.Point(0, 10);
-            this.multicastNwkskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.multicastNwkskeyTextBox.MaxLength = 32;
-            this.multicastNwkskeyTextBox.Multiline = false;
-            this.multicastNwkskeyTextBox.Name = "multicastNwkskeyTextBox";
-            this.multicastNwkskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.multicastNwkskeyTextBox.Size = new System.Drawing.Size(617, 29);
-            this.multicastNwkskeyTextBox.TabIndex = 9;
-            this.multicastNwkskeyTextBox.Texts = "";
-            this.multicastNwkskeyTextBox.UnderlinedStyle = false;
-            // 
             // panel13
             // 
             this.panel13.Controls.Add(this.label14);
@@ -1730,7 +1420,7 @@
             this.panel13.Location = new System.Drawing.Point(5, 67);
             this.panel13.Name = "panel13";
             this.panel13.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel13.Size = new System.Drawing.Size(617, 52);
+            this.panel13.Size = new System.Drawing.Size(511, 52);
             this.panel13.TabIndex = 0;
             // 
             // label14
@@ -1745,26 +1435,6 @@
             this.label14.TabIndex = 9;
             this.label14.Text = "Multicast Address";
             // 
-            // multicastAddressTextBox
-            // 
-            this.multicastAddressTextBox.AutoSize = true;
-            this.multicastAddressTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.multicastAddressTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.multicastAddressTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
-            this.multicastAddressTextBox.BorderSize = 2;
-            this.multicastAddressTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.multicastAddressTextBox.ForeColor = System.Drawing.Color.Black;
-            this.multicastAddressTextBox.Location = new System.Drawing.Point(0, 10);
-            this.multicastAddressTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.multicastAddressTextBox.MaxLength = 8;
-            this.multicastAddressTextBox.Multiline = false;
-            this.multicastAddressTextBox.Name = "multicastAddressTextBox";
-            this.multicastAddressTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
-            this.multicastAddressTextBox.Size = new System.Drawing.Size(617, 29);
-            this.multicastAddressTextBox.TabIndex = 8;
-            this.multicastAddressTextBox.Texts = "";
-            this.multicastAddressTextBox.UnderlinedStyle = false;
-            // 
             // panel18
             // 
             this.panel18.Controls.Add(this.label17);
@@ -1773,7 +1443,7 @@
             this.panel18.Location = new System.Drawing.Point(5, 15);
             this.panel18.Name = "panel18";
             this.panel18.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel18.Size = new System.Drawing.Size(617, 52);
+            this.panel18.Size = new System.Drawing.Size(511, 52);
             this.panel18.TabIndex = 3;
             // 
             // label17
@@ -1787,26 +1457,6 @@
             this.label17.Size = new System.Drawing.Size(50, 15);
             this.label17.TabIndex = 10;
             this.label17.Text = "Classe";
-            // 
-            // multicastClasseComboBox
-            // 
-            this.multicastClasseComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.multicastClasseComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.multicastClasseComboBox.BorderSize = 2;
-            this.multicastClasseComboBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.multicastClasseComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.multicastClasseComboBox.ForeColor = System.Drawing.Color.DimGray;
-            this.multicastClasseComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.multicastClasseComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.multicastClasseComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.multicastClasseComboBox.Location = new System.Drawing.Point(0, 10);
-            this.multicastClasseComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.multicastClasseComboBox.MinimumSize = new System.Drawing.Size(233, 35);
-            this.multicastClasseComboBox.Name = "multicastClasseComboBox";
-            this.multicastClasseComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.multicastClasseComboBox.Size = new System.Drawing.Size(617, 35);
-            this.multicastClasseComboBox.TabIndex = 4;
-            this.multicastClasseComboBox.Texts = "";
             // 
             // label11
             // 
@@ -1825,7 +1475,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(10, 32);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(691, 36);
+            this.panel15.Size = new System.Drawing.Size(585, 36);
             this.panel15.TabIndex = 8;
             // 
             // infoAbpToolTip
@@ -1837,13 +1487,363 @@
             this.infoAbpToolTip.ReshowDelay = 100;
             this.infoAbpToolTip.ShowAlways = true;
             // 
+            // atMaskChannelMaskComboBox
+            // 
+            this.atMaskChannelMaskComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.atMaskChannelMaskComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.atMaskChannelMaskComboBox.BorderSize = 2;
+            this.atMaskChannelMaskComboBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.atMaskChannelMaskComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.atMaskChannelMaskComboBox.ForeColor = System.Drawing.Color.DimGray;
+            this.atMaskChannelMaskComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.atMaskChannelMaskComboBox.Items.AddRange(new object[] {
+            "0000",
+            "0001",
+            "0002",
+            "0004",
+            "0008",
+            "0010",
+            "0020",
+            "0040",
+            "0080",
+            "0100",
+            "0200",
+            "0400",
+            "0800"});
+            this.atMaskChannelMaskComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.atMaskChannelMaskComboBox.ListTextColor = System.Drawing.Color.DimGray;
+            this.atMaskChannelMaskComboBox.Location = new System.Drawing.Point(0, 10);
+            this.atMaskChannelMaskComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.atMaskChannelMaskComboBox.MinimumSize = new System.Drawing.Size(233, 35);
+            this.atMaskChannelMaskComboBox.Name = "atMaskChannelMaskComboBox";
+            this.atMaskChannelMaskComboBox.Padding = new System.Windows.Forms.Padding(2);
+            this.atMaskChannelMaskComboBox.Size = new System.Drawing.Size(406, 36);
+            this.atMaskChannelMaskComboBox.TabIndex = 17;
+            this.atMaskChannelMaskComboBox.Texts = "";
+            // 
+            // atSleepTempoTextBox
+            // 
+            this.atSleepTempoTextBox.AutoSize = true;
+            this.atSleepTempoTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.atSleepTempoTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.atSleepTempoTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.atSleepTempoTextBox.BorderSize = 2;
+            this.atSleepTempoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atSleepTempoTextBox.ForeColor = System.Drawing.Color.Black;
+            this.atSleepTempoTextBox.Location = new System.Drawing.Point(0, 10);
+            this.atSleepTempoTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.atSleepTempoTextBox.MaxLength = 5;
+            this.atSleepTempoTextBox.Multiline = false;
+            this.atSleepTempoTextBox.Name = "atSleepTempoTextBox";
+            this.atSleepTempoTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.atSleepTempoTextBox.Size = new System.Drawing.Size(523, 29);
+            this.atSleepTempoTextBox.TabIndex = 17;
+            this.atSleepTempoTextBox.Texts = "";
+            this.atSleepTempoTextBox.UnderlinedStyle = false;
+            // 
+            // atSendPortaComboBox
+            // 
+            this.atSendPortaComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.atSendPortaComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.atSendPortaComboBox.BorderSize = 1;
+            this.atSendPortaComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atSendPortaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.atSendPortaComboBox.ForeColor = System.Drawing.Color.DimGray;
+            this.atSendPortaComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.atSendPortaComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.atSendPortaComboBox.ListTextColor = System.Drawing.Color.DimGray;
+            this.atSendPortaComboBox.Location = new System.Drawing.Point(0, 10);
+            this.atSendPortaComboBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.atSendPortaComboBox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.atSendPortaComboBox.Name = "atSendPortaComboBox";
+            this.atSendPortaComboBox.Padding = new System.Windows.Forms.Padding(1);
+            this.atSendPortaComboBox.Size = new System.Drawing.Size(523, 49);
+            this.atSendPortaComboBox.TabIndex = 9;
+            this.atSendPortaComboBox.Texts = "";
+            // 
+            // atSendTextoTextBox
+            // 
+            this.atSendTextoTextBox.AutoSize = true;
+            this.atSendTextoTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.atSendTextoTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.atSendTextoTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.atSendTextoTextBox.BorderSize = 1;
+            this.atSendTextoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atSendTextoTextBox.ForeColor = System.Drawing.Color.Black;
+            this.atSendTextoTextBox.Location = new System.Drawing.Point(0, 10);
+            this.atSendTextoTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.atSendTextoTextBox.MaxLength = 32767;
+            this.atSendTextoTextBox.Multiline = false;
+            this.atSendTextoTextBox.Name = "atSendTextoTextBox";
+            this.atSendTextoTextBox.Padding = new System.Windows.Forms.Padding(12, 13, 3, 3);
+            this.atSendTextoTextBox.Size = new System.Drawing.Size(523, 32);
+            this.atSendTextoTextBox.TabIndex = 7;
+            this.atSendTextoTextBox.Texts = "";
+            this.atSendTextoTextBox.UnderlinedStyle = false;
+            // 
+            // multicastAddressRemoverTextBox
+            // 
+            this.multicastAddressRemoverTextBox.AutoSize = true;
+            this.multicastAddressRemoverTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.multicastAddressRemoverTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.multicastAddressRemoverTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.multicastAddressRemoverTextBox.BorderSize = 2;
+            this.multicastAddressRemoverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.multicastAddressRemoverTextBox.ForeColor = System.Drawing.Color.Black;
+            this.multicastAddressRemoverTextBox.Location = new System.Drawing.Point(0, 10);
+            this.multicastAddressRemoverTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.multicastAddressRemoverTextBox.MaxLength = 8;
+            this.multicastAddressRemoverTextBox.Multiline = false;
+            this.multicastAddressRemoverTextBox.Name = "multicastAddressRemoverTextBox";
+            this.multicastAddressRemoverTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.multicastAddressRemoverTextBox.Size = new System.Drawing.Size(511, 29);
+            this.multicastAddressRemoverTextBox.TabIndex = 17;
+            this.multicastAddressRemoverTextBox.Texts = "";
+            this.multicastAddressRemoverTextBox.UnderlinedStyle = false;
+            // 
+            // multicastAppskeyTextBox
+            // 
+            this.multicastAppskeyTextBox.AutoSize = true;
+            this.multicastAppskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.multicastAppskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.multicastAppskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.multicastAppskeyTextBox.BorderSize = 2;
+            this.multicastAppskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.multicastAppskeyTextBox.ForeColor = System.Drawing.Color.Black;
+            this.multicastAppskeyTextBox.Location = new System.Drawing.Point(0, 10);
+            this.multicastAppskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.multicastAppskeyTextBox.MaxLength = 32;
+            this.multicastAppskeyTextBox.Multiline = false;
+            this.multicastAppskeyTextBox.Name = "multicastAppskeyTextBox";
+            this.multicastAppskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.multicastAppskeyTextBox.Size = new System.Drawing.Size(511, 29);
+            this.multicastAppskeyTextBox.TabIndex = 10;
+            this.multicastAppskeyTextBox.Texts = "";
+            this.multicastAppskeyTextBox.UnderlinedStyle = false;
+            // 
+            // multicastNwkskeyTextBox
+            // 
+            this.multicastNwkskeyTextBox.AutoSize = true;
+            this.multicastNwkskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.multicastNwkskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.multicastNwkskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.multicastNwkskeyTextBox.BorderSize = 2;
+            this.multicastNwkskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.multicastNwkskeyTextBox.ForeColor = System.Drawing.Color.Black;
+            this.multicastNwkskeyTextBox.Location = new System.Drawing.Point(0, 10);
+            this.multicastNwkskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.multicastNwkskeyTextBox.MaxLength = 32;
+            this.multicastNwkskeyTextBox.Multiline = false;
+            this.multicastNwkskeyTextBox.Name = "multicastNwkskeyTextBox";
+            this.multicastNwkskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.multicastNwkskeyTextBox.Size = new System.Drawing.Size(511, 29);
+            this.multicastNwkskeyTextBox.TabIndex = 9;
+            this.multicastNwkskeyTextBox.Texts = "";
+            this.multicastNwkskeyTextBox.UnderlinedStyle = false;
+            // 
+            // multicastAddressTextBox
+            // 
+            this.multicastAddressTextBox.AutoSize = true;
+            this.multicastAddressTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.multicastAddressTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.multicastAddressTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.multicastAddressTextBox.BorderSize = 2;
+            this.multicastAddressTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.multicastAddressTextBox.ForeColor = System.Drawing.Color.Black;
+            this.multicastAddressTextBox.Location = new System.Drawing.Point(0, 10);
+            this.multicastAddressTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.multicastAddressTextBox.MaxLength = 8;
+            this.multicastAddressTextBox.Multiline = false;
+            this.multicastAddressTextBox.Name = "multicastAddressTextBox";
+            this.multicastAddressTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.multicastAddressTextBox.Size = new System.Drawing.Size(511, 29);
+            this.multicastAddressTextBox.TabIndex = 8;
+            this.multicastAddressTextBox.Texts = "";
+            this.multicastAddressTextBox.UnderlinedStyle = false;
+            // 
+            // multicastClasseComboBox
+            // 
+            this.multicastClasseComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.multicastClasseComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.multicastClasseComboBox.BorderSize = 2;
+            this.multicastClasseComboBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.multicastClasseComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.multicastClasseComboBox.ForeColor = System.Drawing.Color.DimGray;
+            this.multicastClasseComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.multicastClasseComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.multicastClasseComboBox.ListTextColor = System.Drawing.Color.DimGray;
+            this.multicastClasseComboBox.Location = new System.Drawing.Point(0, 10);
+            this.multicastClasseComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.multicastClasseComboBox.MinimumSize = new System.Drawing.Size(233, 35);
+            this.multicastClasseComboBox.Name = "multicastClasseComboBox";
+            this.multicastClasseComboBox.Padding = new System.Windows.Forms.Padding(2);
+            this.multicastClasseComboBox.Size = new System.Drawing.Size(511, 35);
+            this.multicastClasseComboBox.TabIndex = 4;
+            this.multicastClasseComboBox.Texts = "";
+            // 
+            // modoConfirmacaoToggle
+            // 
+            this.modoConfirmacaoToggle.AutoSize = true;
+            this.modoConfirmacaoToggle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.modoConfirmacaoToggle.Location = new System.Drawing.Point(220, 2);
+            this.modoConfirmacaoToggle.MinimumSize = new System.Drawing.Size(42, 18);
+            this.modoConfirmacaoToggle.Name = "modoConfirmacaoToggle";
+            this.modoConfirmacaoToggle.OffBackColor = System.Drawing.Color.Gray;
+            this.modoConfirmacaoToggle.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.modoConfirmacaoToggle.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.modoConfirmacaoToggle.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.modoConfirmacaoToggle.Size = new System.Drawing.Size(42, 18);
+            this.modoConfirmacaoToggle.TabIndex = 12;
+            this.modoConfirmacaoToggle.UseVisualStyleBackColor = true;
+            this.modoConfirmacaoToggle.CheckedChanged += new System.EventHandler(this.cToggle1_CheckedChanged);
+            // 
+            // numeroRetentativasComboBox
+            // 
+            this.numeroRetentativasComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.numeroRetentativasComboBox.BorderColor = System.Drawing.Color.Gainsboro;
+            this.numeroRetentativasComboBox.BorderSize = 2;
+            this.numeroRetentativasComboBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.numeroRetentativasComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.numeroRetentativasComboBox.ForeColor = System.Drawing.Color.DimGray;
+            this.numeroRetentativasComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.numeroRetentativasComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.numeroRetentativasComboBox.ListTextColor = System.Drawing.Color.DimGray;
+            this.numeroRetentativasComboBox.Location = new System.Drawing.Point(10, 25);
+            this.numeroRetentativasComboBox.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
+            this.numeroRetentativasComboBox.MinimumSize = new System.Drawing.Size(317, 46);
+            this.numeroRetentativasComboBox.Name = "numeroRetentativasComboBox";
+            this.numeroRetentativasComboBox.Padding = new System.Windows.Forms.Padding(2);
+            this.numeroRetentativasComboBox.Size = new System.Drawing.Size(523, 46);
+            this.numeroRetentativasComboBox.TabIndex = 4;
+            this.numeroRetentativasComboBox.Texts = "";
+            // 
+            // classeComboBox
+            // 
+            this.classeComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.classeComboBox.BorderColor = System.Drawing.Color.Gainsboro;
+            this.classeComboBox.BorderSize = 2;
+            this.classeComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.classeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.classeComboBox.ForeColor = System.Drawing.Color.DimGray;
+            this.classeComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.classeComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.classeComboBox.ListTextColor = System.Drawing.Color.DimGray;
+            this.classeComboBox.Location = new System.Drawing.Point(10, 10);
+            this.classeComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.classeComboBox.MinimumSize = new System.Drawing.Size(233, 35);
+            this.classeComboBox.Name = "classeComboBox";
+            this.classeComboBox.Padding = new System.Windows.Forms.Padding(2);
+            this.classeComboBox.Size = new System.Drawing.Size(545, 38);
+            this.classeComboBox.TabIndex = 3;
+            this.classeComboBox.Texts = "";
+            // 
+            // deviceEuiTextBox
+            // 
+            this.deviceEuiTextBox.AutoSize = true;
+            this.deviceEuiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.deviceEuiTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.deviceEuiTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.deviceEuiTextBox.BorderSize = 2;
+            this.deviceEuiTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.deviceEuiTextBox.ForeColor = System.Drawing.Color.Black;
+            this.deviceEuiTextBox.Location = new System.Drawing.Point(10, 10);
+            this.deviceEuiTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.deviceEuiTextBox.MaxLength = 16;
+            this.deviceEuiTextBox.Multiline = false;
+            this.deviceEuiTextBox.Name = "deviceEuiTextBox";
+            this.deviceEuiTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.deviceEuiTextBox.Size = new System.Drawing.Size(545, 29);
+            this.deviceEuiTextBox.TabIndex = 7;
+            this.deviceEuiTextBox.Texts = "";
+            this.deviceEuiTextBox.UnderlinedStyle = false;
+            // 
+            // nwkskeyTextBox
+            // 
+            this.nwkskeyTextBox.AutoSize = true;
+            this.nwkskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.nwkskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.nwkskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.nwkskeyTextBox.BorderSize = 2;
+            this.nwkskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nwkskeyTextBox.ForeColor = System.Drawing.Color.Black;
+            this.nwkskeyTextBox.Location = new System.Drawing.Point(10, 10);
+            this.nwkskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.nwkskeyTextBox.MaxLength = 32;
+            this.nwkskeyTextBox.Multiline = false;
+            this.nwkskeyTextBox.Name = "nwkskeyTextBox";
+            this.nwkskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.nwkskeyTextBox.Size = new System.Drawing.Size(545, 29);
+            this.nwkskeyTextBox.TabIndex = 7;
+            this.nwkskeyTextBox.Texts = "";
+            this.nwkskeyTextBox.UnderlinedStyle = false;
+            // 
+            // appskeyTextBox
+            // 
+            this.appskeyTextBox.AutoSize = true;
+            this.appskeyTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.appskeyTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.appskeyTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.appskeyTextBox.BorderSize = 2;
+            this.appskeyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.appskeyTextBox.ForeColor = System.Drawing.Color.Black;
+            this.appskeyTextBox.Location = new System.Drawing.Point(10, 10);
+            this.appskeyTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.appskeyTextBox.MaxLength = 32;
+            this.appskeyTextBox.Multiline = false;
+            this.appskeyTextBox.Name = "appskeyTextBox";
+            this.appskeyTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.appskeyTextBox.Size = new System.Drawing.Size(545, 29);
+            this.appskeyTextBox.TabIndex = 7;
+            this.appskeyTextBox.Texts = "";
+            this.appskeyTextBox.UnderlinedStyle = false;
+            // 
+            // deviceAddressTextBox
+            // 
+            this.deviceAddressTextBox.AutoSize = true;
+            this.deviceAddressTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.deviceAddressTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.deviceAddressTextBox.BorderColorFocus = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(189)))), ((int)(((byte)(19)))));
+            this.deviceAddressTextBox.BorderSize = 2;
+            this.deviceAddressTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.deviceAddressTextBox.ForeColor = System.Drawing.Color.Black;
+            this.deviceAddressTextBox.Location = new System.Drawing.Point(10, 10);
+            this.deviceAddressTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.deviceAddressTextBox.MaxLength = 8;
+            this.deviceAddressTextBox.Multiline = false;
+            this.deviceAddressTextBox.Name = "deviceAddressTextBox";
+            this.deviceAddressTextBox.Padding = new System.Windows.Forms.Padding(12, 10, 3, 3);
+            this.deviceAddressTextBox.Size = new System.Drawing.Size(545, 29);
+            this.deviceAddressTextBox.TabIndex = 6;
+            this.deviceAddressTextBox.Texts = "";
+            this.deviceAddressTextBox.UnderlinedStyle = false;
+            // 
+            // comboBoxCOM
+            // 
+            this.comboBoxCOM.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.comboBoxCOM.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboBoxCOM.BorderSize = 1;
+            this.comboBoxCOM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.comboBoxCOM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.comboBoxCOM.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxCOM.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboBoxCOM.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.comboBoxCOM.ListTextColor = System.Drawing.Color.DimGray;
+            this.comboBoxCOM.Location = new System.Drawing.Point(0, 0);
+            this.comboBoxCOM.Margin = new System.Windows.Forms.Padding(7, 3, 7, 3);
+            this.comboBoxCOM.MinimumSize = new System.Drawing.Size(370, 53);
+            this.comboBoxCOM.Name = "comboBoxCOM";
+            this.comboBoxCOM.Padding = new System.Windows.Forms.Padding(1);
+            this.comboBoxCOM.Size = new System.Drawing.Size(377, 53);
+            this.comboBoxCOM.TabIndex = 15;
+            this.comboBoxCOM.Texts = "";
+            // 
             // FormModoAbp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(728, 562);
+            this.ClientSize = new System.Drawing.Size(622, 562);
             this.ControlBox = false;
             this.Controls.Add(this.comandosATGroup);
             this.Controls.Add(this.panel8);
