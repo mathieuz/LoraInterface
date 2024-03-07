@@ -53,6 +53,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CRC16.cs" />
     <Compile Include="CustomControls\CComboBox.cs">
       <SubType>UserControl</SubType>
     </Compile>

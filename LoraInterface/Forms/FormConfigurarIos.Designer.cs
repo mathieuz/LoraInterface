@@ -36,100 +36,102 @@
             this.conectarCOMButton = new FontAwesome.Sharp.IconButton();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.configurarIosPanel = new System.Windows.Forms.GroupBox();
             this.label31 = new System.Windows.Forms.Label();
             this.panel41 = new System.Windows.Forms.Panel();
             this.panel42 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
-            this.cComboBox18 = new LoraInterface.CustomControls.CComboBox();
+            this.pb12ZonaCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel43 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
-            this.cComboBox19 = new LoraInterface.CustomControls.CComboBox();
+            this.pb12ModoCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel40 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
             this.panel38 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
-            this.cComboBox16 = new LoraInterface.CustomControls.CComboBox();
+            this.pa2ZonaCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel39 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
-            this.cComboBox17 = new LoraInterface.CustomControls.CComboBox();
+            this.pa2ModoCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel36 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
             this.panel34 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
-            this.cComboBox14 = new LoraInterface.CustomControls.CComboBox();
+            this.pb3ZonaCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel35 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
-            this.cComboBox15 = new LoraInterface.CustomControls.CComboBox();
+            this.pb3ModoCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel32 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
             this.panel30 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
-            this.cComboBox12 = new LoraInterface.CustomControls.CComboBox();
+            this.pb4ZonaCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel31 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
-            this.cComboBox13 = new LoraInterface.CustomControls.CComboBox();
+            this.pb4ModoCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel28 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.cComboBox10 = new LoraInterface.CustomControls.CComboBox();
+            this.pb5ZonaCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel27 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.cComboBox11 = new LoraInterface.CustomControls.CComboBox();
+            this.pb5ModoCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.cComboBox8 = new LoraInterface.CustomControls.CComboBox();
+            this.pa0ZonaCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel22 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.cComboBox9 = new LoraInterface.CustomControls.CComboBox();
+            this.pa0ModoCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.cComboBox6 = new LoraInterface.CustomControls.CComboBox();
+            this.pa9ZonaCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.cComboBox7 = new LoraInterface.CustomControls.CComboBox();
+            this.pa9ModoCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.cComboBox4 = new LoraInterface.CustomControls.CComboBox();
+            this.pa8ZonaCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.cComboBox5 = new LoraInterface.CustomControls.CComboBox();
+            this.pa8ModoCombobox = new LoraInterface.CustomControls.CComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.cComboBox2 = new LoraInterface.CustomControls.CComboBox();
+            this.pa1ZonaCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.cComboBox3 = new LoraInterface.CustomControls.CComboBox();
+            this.pa1ModoCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.cComboBox1 = new LoraInterface.CustomControls.CComboBox();
+            this.pa15ZonaCombobox = new LoraInterface.CustomControls.CComboBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.multicastClasseComboBox = new LoraInterface.CustomControls.CComboBox();
+            this.pa15ModoCombobox = new LoraInterface.CustomControls.CComboBox();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.enviarConfiguracoesButton = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.configurarIosPanel.SuspendLayout();
             this.panel41.SuspendLayout();
             this.panel42.SuspendLayout();
             this.panel43.SuspendLayout();
@@ -160,6 +162,7 @@
             this.panel24.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel18.SuspendLayout();
+            this.panel44.SuspendLayout();
             this.SuspendLayout();
             // 
             // label11
@@ -268,48 +271,50 @@
             this.panel1.Size = new System.Drawing.Size(601, 36);
             this.panel1.TabIndex = 13;
             // 
-            // groupBox2
+            // configurarIosPanel
             // 
-            this.groupBox2.AutoSize = true;
-            this.groupBox2.Controls.Add(this.label31);
-            this.groupBox2.Controls.Add(this.panel41);
-            this.groupBox2.Controls.Add(this.panel40);
-            this.groupBox2.Controls.Add(this.label28);
-            this.groupBox2.Controls.Add(this.panel37);
-            this.groupBox2.Controls.Add(this.panel36);
-            this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Controls.Add(this.panel33);
-            this.groupBox2.Controls.Add(this.panel32);
-            this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Controls.Add(this.panel29);
-            this.groupBox2.Controls.Add(this.panel28);
-            this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.panel25);
-            this.groupBox2.Controls.Add(this.panel23);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.panel20);
-            this.groupBox2.Controls.Add(this.panel19);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.panel14);
-            this.groupBox2.Controls.Add(this.panel13);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.panel10);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.panel4);
-            this.groupBox2.Controls.Add(this.panel7);
-            this.groupBox2.Controls.Add(this.panel3);
-            this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.panel24);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Gray;
-            this.groupBox2.Location = new System.Drawing.Point(10, 212);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.groupBox2.Size = new System.Drawing.Size(601, 1558);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Configurar IOs";
+            this.configurarIosPanel.AutoSize = true;
+            this.configurarIosPanel.Controls.Add(this.panel44);
+            this.configurarIosPanel.Controls.Add(this.label31);
+            this.configurarIosPanel.Controls.Add(this.panel41);
+            this.configurarIosPanel.Controls.Add(this.panel40);
+            this.configurarIosPanel.Controls.Add(this.label28);
+            this.configurarIosPanel.Controls.Add(this.panel37);
+            this.configurarIosPanel.Controls.Add(this.panel36);
+            this.configurarIosPanel.Controls.Add(this.label25);
+            this.configurarIosPanel.Controls.Add(this.panel33);
+            this.configurarIosPanel.Controls.Add(this.panel32);
+            this.configurarIosPanel.Controls.Add(this.label22);
+            this.configurarIosPanel.Controls.Add(this.panel29);
+            this.configurarIosPanel.Controls.Add(this.panel28);
+            this.configurarIosPanel.Controls.Add(this.label19);
+            this.configurarIosPanel.Controls.Add(this.panel25);
+            this.configurarIosPanel.Controls.Add(this.panel23);
+            this.configurarIosPanel.Controls.Add(this.label14);
+            this.configurarIosPanel.Controls.Add(this.panel20);
+            this.configurarIosPanel.Controls.Add(this.panel19);
+            this.configurarIosPanel.Controls.Add(this.label10);
+            this.configurarIosPanel.Controls.Add(this.panel14);
+            this.configurarIosPanel.Controls.Add(this.panel13);
+            this.configurarIosPanel.Controls.Add(this.label7);
+            this.configurarIosPanel.Controls.Add(this.panel10);
+            this.configurarIosPanel.Controls.Add(this.label4);
+            this.configurarIosPanel.Controls.Add(this.panel4);
+            this.configurarIosPanel.Controls.Add(this.panel7);
+            this.configurarIosPanel.Controls.Add(this.panel3);
+            this.configurarIosPanel.Controls.Add(this.label18);
+            this.configurarIosPanel.Controls.Add(this.panel24);
+            this.configurarIosPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.configurarIosPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.configurarIosPanel.ForeColor = System.Drawing.Color.Gray;
+            this.configurarIosPanel.Location = new System.Drawing.Point(10, 212);
+            this.configurarIosPanel.Name = "configurarIosPanel";
+            this.configurarIosPanel.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            this.configurarIosPanel.Size = new System.Drawing.Size(601, 1614);
+            this.configurarIosPanel.TabIndex = 14;
+            this.configurarIosPanel.TabStop = false;
+            this.configurarIosPanel.Text = "Configurar IOs";
+            this.configurarIosPanel.Visible = false;
             // 
             // label31
             // 
@@ -338,7 +343,7 @@
             // panel42
             // 
             this.panel42.Controls.Add(this.label29);
-            this.panel42.Controls.Add(this.cComboBox18);
+            this.panel42.Controls.Add(this.pb12ZonaCombobox);
             this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel42.Location = new System.Drawing.Point(5, 67);
             this.panel42.Name = "panel42";
@@ -358,36 +363,36 @@
             this.label29.TabIndex = 10;
             this.label29.Text = "Zona";
             // 
-            // cComboBox18
+            // pb12ZonaCombobox
             // 
-            this.cComboBox18.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox18.BorderSize = 2;
-            this.cComboBox18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox18.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox18.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox18.Items.AddRange(new object[] {
+            this.pb12ZonaCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb12ZonaCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb12ZonaCombobox.BorderSize = 2;
+            this.pb12ZonaCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pb12ZonaCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pb12ZonaCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pb12ZonaCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb12ZonaCombobox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4"});
-            this.cComboBox18.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox18.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox18.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox18.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox18.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox18.Name = "cComboBox18";
-            this.cComboBox18.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox18.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox18.TabIndex = 4;
-            this.cComboBox18.Texts = "";
+            this.pb12ZonaCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pb12ZonaCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pb12ZonaCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pb12ZonaCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pb12ZonaCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pb12ZonaCombobox.Name = "pb12ZonaCombobox";
+            this.pb12ZonaCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pb12ZonaCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pb12ZonaCombobox.TabIndex = 4;
+            this.pb12ZonaCombobox.Texts = "";
             // 
             // panel43
             // 
             this.panel43.Controls.Add(this.label30);
-            this.panel43.Controls.Add(this.cComboBox19);
+            this.panel43.Controls.Add(this.pb12ModoCombobox);
             this.panel43.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel43.Location = new System.Drawing.Point(5, 15);
             this.panel43.Name = "panel43";
@@ -407,29 +412,29 @@
             this.label30.TabIndex = 10;
             this.label30.Text = "Modo";
             // 
-            // cComboBox19
+            // pb12ModoCombobox
             // 
-            this.cComboBox19.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox19.BorderSize = 2;
-            this.cComboBox19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox19.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox19.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox19.Items.AddRange(new object[] {
+            this.pb12ModoCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb12ModoCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb12ModoCombobox.BorderSize = 2;
+            this.pb12ModoCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pb12ModoCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pb12ModoCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pb12ModoCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb12ModoCombobox.Items.AddRange(new object[] {
             "Entrada Digital",
             "Saída Digital",
             "Entrada Analógica"});
-            this.cComboBox19.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox19.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox19.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox19.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox19.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox19.Name = "cComboBox19";
-            this.cComboBox19.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox19.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox19.TabIndex = 4;
-            this.cComboBox19.Texts = "";
+            this.pb12ModoCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pb12ModoCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pb12ModoCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pb12ModoCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pb12ModoCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pb12ModoCombobox.Name = "pb12ModoCombobox";
+            this.pb12ModoCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pb12ModoCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pb12ModoCombobox.TabIndex = 4;
+            this.pb12ModoCombobox.Texts = "";
             // 
             // panel40
             // 
@@ -466,7 +471,7 @@
             // panel38
             // 
             this.panel38.Controls.Add(this.label26);
-            this.panel38.Controls.Add(this.cComboBox16);
+            this.panel38.Controls.Add(this.pa2ZonaCombobox);
             this.panel38.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel38.Location = new System.Drawing.Point(5, 67);
             this.panel38.Name = "panel38";
@@ -486,36 +491,36 @@
             this.label26.TabIndex = 10;
             this.label26.Text = "Zona";
             // 
-            // cComboBox16
+            // pa2ZonaCombobox
             // 
-            this.cComboBox16.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox16.BorderSize = 2;
-            this.cComboBox16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox16.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox16.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox16.Items.AddRange(new object[] {
+            this.pa2ZonaCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa2ZonaCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa2ZonaCombobox.BorderSize = 2;
+            this.pa2ZonaCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa2ZonaCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa2ZonaCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa2ZonaCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa2ZonaCombobox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4"});
-            this.cComboBox16.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox16.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox16.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox16.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox16.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox16.Name = "cComboBox16";
-            this.cComboBox16.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox16.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox16.TabIndex = 4;
-            this.cComboBox16.Texts = "";
+            this.pa2ZonaCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa2ZonaCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa2ZonaCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa2ZonaCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa2ZonaCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa2ZonaCombobox.Name = "pa2ZonaCombobox";
+            this.pa2ZonaCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa2ZonaCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa2ZonaCombobox.TabIndex = 4;
+            this.pa2ZonaCombobox.Texts = "";
             // 
             // panel39
             // 
             this.panel39.Controls.Add(this.label27);
-            this.panel39.Controls.Add(this.cComboBox17);
+            this.panel39.Controls.Add(this.pa2ModoCombobox);
             this.panel39.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel39.Location = new System.Drawing.Point(5, 15);
             this.panel39.Name = "panel39";
@@ -535,29 +540,29 @@
             this.label27.TabIndex = 10;
             this.label27.Text = "Modo";
             // 
-            // cComboBox17
+            // pa2ModoCombobox
             // 
-            this.cComboBox17.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox17.BorderSize = 2;
-            this.cComboBox17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox17.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox17.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox17.Items.AddRange(new object[] {
+            this.pa2ModoCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa2ModoCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa2ModoCombobox.BorderSize = 2;
+            this.pa2ModoCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa2ModoCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa2ModoCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa2ModoCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa2ModoCombobox.Items.AddRange(new object[] {
             "Entrada Digital",
             "Saída Digital",
             "Entrada Analógica"});
-            this.cComboBox17.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox17.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox17.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox17.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox17.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox17.Name = "cComboBox17";
-            this.cComboBox17.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox17.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox17.TabIndex = 4;
-            this.cComboBox17.Texts = "";
+            this.pa2ModoCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa2ModoCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa2ModoCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa2ModoCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa2ModoCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa2ModoCombobox.Name = "pa2ModoCombobox";
+            this.pa2ModoCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa2ModoCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa2ModoCombobox.TabIndex = 4;
+            this.pa2ModoCombobox.Texts = "";
             // 
             // panel36
             // 
@@ -594,7 +599,7 @@
             // panel34
             // 
             this.panel34.Controls.Add(this.label23);
-            this.panel34.Controls.Add(this.cComboBox14);
+            this.panel34.Controls.Add(this.pb3ZonaCombobox);
             this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel34.Location = new System.Drawing.Point(5, 67);
             this.panel34.Name = "panel34";
@@ -614,36 +619,36 @@
             this.label23.TabIndex = 10;
             this.label23.Text = "Zona";
             // 
-            // cComboBox14
+            // pb3ZonaCombobox
             // 
-            this.cComboBox14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox14.BorderSize = 2;
-            this.cComboBox14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox14.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox14.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox14.Items.AddRange(new object[] {
+            this.pb3ZonaCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb3ZonaCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb3ZonaCombobox.BorderSize = 2;
+            this.pb3ZonaCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pb3ZonaCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pb3ZonaCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pb3ZonaCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb3ZonaCombobox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4"});
-            this.cComboBox14.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox14.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox14.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox14.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox14.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox14.Name = "cComboBox14";
-            this.cComboBox14.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox14.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox14.TabIndex = 4;
-            this.cComboBox14.Texts = "";
+            this.pb3ZonaCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pb3ZonaCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pb3ZonaCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pb3ZonaCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pb3ZonaCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pb3ZonaCombobox.Name = "pb3ZonaCombobox";
+            this.pb3ZonaCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pb3ZonaCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pb3ZonaCombobox.TabIndex = 4;
+            this.pb3ZonaCombobox.Texts = "";
             // 
             // panel35
             // 
             this.panel35.Controls.Add(this.label24);
-            this.panel35.Controls.Add(this.cComboBox15);
+            this.panel35.Controls.Add(this.pb3ModoCombobox);
             this.panel35.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel35.Location = new System.Drawing.Point(5, 15);
             this.panel35.Name = "panel35";
@@ -663,29 +668,29 @@
             this.label24.TabIndex = 10;
             this.label24.Text = "Modo";
             // 
-            // cComboBox15
+            // pb3ModoCombobox
             // 
-            this.cComboBox15.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox15.BorderSize = 2;
-            this.cComboBox15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox15.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox15.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox15.Items.AddRange(new object[] {
+            this.pb3ModoCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb3ModoCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb3ModoCombobox.BorderSize = 2;
+            this.pb3ModoCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pb3ModoCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pb3ModoCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pb3ModoCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb3ModoCombobox.Items.AddRange(new object[] {
             "Entrada Digital",
             "Saída Digital",
             "Entrada Analógica"});
-            this.cComboBox15.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox15.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox15.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox15.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox15.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox15.Name = "cComboBox15";
-            this.cComboBox15.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox15.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox15.TabIndex = 4;
-            this.cComboBox15.Texts = "";
+            this.pb3ModoCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pb3ModoCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pb3ModoCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pb3ModoCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pb3ModoCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pb3ModoCombobox.Name = "pb3ModoCombobox";
+            this.pb3ModoCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pb3ModoCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pb3ModoCombobox.TabIndex = 4;
+            this.pb3ModoCombobox.Texts = "";
             // 
             // panel32
             // 
@@ -722,7 +727,7 @@
             // panel30
             // 
             this.panel30.Controls.Add(this.label20);
-            this.panel30.Controls.Add(this.cComboBox12);
+            this.panel30.Controls.Add(this.pb4ZonaCombobox);
             this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel30.Location = new System.Drawing.Point(5, 67);
             this.panel30.Name = "panel30";
@@ -742,36 +747,36 @@
             this.label20.TabIndex = 10;
             this.label20.Text = "Zona";
             // 
-            // cComboBox12
+            // pb4ZonaCombobox
             // 
-            this.cComboBox12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox12.BorderSize = 2;
-            this.cComboBox12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox12.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox12.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox12.Items.AddRange(new object[] {
+            this.pb4ZonaCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb4ZonaCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb4ZonaCombobox.BorderSize = 2;
+            this.pb4ZonaCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pb4ZonaCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pb4ZonaCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pb4ZonaCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb4ZonaCombobox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4"});
-            this.cComboBox12.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox12.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox12.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox12.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox12.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox12.Name = "cComboBox12";
-            this.cComboBox12.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox12.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox12.TabIndex = 4;
-            this.cComboBox12.Texts = "";
+            this.pb4ZonaCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pb4ZonaCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pb4ZonaCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pb4ZonaCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pb4ZonaCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pb4ZonaCombobox.Name = "pb4ZonaCombobox";
+            this.pb4ZonaCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pb4ZonaCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pb4ZonaCombobox.TabIndex = 4;
+            this.pb4ZonaCombobox.Texts = "";
             // 
             // panel31
             // 
             this.panel31.Controls.Add(this.label21);
-            this.panel31.Controls.Add(this.cComboBox13);
+            this.panel31.Controls.Add(this.pb4ModoCombobox);
             this.panel31.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel31.Location = new System.Drawing.Point(5, 15);
             this.panel31.Name = "panel31";
@@ -791,29 +796,29 @@
             this.label21.TabIndex = 10;
             this.label21.Text = "Modo";
             // 
-            // cComboBox13
+            // pb4ModoCombobox
             // 
-            this.cComboBox13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox13.BorderSize = 2;
-            this.cComboBox13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox13.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox13.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox13.Items.AddRange(new object[] {
+            this.pb4ModoCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb4ModoCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb4ModoCombobox.BorderSize = 2;
+            this.pb4ModoCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pb4ModoCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pb4ModoCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pb4ModoCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb4ModoCombobox.Items.AddRange(new object[] {
             "Entrada Digital",
             "Saída Digital",
             "Entrada Analógica"});
-            this.cComboBox13.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox13.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox13.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox13.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox13.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox13.Name = "cComboBox13";
-            this.cComboBox13.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox13.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox13.TabIndex = 4;
-            this.cComboBox13.Texts = "";
+            this.pb4ModoCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pb4ModoCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pb4ModoCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pb4ModoCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pb4ModoCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pb4ModoCombobox.Name = "pb4ModoCombobox";
+            this.pb4ModoCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pb4ModoCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pb4ModoCombobox.TabIndex = 4;
+            this.pb4ModoCombobox.Texts = "";
             // 
             // panel28
             // 
@@ -850,7 +855,7 @@
             // panel26
             // 
             this.panel26.Controls.Add(this.label15);
-            this.panel26.Controls.Add(this.cComboBox10);
+            this.panel26.Controls.Add(this.pb5ZonaCombobox);
             this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel26.Location = new System.Drawing.Point(5, 67);
             this.panel26.Name = "panel26";
@@ -870,36 +875,36 @@
             this.label15.TabIndex = 10;
             this.label15.Text = "Zona";
             // 
-            // cComboBox10
+            // pb5ZonaCombobox
             // 
-            this.cComboBox10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox10.BorderSize = 2;
-            this.cComboBox10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox10.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox10.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox10.Items.AddRange(new object[] {
+            this.pb5ZonaCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb5ZonaCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb5ZonaCombobox.BorderSize = 2;
+            this.pb5ZonaCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pb5ZonaCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pb5ZonaCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pb5ZonaCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb5ZonaCombobox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4"});
-            this.cComboBox10.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox10.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox10.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox10.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox10.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox10.Name = "cComboBox10";
-            this.cComboBox10.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox10.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox10.TabIndex = 4;
-            this.cComboBox10.Texts = "";
+            this.pb5ZonaCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pb5ZonaCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pb5ZonaCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pb5ZonaCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pb5ZonaCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pb5ZonaCombobox.Name = "pb5ZonaCombobox";
+            this.pb5ZonaCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pb5ZonaCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pb5ZonaCombobox.TabIndex = 4;
+            this.pb5ZonaCombobox.Texts = "";
             // 
             // panel27
             // 
             this.panel27.Controls.Add(this.label16);
-            this.panel27.Controls.Add(this.cComboBox11);
+            this.panel27.Controls.Add(this.pb5ModoCombobox);
             this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel27.Location = new System.Drawing.Point(5, 15);
             this.panel27.Name = "panel27";
@@ -919,29 +924,29 @@
             this.label16.TabIndex = 10;
             this.label16.Text = "Modo";
             // 
-            // cComboBox11
+            // pb5ModoCombobox
             // 
-            this.cComboBox11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox11.BorderSize = 2;
-            this.cComboBox11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox11.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox11.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox11.Items.AddRange(new object[] {
+            this.pb5ModoCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb5ModoCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb5ModoCombobox.BorderSize = 2;
+            this.pb5ModoCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pb5ModoCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pb5ModoCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pb5ModoCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pb5ModoCombobox.Items.AddRange(new object[] {
             "Entrada Digital",
             "Saída Digital",
             "Entrada Analógica"});
-            this.cComboBox11.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox11.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox11.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox11.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox11.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox11.Name = "cComboBox11";
-            this.cComboBox11.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox11.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox11.TabIndex = 4;
-            this.cComboBox11.Texts = "";
+            this.pb5ModoCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pb5ModoCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pb5ModoCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pb5ModoCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pb5ModoCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pb5ModoCombobox.Name = "pb5ModoCombobox";
+            this.pb5ModoCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pb5ModoCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pb5ModoCombobox.TabIndex = 4;
+            this.pb5ModoCombobox.Texts = "";
             // 
             // panel23
             // 
@@ -978,7 +983,7 @@
             // panel21
             // 
             this.panel21.Controls.Add(this.label12);
-            this.panel21.Controls.Add(this.cComboBox8);
+            this.panel21.Controls.Add(this.pa0ZonaCombobox);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel21.Location = new System.Drawing.Point(5, 67);
             this.panel21.Name = "panel21";
@@ -998,36 +1003,36 @@
             this.label12.TabIndex = 10;
             this.label12.Text = "Zona";
             // 
-            // cComboBox8
+            // pa0ZonaCombobox
             // 
-            this.cComboBox8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox8.BorderSize = 2;
-            this.cComboBox8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox8.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox8.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox8.Items.AddRange(new object[] {
+            this.pa0ZonaCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa0ZonaCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa0ZonaCombobox.BorderSize = 2;
+            this.pa0ZonaCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa0ZonaCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa0ZonaCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa0ZonaCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa0ZonaCombobox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4"});
-            this.cComboBox8.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox8.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox8.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox8.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox8.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox8.Name = "cComboBox8";
-            this.cComboBox8.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox8.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox8.TabIndex = 4;
-            this.cComboBox8.Texts = "";
+            this.pa0ZonaCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa0ZonaCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa0ZonaCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa0ZonaCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa0ZonaCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa0ZonaCombobox.Name = "pa0ZonaCombobox";
+            this.pa0ZonaCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa0ZonaCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa0ZonaCombobox.TabIndex = 4;
+            this.pa0ZonaCombobox.Texts = "";
             // 
             // panel22
             // 
             this.panel22.Controls.Add(this.label13);
-            this.panel22.Controls.Add(this.cComboBox9);
+            this.panel22.Controls.Add(this.pa0ModoCombobox);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel22.Location = new System.Drawing.Point(5, 15);
             this.panel22.Name = "panel22";
@@ -1047,29 +1052,29 @@
             this.label13.TabIndex = 10;
             this.label13.Text = "Modo";
             // 
-            // cComboBox9
+            // pa0ModoCombobox
             // 
-            this.cComboBox9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox9.BorderSize = 2;
-            this.cComboBox9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox9.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox9.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox9.Items.AddRange(new object[] {
+            this.pa0ModoCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa0ModoCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa0ModoCombobox.BorderSize = 2;
+            this.pa0ModoCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa0ModoCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa0ModoCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa0ModoCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa0ModoCombobox.Items.AddRange(new object[] {
             "Entrada Digital",
             "Saída Digital",
             "Entrada Analógica"});
-            this.cComboBox9.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox9.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox9.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox9.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox9.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox9.Name = "cComboBox9";
-            this.cComboBox9.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox9.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox9.TabIndex = 4;
-            this.cComboBox9.Texts = "";
+            this.pa0ModoCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa0ModoCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa0ModoCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa0ModoCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa0ModoCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa0ModoCombobox.Name = "pa0ModoCombobox";
+            this.pa0ModoCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa0ModoCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa0ModoCombobox.TabIndex = 4;
+            this.pa0ModoCombobox.Texts = "";
             // 
             // panel19
             // 
@@ -1106,7 +1111,7 @@
             // panel16
             // 
             this.panel16.Controls.Add(this.label8);
-            this.panel16.Controls.Add(this.cComboBox6);
+            this.panel16.Controls.Add(this.pa9ZonaCombobox);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(5, 67);
             this.panel16.Name = "panel16";
@@ -1126,36 +1131,36 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Zona";
             // 
-            // cComboBox6
+            // pa9ZonaCombobox
             // 
-            this.cComboBox6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox6.BorderSize = 2;
-            this.cComboBox6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox6.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox6.Items.AddRange(new object[] {
+            this.pa9ZonaCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa9ZonaCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa9ZonaCombobox.BorderSize = 2;
+            this.pa9ZonaCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa9ZonaCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa9ZonaCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa9ZonaCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa9ZonaCombobox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4"});
-            this.cComboBox6.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox6.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox6.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox6.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox6.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox6.Name = "cComboBox6";
-            this.cComboBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox6.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox6.TabIndex = 4;
-            this.cComboBox6.Texts = "";
+            this.pa9ZonaCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa9ZonaCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa9ZonaCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa9ZonaCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa9ZonaCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa9ZonaCombobox.Name = "pa9ZonaCombobox";
+            this.pa9ZonaCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa9ZonaCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa9ZonaCombobox.TabIndex = 4;
+            this.pa9ZonaCombobox.Texts = "";
             // 
             // panel17
             // 
             this.panel17.Controls.Add(this.label9);
-            this.panel17.Controls.Add(this.cComboBox7);
+            this.panel17.Controls.Add(this.pa9ModoCombobox);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel17.Location = new System.Drawing.Point(5, 15);
             this.panel17.Name = "panel17";
@@ -1175,29 +1180,29 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "Modo";
             // 
-            // cComboBox7
+            // pa9ModoCombobox
             // 
-            this.cComboBox7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox7.BorderSize = 2;
-            this.cComboBox7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox7.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox7.Items.AddRange(new object[] {
+            this.pa9ModoCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa9ModoCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa9ModoCombobox.BorderSize = 2;
+            this.pa9ModoCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa9ModoCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa9ModoCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa9ModoCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa9ModoCombobox.Items.AddRange(new object[] {
             "Entrada Digital",
             "Saída Digital",
             "Entrada Analógica"});
-            this.cComboBox7.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox7.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox7.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox7.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox7.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox7.Name = "cComboBox7";
-            this.cComboBox7.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox7.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox7.TabIndex = 4;
-            this.cComboBox7.Texts = "";
+            this.pa9ModoCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa9ModoCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa9ModoCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa9ModoCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa9ModoCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa9ModoCombobox.Name = "pa9ModoCombobox";
+            this.pa9ModoCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa9ModoCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa9ModoCombobox.TabIndex = 4;
+            this.pa9ModoCombobox.Texts = "";
             // 
             // panel13
             // 
@@ -1234,7 +1239,7 @@
             // panel11
             // 
             this.panel11.Controls.Add(this.label5);
-            this.panel11.Controls.Add(this.cComboBox4);
+            this.panel11.Controls.Add(this.pa8ZonaCombobox);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(5, 67);
             this.panel11.Name = "panel11";
@@ -1254,36 +1259,36 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Zona";
             // 
-            // cComboBox4
+            // pa8ZonaCombobox
             // 
-            this.cComboBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox4.BorderSize = 2;
-            this.cComboBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox4.Items.AddRange(new object[] {
+            this.pa8ZonaCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa8ZonaCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa8ZonaCombobox.BorderSize = 2;
+            this.pa8ZonaCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa8ZonaCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa8ZonaCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa8ZonaCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa8ZonaCombobox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4"});
-            this.cComboBox4.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox4.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox4.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox4.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox4.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox4.Name = "cComboBox4";
-            this.cComboBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox4.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox4.TabIndex = 4;
-            this.cComboBox4.Texts = "";
+            this.pa8ZonaCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa8ZonaCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa8ZonaCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa8ZonaCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa8ZonaCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa8ZonaCombobox.Name = "pa8ZonaCombobox";
+            this.pa8ZonaCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa8ZonaCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa8ZonaCombobox.TabIndex = 4;
+            this.pa8ZonaCombobox.Texts = "";
             // 
             // panel12
             // 
             this.panel12.Controls.Add(this.label6);
-            this.panel12.Controls.Add(this.cComboBox5);
+            this.panel12.Controls.Add(this.pa8ModoCombobox);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(5, 15);
             this.panel12.Name = "panel12";
@@ -1303,29 +1308,29 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Modo";
             // 
-            // cComboBox5
+            // pa8ModoCombobox
             // 
-            this.cComboBox5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox5.BorderSize = 2;
-            this.cComboBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox5.Items.AddRange(new object[] {
+            this.pa8ModoCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa8ModoCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa8ModoCombobox.BorderSize = 2;
+            this.pa8ModoCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa8ModoCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa8ModoCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa8ModoCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa8ModoCombobox.Items.AddRange(new object[] {
             "Entrada Digital",
             "Saída Digital",
             "Entrada Analógica"});
-            this.cComboBox5.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox5.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox5.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox5.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox5.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox5.Name = "cComboBox5";
-            this.cComboBox5.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox5.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox5.TabIndex = 4;
-            this.cComboBox5.Texts = "";
+            this.pa8ModoCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa8ModoCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa8ModoCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa8ModoCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa8ModoCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa8ModoCombobox.Name = "pa8ModoCombobox";
+            this.pa8ModoCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa8ModoCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa8ModoCombobox.TabIndex = 4;
+            this.pa8ModoCombobox.Texts = "";
             // 
             // label4
             // 
@@ -1362,7 +1367,7 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.cComboBox2);
+            this.panel8.Controls.Add(this.pa1ZonaCombobox);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(5, 67);
             this.panel8.Name = "panel8";
@@ -1382,36 +1387,36 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Zona";
             // 
-            // cComboBox2
+            // pa1ZonaCombobox
             // 
-            this.cComboBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox2.BorderSize = 2;
-            this.cComboBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox2.Items.AddRange(new object[] {
+            this.pa1ZonaCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa1ZonaCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa1ZonaCombobox.BorderSize = 2;
+            this.pa1ZonaCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa1ZonaCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa1ZonaCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa1ZonaCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa1ZonaCombobox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4"});
-            this.cComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox2.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox2.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox2.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox2.Name = "cComboBox2";
-            this.cComboBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox2.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox2.TabIndex = 4;
-            this.cComboBox2.Texts = "";
+            this.pa1ZonaCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa1ZonaCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa1ZonaCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa1ZonaCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa1ZonaCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa1ZonaCombobox.Name = "pa1ZonaCombobox";
+            this.pa1ZonaCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa1ZonaCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa1ZonaCombobox.TabIndex = 4;
+            this.pa1ZonaCombobox.Texts = "";
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.label3);
-            this.panel9.Controls.Add(this.cComboBox3);
+            this.panel9.Controls.Add(this.pa1ModoCombobox);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(5, 15);
             this.panel9.Name = "panel9";
@@ -1431,29 +1436,29 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Modo";
             // 
-            // cComboBox3
+            // pa1ModoCombobox
             // 
-            this.cComboBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox3.BorderSize = 2;
-            this.cComboBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox3.Items.AddRange(new object[] {
+            this.pa1ModoCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa1ModoCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa1ModoCombobox.BorderSize = 2;
+            this.pa1ModoCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa1ModoCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa1ModoCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa1ModoCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa1ModoCombobox.Items.AddRange(new object[] {
             "Entrada Digital",
             "Saída Digital",
             "Entrada Analógica"});
-            this.cComboBox3.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox3.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox3.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox3.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox3.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox3.Name = "cComboBox3";
-            this.cComboBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox3.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox3.TabIndex = 4;
-            this.cComboBox3.Texts = "";
+            this.pa1ModoCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa1ModoCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa1ModoCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa1ModoCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa1ModoCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa1ModoCombobox.Name = "pa1ModoCombobox";
+            this.pa1ModoCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa1ModoCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa1ModoCombobox.TabIndex = 4;
+            this.pa1ModoCombobox.Texts = "";
             // 
             // panel3
             // 
@@ -1490,7 +1495,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.cComboBox1);
+            this.panel2.Controls.Add(this.pa15ZonaCombobox);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(5, 67);
             this.panel2.Name = "panel2";
@@ -1510,36 +1515,36 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Zona";
             // 
-            // cComboBox1
+            // pa15ZonaCombobox
             // 
-            this.cComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox1.BorderSize = 2;
-            this.cComboBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cComboBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.cComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.cComboBox1.Items.AddRange(new object[] {
+            this.pa15ZonaCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa15ZonaCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa15ZonaCombobox.BorderSize = 2;
+            this.pa15ZonaCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa15ZonaCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa15ZonaCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa15ZonaCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa15ZonaCombobox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4"});
-            this.cComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.cComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this.cComboBox1.Location = new System.Drawing.Point(0, 10);
-            this.cComboBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.cComboBox1.MinimumSize = new System.Drawing.Size(272, 40);
-            this.cComboBox1.Name = "cComboBox1";
-            this.cComboBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.cComboBox1.Size = new System.Drawing.Size(569, 40);
-            this.cComboBox1.TabIndex = 4;
-            this.cComboBox1.Texts = "";
+            this.pa15ZonaCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa15ZonaCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa15ZonaCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa15ZonaCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa15ZonaCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa15ZonaCombobox.Name = "pa15ZonaCombobox";
+            this.pa15ZonaCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa15ZonaCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa15ZonaCombobox.TabIndex = 4;
+            this.pa15ZonaCombobox.Texts = "";
             // 
             // panel18
             // 
             this.panel18.Controls.Add(this.label17);
-            this.panel18.Controls.Add(this.multicastClasseComboBox);
+            this.panel18.Controls.Add(this.pa15ModoCombobox);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(5, 15);
             this.panel18.Name = "panel18";
@@ -1559,29 +1564,60 @@
             this.label17.TabIndex = 10;
             this.label17.Text = "Modo";
             // 
-            // multicastClasseComboBox
+            // pa15ModoCombobox
             // 
-            this.multicastClasseComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.multicastClasseComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.multicastClasseComboBox.BorderSize = 2;
-            this.multicastClasseComboBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.multicastClasseComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.multicastClasseComboBox.ForeColor = System.Drawing.Color.DimGray;
-            this.multicastClasseComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.multicastClasseComboBox.Items.AddRange(new object[] {
+            this.pa15ModoCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pa15ModoCombobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa15ModoCombobox.BorderSize = 2;
+            this.pa15ModoCombobox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pa15ModoCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.pa15ModoCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.pa15ModoCombobox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.pa15ModoCombobox.Items.AddRange(new object[] {
             "Entrada Digital",
             "Saída Digital",
             "Entrada Analógica"});
-            this.multicastClasseComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.multicastClasseComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.multicastClasseComboBox.Location = new System.Drawing.Point(0, 10);
-            this.multicastClasseComboBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.multicastClasseComboBox.MinimumSize = new System.Drawing.Size(272, 40);
-            this.multicastClasseComboBox.Name = "multicastClasseComboBox";
-            this.multicastClasseComboBox.Padding = new System.Windows.Forms.Padding(2);
-            this.multicastClasseComboBox.Size = new System.Drawing.Size(569, 40);
-            this.multicastClasseComboBox.TabIndex = 4;
-            this.multicastClasseComboBox.Texts = "";
+            this.pa15ModoCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.pa15ModoCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.pa15ModoCombobox.Location = new System.Drawing.Point(0, 10);
+            this.pa15ModoCombobox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pa15ModoCombobox.MinimumSize = new System.Drawing.Size(272, 40);
+            this.pa15ModoCombobox.Name = "pa15ModoCombobox";
+            this.pa15ModoCombobox.Padding = new System.Windows.Forms.Padding(2);
+            this.pa15ModoCombobox.Size = new System.Drawing.Size(569, 40);
+            this.pa15ModoCombobox.TabIndex = 4;
+            this.pa15ModoCombobox.Texts = "";
+            // 
+            // panel44
+            // 
+            this.panel44.Controls.Add(this.enviarConfiguracoesButton);
+            this.panel44.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel44.Location = new System.Drawing.Point(10, 1548);
+            this.panel44.Name = "panel44";
+            this.panel44.Padding = new System.Windows.Forms.Padding(10);
+            this.panel44.Size = new System.Drawing.Size(581, 56);
+            this.panel44.TabIndex = 58;
+            // 
+            // enviarConfiguracoesButton
+            // 
+            this.enviarConfiguracoesButton.BackColor = System.Drawing.Color.LimeGreen;
+            this.enviarConfiguracoesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.enviarConfiguracoesButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.enviarConfiguracoesButton.FlatAppearance.BorderSize = 0;
+            this.enviarConfiguracoesButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.enviarConfiguracoesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.enviarConfiguracoesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.enviarConfiguracoesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enviarConfiguracoesButton.ForeColor = System.Drawing.Color.White;
+            this.enviarConfiguracoesButton.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.enviarConfiguracoesButton.IconColor = System.Drawing.Color.Black;
+            this.enviarConfiguracoesButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.enviarConfiguracoesButton.Location = new System.Drawing.Point(10, 10);
+            this.enviarConfiguracoesButton.Name = "enviarConfiguracoesButton";
+            this.enviarConfiguracoesButton.Size = new System.Drawing.Size(561, 36);
+            this.enviarConfiguracoesButton.TabIndex = 13;
+            this.enviarConfiguracoesButton.Text = "Enviar Configurações";
+            this.enviarConfiguracoesButton.UseVisualStyleBackColor = false;
             // 
             // FormConfigurarIos
             // 
@@ -1591,7 +1627,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(638, 527);
             this.ControlBox = false;
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.configurarIosPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel15);
@@ -1602,8 +1638,8 @@
             this.groupBox1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.configurarIosPanel.ResumeLayout(false);
+            this.configurarIosPanel.PerformLayout();
             this.panel41.ResumeLayout(false);
             this.panel42.ResumeLayout(false);
             this.panel42.PerformLayout();
@@ -1654,6 +1690,7 @@
             this.panel2.PerformLayout();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
+            this.panel44.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1669,95 +1706,97 @@
         private FontAwesome.Sharp.IconButton conectarCOMButton;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox configurarIosPanel;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label17;
-        private CustomControls.CComboBox multicastClasseComboBox;
+        private CustomControls.CComboBox pa15ModoCombobox;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private CustomControls.CComboBox cComboBox1;
+        private CustomControls.CComboBox pa15ZonaCombobox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label2;
-        private CustomControls.CComboBox cComboBox2;
+        private CustomControls.CComboBox pa1ZonaCombobox;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label3;
-        private CustomControls.CComboBox cComboBox3;
+        private CustomControls.CComboBox pa1ModoCombobox;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label8;
-        private CustomControls.CComboBox cComboBox6;
+        private CustomControls.CComboBox pa9ZonaCombobox;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label label9;
-        private CustomControls.CComboBox cComboBox7;
+        private CustomControls.CComboBox pa9ModoCombobox;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label5;
-        private CustomControls.CComboBox cComboBox4;
+        private CustomControls.CComboBox pa8ZonaCombobox;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label6;
-        private CustomControls.CComboBox cComboBox5;
+        private CustomControls.CComboBox pa8ModoCombobox;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel41;
         private System.Windows.Forms.Panel panel42;
         private System.Windows.Forms.Label label29;
-        private CustomControls.CComboBox cComboBox18;
+        private CustomControls.CComboBox pb12ZonaCombobox;
         private System.Windows.Forms.Panel panel43;
         private System.Windows.Forms.Label label30;
-        private CustomControls.CComboBox cComboBox19;
+        private CustomControls.CComboBox pb12ModoCombobox;
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Panel panel37;
         private System.Windows.Forms.Panel panel38;
         private System.Windows.Forms.Label label26;
-        private CustomControls.CComboBox cComboBox16;
+        private CustomControls.CComboBox pa2ZonaCombobox;
         private System.Windows.Forms.Panel panel39;
         private System.Windows.Forms.Label label27;
-        private CustomControls.CComboBox cComboBox17;
+        private CustomControls.CComboBox pa2ModoCombobox;
         private System.Windows.Forms.Panel panel36;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel33;
         private System.Windows.Forms.Panel panel34;
         private System.Windows.Forms.Label label23;
-        private CustomControls.CComboBox cComboBox14;
+        private CustomControls.CComboBox pb3ZonaCombobox;
         private System.Windows.Forms.Panel panel35;
         private System.Windows.Forms.Label label24;
-        private CustomControls.CComboBox cComboBox15;
+        private CustomControls.CComboBox pb3ModoCombobox;
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.Label label20;
-        private CustomControls.CComboBox cComboBox12;
+        private CustomControls.CComboBox pb4ZonaCombobox;
         private System.Windows.Forms.Panel panel31;
         private System.Windows.Forms.Label label21;
-        private CustomControls.CComboBox cComboBox13;
+        private CustomControls.CComboBox pb4ModoCombobox;
         private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Label label15;
-        private CustomControls.CComboBox cComboBox10;
+        private CustomControls.CComboBox pb5ZonaCombobox;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Label label16;
-        private CustomControls.CComboBox cComboBox11;
+        private CustomControls.CComboBox pb5ModoCombobox;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Label label12;
-        private CustomControls.CComboBox cComboBox8;
+        private CustomControls.CComboBox pa0ZonaCombobox;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Label label13;
-        private CustomControls.CComboBox cComboBox9;
+        private CustomControls.CComboBox pa0ModoCombobox;
         private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Panel panel44;
+        private FontAwesome.Sharp.IconButton enviarConfiguracoesButton;
     }
 }

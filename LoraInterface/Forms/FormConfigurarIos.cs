@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.IO.Ports;
@@ -33,6 +34,45 @@ namespace LoraInterface.Forms
                 comboBoxCOM.Items.Add("COM" + i.ToString());
             }
             comboBoxCOM.SelectedIndex = 0;
+
+            //Inicializando índices dos comboboxes.
+            List<CComboBox> iosComboboxList = new List<CComboBox>() {
+                pa15ModoCombobox,
+                pa15ZonaCombobox,
+
+                pa1ModoCombobox,
+                pa1ZonaCombobox,
+
+                pa8ModoCombobox,
+                pa8ZonaCombobox,
+
+                pa9ModoCombobox,
+                pa9ZonaCombobox,
+
+                pa0ModoCombobox,
+                pa0ZonaCombobox,
+
+                pb5ModoCombobox,
+                pb5ZonaCombobox,
+
+                pb4ModoCombobox,
+                pb4ZonaCombobox,
+
+                pb3ModoCombobox,
+                pb3ZonaCombobox,
+
+                pa2ModoCombobox,
+                pa2ZonaCombobox,
+
+                pb12ModoCombobox,
+                pb12ZonaCombobox
+            };
+
+            foreach (CComboBox ioCombobox in iosComboboxList)
+            {
+                ioCombobox.SelectedIndex = 0;
+            }
+
 
             //Tornando o form e controles visíveis para outros forms
             formInstance = this;
@@ -69,6 +109,9 @@ namespace LoraInterface.Forms
                         MainForm.formInstance.acessoModoOtaa.Enabled = false;
                         MainForm.formInstance.acessoConfigurarIos.Enabled = false;
 
+                        //Habilita o grupo de IOs
+                        configurarIosPanel.Visible = true;
+
                         MainForm.formInstance.acessoSideBar.Cursor = Cursors.No;
 
                         new CustomDialog("Sucesso!", $"Conectado em '{portSelecionado}' com sucesso.", Color.LimeGreen).ShowDialog();
@@ -97,6 +140,9 @@ namespace LoraInterface.Forms
                 MainForm.formInstance.acessoModoOtaa.Enabled = true;
                 MainForm.formInstance.acessoConfigurarIos.Enabled = true;
 
+                //Desabilita o grupo de IOs
+                configurarIosPanel.Visible = false;
+
                 MainForm.formInstance.acessoSideBar.Cursor = Cursors.Default;
 
                 new CustomDialog("Sucesso!", $"Desconectado com sucesso.", Color.LimeGreen).ShowDialog();
@@ -114,6 +160,12 @@ namespace LoraInterface.Forms
             MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
 
             MainForm.formInstance.console.ScrollToCaret();
+
+        }
+
+        //Envia as configurações dos IOs na memória flash do device.
+        private void enviarConfiguracaoButton_Click(object sender, EventArgs e)
+        {
 
         }
     }
