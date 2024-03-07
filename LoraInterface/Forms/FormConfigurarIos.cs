@@ -21,6 +21,9 @@ namespace LoraInterface.Forms
         //Tornando os controles do form e o forms acessíveis em outros forms.
         public static FormConfigurarIos formInstance;
 
+        //Lista de comboboxes dos IOs.
+        List<CComboBox> iosComboboxList = new List<CComboBox>();
+
         public FormConfigurarIos()
         {
             InitializeComponent();
@@ -35,38 +38,36 @@ namespace LoraInterface.Forms
             }
             comboBoxCOM.SelectedIndex = 0;
 
-            //Inicializando índices dos comboboxes.
-            List<CComboBox> iosComboboxList = new List<CComboBox>() {
-                pa15ModoCombobox,
-                pa15ZonaCombobox,
+            //Inicializando comboboxes dos IOs.
+            iosComboboxList.Add(pa15ModoCombobox);
+            iosComboboxList.Add(pa15ZonaCombobox);
 
-                pa1ModoCombobox,
-                pa1ZonaCombobox,
+            iosComboboxList.Add(pa1ModoCombobox);
+            iosComboboxList.Add(pa1ZonaCombobox);
 
-                pa8ModoCombobox,
-                pa8ZonaCombobox,
+            iosComboboxList.Add(pa8ModoCombobox);
+            iosComboboxList.Add(pa8ZonaCombobox);
 
-                pa9ModoCombobox,
-                pa9ZonaCombobox,
+            iosComboboxList.Add(pa9ModoCombobox);
+            iosComboboxList.Add(pa9ZonaCombobox);
 
-                pa0ModoCombobox,
-                pa0ZonaCombobox,
+            iosComboboxList.Add(pa0ModoCombobox);
+            iosComboboxList.Add(pa0ZonaCombobox);
 
-                pb5ModoCombobox,
-                pb5ZonaCombobox,
+            iosComboboxList.Add(pb5ModoCombobox);
+            iosComboboxList.Add(pb5ZonaCombobox);
 
-                pb4ModoCombobox,
-                pb4ZonaCombobox,
+            iosComboboxList.Add(pb4ModoCombobox);
+            iosComboboxList.Add(pb4ZonaCombobox);
 
-                pb3ModoCombobox,
-                pb3ZonaCombobox,
+            iosComboboxList.Add(pb3ModoCombobox);
+            iosComboboxList.Add(pb3ZonaCombobox);
 
-                pa2ModoCombobox,
-                pa2ZonaCombobox,
+            iosComboboxList.Add(pa2ModoCombobox);
+            iosComboboxList.Add(pa2ZonaCombobox);
 
-                pb12ModoCombobox,
-                pb12ZonaCombobox
-            };
+            iosComboboxList.Add(pb12ModoCombobox);
+            iosComboboxList.Add(pb12ZonaCombobox);
 
             foreach (CComboBox ioCombobox in iosComboboxList)
             {
@@ -150,6 +151,12 @@ namespace LoraInterface.Forms
             }
         }
 
+        //Envia as configurações dos IOs na memória flash do device.
+        private void enviarConfiguracoesButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         //Evento assíncrono serial port: retorna dados da placa à partir do momento em que um comando
         //AT é enviado ou um programa upado está rodando e escrevendo algo.
         private static void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -160,12 +167,6 @@ namespace LoraInterface.Forms
             MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
 
             MainForm.formInstance.console.ScrollToCaret();
-
-        }
-
-        //Envia as configurações dos IOs na memória flash do device.
-        private void enviarConfiguracaoButton_Click(object sender, EventArgs e)
-        {
 
         }
     }

@@ -1618,6 +1618,7 @@
             this.enviarConfiguracoesButton.TabIndex = 13;
             this.enviarConfiguracoesButton.Text = "Enviar Configurações";
             this.enviarConfiguracoesButton.UseVisualStyleBackColor = false;
+            this.enviarConfiguracoesButton.Click += new System.EventHandler(this.enviarConfiguracoesButton_Click);
             // 
             // FormConfigurarIos
             // 
