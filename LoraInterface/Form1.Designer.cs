@@ -38,6 +38,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.modoAbpButton = new FontAwesome.Sharp.IconButton();
             this.modoOtaaButton = new FontAwesome.Sharp.IconButton();
+            this.configurarIosButton = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.desktopPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -52,7 +53,6 @@
             this.topBarPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.infoFormToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.configurarIosButton = new FontAwesome.Sharp.IconButton();
             this.sideBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -65,7 +65,7 @@
             // 
             // sideBarPanel
             // 
-            this.sideBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(178)))), ((int)(((byte)(19)))));
+            this.sideBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(160)))), ((int)(((byte)(19)))));
             this.sideBarPanel.Controls.Add(this.panel1);
             this.sideBarPanel.Controls.Add(this.salvarButton);
             this.sideBarPanel.Controls.Add(this.abrirButton);
@@ -91,8 +91,8 @@
             // 
             this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuButton.FlatAppearance.BorderSize = 0;
-            this.menuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Goldenrod;
-            this.menuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.menuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
+            this.menuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
             this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menuButton.IconChar = FontAwesome.Sharp.IconChar.GripLines;
             this.menuButton.IconColor = System.Drawing.Color.White;
@@ -109,11 +109,12 @@
             // 
             // salvarButton
             // 
+            this.salvarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(160)))), ((int)(((byte)(19)))));
             this.salvarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.salvarButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.salvarButton.FlatAppearance.BorderSize = 0;
-            this.salvarButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Goldenrod;
-            this.salvarButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.salvarButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
+            this.salvarButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
             this.salvarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.salvarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salvarButton.ForeColor = System.Drawing.Color.White;
@@ -131,16 +132,17 @@
             this.salvarButton.Tag = "Salvar";
             this.salvarButton.Text = "Salvar";
             this.infoFormToolTip.SetToolTip(this.salvarButton, "Salvar configurações de conexão atual");
-            this.salvarButton.UseVisualStyleBackColor = true;
+            this.salvarButton.UseVisualStyleBackColor = false;
             this.salvarButton.Click += new System.EventHandler(this.salvarButton_Click);
             // 
             // abrirButton
             // 
+            this.abrirButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(160)))), ((int)(((byte)(19)))));
             this.abrirButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.abrirButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.abrirButton.FlatAppearance.BorderSize = 0;
-            this.abrirButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Goldenrod;
-            this.abrirButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.abrirButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
+            this.abrirButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
             this.abrirButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.abrirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.abrirButton.ForeColor = System.Drawing.Color.White;
@@ -158,7 +160,7 @@
             this.abrirButton.Tag = "Abrir";
             this.abrirButton.Text = "Abrir";
             this.infoFormToolTip.SetToolTip(this.abrirButton, "Carregar uma configuração de conexão salva");
-            this.abrirButton.UseVisualStyleBackColor = true;
+            this.abrirButton.UseVisualStyleBackColor = false;
             this.abrirButton.Click += new System.EventHandler(this.abrirButton_Click);
             // 
             // panel4
@@ -171,11 +173,12 @@
             // 
             // modoAbpButton
             // 
+            this.modoAbpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(160)))), ((int)(((byte)(19)))));
             this.modoAbpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.modoAbpButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.modoAbpButton.FlatAppearance.BorderSize = 0;
-            this.modoAbpButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Goldenrod;
-            this.modoAbpButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.modoAbpButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
+            this.modoAbpButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
             this.modoAbpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.modoAbpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modoAbpButton.ForeColor = System.Drawing.Color.White;
@@ -193,16 +196,17 @@
             this.modoAbpButton.Tag = "Modo ABP";
             this.modoAbpButton.Text = "Modo ABP";
             this.infoFormToolTip.SetToolTip(this.modoAbpButton, "Iniciar conexão no modo ABP");
-            this.modoAbpButton.UseVisualStyleBackColor = true;
+            this.modoAbpButton.UseVisualStyleBackColor = false;
             this.modoAbpButton.Click += new System.EventHandler(this.modoAbpButton_Click);
             // 
             // modoOtaaButton
             // 
+            this.modoOtaaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(160)))), ((int)(((byte)(19)))));
             this.modoOtaaButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.modoOtaaButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.modoOtaaButton.FlatAppearance.BorderSize = 0;
-            this.modoOtaaButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Goldenrod;
-            this.modoOtaaButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.modoOtaaButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
+            this.modoOtaaButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
             this.modoOtaaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.modoOtaaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modoOtaaButton.ForeColor = System.Drawing.Color.White;
@@ -220,8 +224,36 @@
             this.modoOtaaButton.Tag = "Modo OTAA";
             this.modoOtaaButton.Text = "Modo OTAA";
             this.infoFormToolTip.SetToolTip(this.modoOtaaButton, "Iniciar conexão no modo OTAA");
-            this.modoOtaaButton.UseVisualStyleBackColor = true;
+            this.modoOtaaButton.UseVisualStyleBackColor = false;
             this.modoOtaaButton.Click += new System.EventHandler(this.modoOtaaButton_Click);
+            // 
+            // configurarIosButton
+            // 
+            this.configurarIosButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(160)))), ((int)(((byte)(19)))));
+            this.configurarIosButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.configurarIosButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.configurarIosButton.FlatAppearance.BorderSize = 0;
+            this.configurarIosButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
+            this.configurarIosButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(110)))), ((int)(((byte)(19)))));
+            this.configurarIosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.configurarIosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.configurarIosButton.ForeColor = System.Drawing.Color.White;
+            this.configurarIosButton.IconChar = FontAwesome.Sharp.IconChar.Gear;
+            this.configurarIosButton.IconColor = System.Drawing.Color.White;
+            this.configurarIosButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.configurarIosButton.IconSize = 25;
+            this.configurarIosButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.configurarIosButton.Location = new System.Drawing.Point(0, 232);
+            this.configurarIosButton.Margin = new System.Windows.Forms.Padding(0);
+            this.configurarIosButton.Name = "configurarIosButton";
+            this.configurarIosButton.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.configurarIosButton.Size = new System.Drawing.Size(180, 36);
+            this.configurarIosButton.TabIndex = 8;
+            this.configurarIosButton.Tag = "Configurar IOs";
+            this.configurarIosButton.Text = "Configurar IOs";
+            this.infoFormToolTip.SetToolTip(this.configurarIosButton, "Configurar modos e zonas dos IOs");
+            this.configurarIosButton.UseVisualStyleBackColor = false;
+            this.configurarIosButton.Click += new System.EventHandler(this.configurarIosButton_Click);
             // 
             // panel2
             // 
@@ -434,33 +466,6 @@
             this.infoFormToolTip.IsBalloon = true;
             this.infoFormToolTip.ReshowDelay = 100;
             this.infoFormToolTip.ShowAlways = true;
-            // 
-            // configurarIosButton
-            // 
-            this.configurarIosButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.configurarIosButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.configurarIosButton.FlatAppearance.BorderSize = 0;
-            this.configurarIosButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Goldenrod;
-            this.configurarIosButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
-            this.configurarIosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.configurarIosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.configurarIosButton.ForeColor = System.Drawing.Color.White;
-            this.configurarIosButton.IconChar = FontAwesome.Sharp.IconChar.Gear;
-            this.configurarIosButton.IconColor = System.Drawing.Color.White;
-            this.configurarIosButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.configurarIosButton.IconSize = 25;
-            this.configurarIosButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.configurarIosButton.Location = new System.Drawing.Point(0, 232);
-            this.configurarIosButton.Margin = new System.Windows.Forms.Padding(0);
-            this.configurarIosButton.Name = "configurarIosButton";
-            this.configurarIosButton.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.configurarIosButton.Size = new System.Drawing.Size(180, 36);
-            this.configurarIosButton.TabIndex = 8;
-            this.configurarIosButton.Tag = "Configurar IOs";
-            this.configurarIosButton.Text = "Configurar IOs";
-            this.infoFormToolTip.SetToolTip(this.configurarIosButton, "Configurar modos e zonas dos IOs");
-            this.configurarIosButton.UseVisualStyleBackColor = true;
-            this.configurarIosButton.Click += new System.EventHandler(this.configurarIosButton_Click);
             // 
             // MainForm
             // 

@@ -198,16 +198,16 @@ namespace LoraInterface
                 modoAbpButton.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
 
                 modoOtaaButton.IconColor = Color.WhiteSmoke;
-                modoOtaaButton.BackColor = Color.FromArgb(253, 189, 19);
+                modoOtaaButton.BackColor = Color.FromArgb(253, 160, 19);
                 modoOtaaButton.ForeColor = Color.WhiteSmoke;
-                modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
-                modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+                modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
 
                 configurarIosButton.IconColor = Color.WhiteSmoke;
-                configurarIosButton.BackColor = Color.FromArgb(253, 189, 19);
+                configurarIosButton.BackColor = Color.FromArgb(253, 160, 19);
                 configurarIosButton.ForeColor = Color.WhiteSmoke;
-                configurarIosButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
-                configurarIosButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+                configurarIosButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                configurarIosButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
 
             }
             else if (form.Name.Contains("Otaa"))
@@ -220,16 +220,16 @@ namespace LoraInterface
                 modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
 
                 modoAbpButton.IconColor = Color.WhiteSmoke;
-                modoAbpButton.BackColor = Color.FromArgb(253, 189, 19);
+                modoAbpButton.BackColor = Color.FromArgb(253, 160, 19);
                 modoAbpButton.ForeColor = Color.WhiteSmoke;
-                modoAbpButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
-                modoAbpButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+                modoAbpButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                modoAbpButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
 
                 configurarIosButton.IconColor = Color.WhiteSmoke;
-                configurarIosButton.BackColor = Color.FromArgb(253, 189, 19);
+                configurarIosButton.BackColor = Color.FromArgb(253, 160, 19);
                 configurarIosButton.ForeColor = Color.WhiteSmoke;
-                configurarIosButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
-                configurarIosButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+                configurarIosButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                configurarIosButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
 
             } else if (form.Name.Contains("ConfigurarIos"))
             {
@@ -240,16 +240,16 @@ namespace LoraInterface
                 configurarIosButton.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
 
                 modoAbpButton.IconColor = Color.WhiteSmoke;
-                modoAbpButton.BackColor = Color.FromArgb(253, 189, 19);
+                modoAbpButton.BackColor = Color.FromArgb(253, 160, 19);
                 modoAbpButton.ForeColor = Color.WhiteSmoke;
-                modoAbpButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
-                modoAbpButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+                modoAbpButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                modoAbpButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
 
                 modoOtaaButton.IconColor = Color.WhiteSmoke;
-                modoOtaaButton.BackColor = Color.FromArgb(253, 189, 19);
+                modoOtaaButton.BackColor = Color.FromArgb(253, 160, 19);
                 modoOtaaButton.ForeColor = Color.WhiteSmoke;
-                modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
-                modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+                modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
 
             }
 
