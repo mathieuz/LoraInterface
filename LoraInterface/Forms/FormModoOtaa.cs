@@ -109,13 +109,6 @@ namespace LoraInterface.Forms
             multicastClasseComboBox.Items.Add("C");
             multicastClasseComboBox.SelectedIndex = 0;
 
-            //Desabilita opção de salvar.
-            try
-            {
-                MainForm.formInstance.acessoSalvar.Enabled = true;
-            }
-            catch {}
-
         }
 
         //Conexão com porta COM.

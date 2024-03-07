@@ -579,7 +579,7 @@ namespace LoraInterface
                     }
 
                 }
-                else
+                else if (modoSelecionado == 1)
                 {
                     try
                     {
@@ -592,6 +592,19 @@ namespace LoraInterface
 
                     }
 
+                }
+                else if (modoSelecionado == 2)
+                {
+                    try
+                    {
+                        FormConfigurarIos.formInstance.serialPort.WriteLine(cmdConsole);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        consolePanel.AppendText(ex.Message + Environment.NewLine);
+
+                    }
                 }
             }
         }

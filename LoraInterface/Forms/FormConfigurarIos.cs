@@ -18,14 +18,7 @@ namespace LoraInterface.Forms
         public SerialPort serialPort = new SerialPort();
 
         //Tornando os controles do form e o forms acessíveis em outros forms.
-        public static FormModoAbp formInstance;
-        public CTextBox acessoDeviceAddress;
-        public CTextBox acessoAppskey;
-        public CTextBox acessoNwkskey;
-        public CTextBox acessoDeveui;
-        public CComboBox acessoClasse;
-        public CToggle acessoToggleModoConfirmacao;
-        public CComboBox acessoNumTentativas;
+        public static FormConfigurarIos formInstance;
 
         public FormConfigurarIos()
         {
@@ -41,13 +34,9 @@ namespace LoraInterface.Forms
             }
             comboBoxCOM.SelectedIndex = 0;
 
-            //Desabilita opção de salvar.
-            try
-            {
-                MainForm.formInstance.acessoSalvar.Enabled = false;
-            
-            } catch {}
-            
+            //Tornando o form e controles visíveis para outros forms
+            formInstance = this;
+
         }
 
         //Conexão com porta COM.
@@ -60,7 +49,7 @@ namespace LoraInterface.Forms
                 serialPort.BaudRate = 115200;
                 serialPort.PortName = portSelecionado;
 
-                MainForm.formInstance.modoSelecionado = 0;
+                MainForm.formInstance.modoSelecionado = 2;
 
                 //Verifica se a porta selecionada está disponível. Se sim, conecta.
                 if (serialPort.IsOpen == false)
@@ -125,31 +114,6 @@ namespace LoraInterface.Forms
             MainForm.formInstance.console.AppendText(respostaPlaca + Environment.NewLine);
 
             MainForm.formInstance.console.ScrollToCaret();
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel18_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void adicionarGrupoMulticastButton_Click(object sender, EventArgs e)
-        {
 
         }
     }
