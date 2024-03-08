@@ -22,9 +22,11 @@ namespace LoraInterface
 
         public static MainForm formInstance;
         public RichTextBox console;
+        public IconButton acessoSalvar;
         public IconButton acessoAbrir;
         public IconButton acessoModoAbp;
         public IconButton acessoModoOtaa;
+        public IconButton acessoConfigurarIos;
         public SerialPort serialPort = new SerialPort();
         public FlowLayoutPanel acessoSideBar;
         public int modoSelecionado = 0;
@@ -51,9 +53,11 @@ namespace LoraInterface
             //Tornando o acesso ao console e demais controles públicos/visíveis para outros forms.
             formInstance = this;
             console = consolePanel;
+            acessoSalvar = salvarButton;
             acessoAbrir = abrirButton;
             acessoModoAbp = modoAbpButton;
             acessoModoOtaa = modoOtaaButton;
+            acessoConfigurarIos = configurarIosButton;
             acessoSideBar = sideBarPanel;
             
         }
@@ -190,16 +194,20 @@ namespace LoraInterface
                 modoAbpButton.IconColor = Color.FromArgb(65, 65, 65);
                 modoAbpButton.BackColor = Color.WhiteSmoke;
                 modoAbpButton.ForeColor = Color.FromArgb(65, 65, 65);
-
                 modoAbpButton.FlatAppearance.MouseDownBackColor = Color.WhiteSmoke;
                 modoAbpButton.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
 
                 modoOtaaButton.IconColor = Color.WhiteSmoke;
-                modoOtaaButton.BackColor = Color.FromArgb(253, 189, 19);
+                modoOtaaButton.BackColor = Color.FromArgb(253, 160, 19);
                 modoOtaaButton.ForeColor = Color.WhiteSmoke;
+                modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
 
-                modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
-                modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+                configurarIosButton.IconColor = Color.WhiteSmoke;
+                configurarIosButton.BackColor = Color.FromArgb(253, 160, 19);
+                configurarIosButton.ForeColor = Color.WhiteSmoke;
+                configurarIosButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                configurarIosButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
 
             }
             else if (form.Name.Contains("Otaa"))
@@ -208,16 +216,40 @@ namespace LoraInterface
                 modoOtaaButton.IconColor = Color.FromArgb(65, 65, 65);
                 modoOtaaButton.BackColor = Color.WhiteSmoke;
                 modoOtaaButton.ForeColor = Color.FromArgb(65, 65, 65);
-
                 modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.WhiteSmoke;
                 modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
 
                 modoAbpButton.IconColor = Color.WhiteSmoke;
-                modoAbpButton.BackColor = Color.FromArgb(253, 189, 19);
+                modoAbpButton.BackColor = Color.FromArgb(253, 160, 19);
                 modoAbpButton.ForeColor = Color.WhiteSmoke;
+                modoAbpButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                modoAbpButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
 
-                modoAbpButton.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
-                modoAbpButton.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+                configurarIosButton.IconColor = Color.WhiteSmoke;
+                configurarIosButton.BackColor = Color.FromArgb(253, 160, 19);
+                configurarIosButton.ForeColor = Color.WhiteSmoke;
+                configurarIosButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                configurarIosButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
+
+            } else if (form.Name.Contains("ConfigurarIos"))
+            {
+                configurarIosButton.IconColor = Color.FromArgb(65, 65, 65);
+                configurarIosButton.BackColor = Color.WhiteSmoke;
+                configurarIosButton.ForeColor = Color.FromArgb(65, 65, 65);
+                configurarIosButton.FlatAppearance.MouseDownBackColor = Color.WhiteSmoke;
+                configurarIosButton.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
+
+                modoAbpButton.IconColor = Color.WhiteSmoke;
+                modoAbpButton.BackColor = Color.FromArgb(253, 160, 19);
+                modoAbpButton.ForeColor = Color.WhiteSmoke;
+                modoAbpButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                modoAbpButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
+
+                modoOtaaButton.IconColor = Color.WhiteSmoke;
+                modoOtaaButton.BackColor = Color.FromArgb(253, 160, 19);
+                modoOtaaButton.ForeColor = Color.WhiteSmoke;
+                modoOtaaButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 110, 19);
+                modoOtaaButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 110, 19);
 
             }
 
@@ -493,6 +525,11 @@ namespace LoraInterface
 
         }
 
+        private void configurarIosButton_Click(object sender, EventArgs e)
+        {
+            abrirForm(new FormConfigurarIos());
+        }
+
         public bool ColapsarConsole() {
             if (panel5.Height == 0)
             {
@@ -542,7 +579,7 @@ namespace LoraInterface
                     }
 
                 }
-                else
+                else if (modoSelecionado == 1)
                 {
                     try
                     {
@@ -555,6 +592,19 @@ namespace LoraInterface
 
                     }
 
+                }
+                else if (modoSelecionado == 2)
+                {
+                    try
+                    {
+                        FormConfigurarIos.formInstance.serialPort.WriteLine(cmdConsole);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        consolePanel.AppendText(ex.Message + Environment.NewLine);
+
+                    }
                 }
             }
         }

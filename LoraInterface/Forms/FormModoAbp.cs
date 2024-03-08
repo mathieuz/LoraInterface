@@ -121,6 +121,7 @@ namespace LoraInterface.Forms
                         MainForm.formInstance.acessoAbrir.Enabled = false;
                         MainForm.formInstance.acessoModoAbp.Enabled = false;
                         MainForm.formInstance.acessoModoOtaa.Enabled = false;
+                        MainForm.formInstance.acessoConfigurarIos.Enabled = false;
 
                         MainForm.formInstance.acessoSideBar.Cursor = Cursors.No;
 
@@ -154,6 +155,7 @@ namespace LoraInterface.Forms
                 MainForm.formInstance.acessoAbrir.Enabled = true;
                 MainForm.formInstance.acessoModoAbp.Enabled = true;
                 MainForm.formInstance.acessoModoOtaa.Enabled = true;
+                MainForm.formInstance.acessoConfigurarIos.Enabled = true;
 
                 MainForm.formInstance.acessoSideBar.Cursor = Cursors.Default;
 
