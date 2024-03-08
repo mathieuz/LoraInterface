@@ -1,9 +1,11 @@
-﻿using LoraInterface.CustomControls;
+﻿using LoraInterface.Classes;
+using LoraInterface.CustomControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO.Ports;
 using System.Linq;
@@ -154,7 +156,39 @@ namespace LoraInterface.Forms
         //Envia as configurações dos IOs na memória flash do device.
         private void enviarConfiguracoesButton_Click(object sender, EventArgs e)
         {
-            
+
+            //Buffer de bytes das configurações dos IOs.
+            byte[] iosConfig = new byte[20];
+
+            //Populando os 10 primeiros endereços da flash com os modos das IOs.
+            uint indexCount = 0;
+
+            for (int i = 0; i < 20; i += 2)
+            {
+                byte config = (byte)(iosComboboxList[i]).SelectedIndex;
+                iosConfig[indexCount] = config;
+                indexCount++;
+            }
+
+            //Populando os 10 últimos endereços da flash com as zonas das IOs.
+            indexCount = 10;
+
+            for (int i = 1; i < 20; i += 2)
+            {
+                byte config = (byte)(iosComboboxList[i]).SelectedIndex;
+                iosConfig[indexCount] = config;
+                indexCount++;
+            }
+
+            //O buffer das configurações de IO a ser enviado junto com CRC.
+            byte[] iosConfigBuffer = new byte[22];
+
+            iosConfig.CopyTo(iosConfigBuffer, 0);
+            iosConfigBuffer[20] = CRC16.CalcAndGetHigh(iosConfig);
+            iosConfigBuffer[21] = CRC16.CalcAndGetLow(iosConfig);
+
+            //Enviando as configurações na serial.
+            serialPort.Write(iosConfigBuffer, 0, iosConfigBuffer.Length);
         }
 
         //Evento assíncrono serial port: retorna dados da placa à partir do momento em que um comando

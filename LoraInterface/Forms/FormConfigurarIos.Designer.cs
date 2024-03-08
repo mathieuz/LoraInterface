@@ -37,6 +37,9 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.configurarIosPanel = new System.Windows.Forms.GroupBox();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.enviarConfiguracoesButton = new FontAwesome.Sharp.IconButton();
+            this.panel45 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.panel41 = new System.Windows.Forms.Panel();
             this.panel42 = new System.Windows.Forms.Panel();
@@ -126,12 +129,11 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.pa15ModoCombobox = new LoraInterface.CustomControls.CComboBox();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.enviarConfiguracoesButton = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.configurarIosPanel.SuspendLayout();
+            this.panel44.SuspendLayout();
             this.panel41.SuspendLayout();
             this.panel42.SuspendLayout();
             this.panel43.SuspendLayout();
@@ -162,7 +164,6 @@
             this.panel24.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel18.SuspendLayout();
-            this.panel44.SuspendLayout();
             this.SuspendLayout();
             // 
             // label11
@@ -275,6 +276,7 @@
             // 
             this.configurarIosPanel.AutoSize = true;
             this.configurarIosPanel.Controls.Add(this.panel44);
+            this.configurarIosPanel.Controls.Add(this.panel45);
             this.configurarIosPanel.Controls.Add(this.label31);
             this.configurarIosPanel.Controls.Add(this.panel41);
             this.configurarIosPanel.Controls.Add(this.panel40);
@@ -310,11 +312,51 @@
             this.configurarIosPanel.Location = new System.Drawing.Point(10, 212);
             this.configurarIosPanel.Name = "configurarIosPanel";
             this.configurarIosPanel.Padding = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.configurarIosPanel.Size = new System.Drawing.Size(601, 1614);
+            this.configurarIosPanel.Size = new System.Drawing.Size(601, 1640);
             this.configurarIosPanel.TabIndex = 14;
             this.configurarIosPanel.TabStop = false;
             this.configurarIosPanel.Text = "Configurar IOs";
             this.configurarIosPanel.Visible = false;
+            // 
+            // panel44
+            // 
+            this.panel44.Controls.Add(this.enviarConfiguracoesButton);
+            this.panel44.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel44.Location = new System.Drawing.Point(10, 1574);
+            this.panel44.Name = "panel44";
+            this.panel44.Padding = new System.Windows.Forms.Padding(10);
+            this.panel44.Size = new System.Drawing.Size(581, 56);
+            this.panel44.TabIndex = 58;
+            // 
+            // enviarConfiguracoesButton
+            // 
+            this.enviarConfiguracoesButton.BackColor = System.Drawing.Color.LimeGreen;
+            this.enviarConfiguracoesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.enviarConfiguracoesButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.enviarConfiguracoesButton.FlatAppearance.BorderSize = 0;
+            this.enviarConfiguracoesButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.enviarConfiguracoesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.enviarConfiguracoesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.enviarConfiguracoesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enviarConfiguracoesButton.ForeColor = System.Drawing.Color.White;
+            this.enviarConfiguracoesButton.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.enviarConfiguracoesButton.IconColor = System.Drawing.Color.Black;
+            this.enviarConfiguracoesButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.enviarConfiguracoesButton.Location = new System.Drawing.Point(10, 10);
+            this.enviarConfiguracoesButton.Name = "enviarConfiguracoesButton";
+            this.enviarConfiguracoesButton.Size = new System.Drawing.Size(561, 36);
+            this.enviarConfiguracoesButton.TabIndex = 13;
+            this.enviarConfiguracoesButton.Text = "Enviar Configurações";
+            this.enviarConfiguracoesButton.UseVisualStyleBackColor = false;
+            this.enviarConfiguracoesButton.Click += new System.EventHandler(this.enviarConfiguracoesButton_Click);
+            // 
+            // panel45
+            // 
+            this.panel45.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel45.Location = new System.Drawing.Point(10, 1548);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(581, 26);
+            this.panel45.TabIndex = 59;
             // 
             // label31
             // 
@@ -1588,38 +1630,6 @@
             this.pa15ModoCombobox.TabIndex = 4;
             this.pa15ModoCombobox.Texts = "";
             // 
-            // panel44
-            // 
-            this.panel44.Controls.Add(this.enviarConfiguracoesButton);
-            this.panel44.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel44.Location = new System.Drawing.Point(10, 1548);
-            this.panel44.Name = "panel44";
-            this.panel44.Padding = new System.Windows.Forms.Padding(10);
-            this.panel44.Size = new System.Drawing.Size(581, 56);
-            this.panel44.TabIndex = 58;
-            // 
-            // enviarConfiguracoesButton
-            // 
-            this.enviarConfiguracoesButton.BackColor = System.Drawing.Color.LimeGreen;
-            this.enviarConfiguracoesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.enviarConfiguracoesButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.enviarConfiguracoesButton.FlatAppearance.BorderSize = 0;
-            this.enviarConfiguracoesButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
-            this.enviarConfiguracoesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            this.enviarConfiguracoesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.enviarConfiguracoesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enviarConfiguracoesButton.ForeColor = System.Drawing.Color.White;
-            this.enviarConfiguracoesButton.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.enviarConfiguracoesButton.IconColor = System.Drawing.Color.Black;
-            this.enviarConfiguracoesButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.enviarConfiguracoesButton.Location = new System.Drawing.Point(10, 10);
-            this.enviarConfiguracoesButton.Name = "enviarConfiguracoesButton";
-            this.enviarConfiguracoesButton.Size = new System.Drawing.Size(561, 36);
-            this.enviarConfiguracoesButton.TabIndex = 13;
-            this.enviarConfiguracoesButton.Text = "Enviar Configurações";
-            this.enviarConfiguracoesButton.UseVisualStyleBackColor = false;
-            this.enviarConfiguracoesButton.Click += new System.EventHandler(this.enviarConfiguracoesButton_Click);
-            // 
             // FormConfigurarIos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1641,6 +1651,7 @@
             this.panel6.ResumeLayout(false);
             this.configurarIosPanel.ResumeLayout(false);
             this.configurarIosPanel.PerformLayout();
+            this.panel44.ResumeLayout(false);
             this.panel41.ResumeLayout(false);
             this.panel42.ResumeLayout(false);
             this.panel42.PerformLayout();
@@ -1691,7 +1702,6 @@
             this.panel2.PerformLayout();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            this.panel44.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1799,5 +1809,6 @@
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel44;
         private FontAwesome.Sharp.IconButton enviarConfiguracoesButton;
+        private System.Windows.Forms.Panel panel45;
     }
 }
