@@ -51,6 +51,7 @@
             this.Name = "CTextBox";
             this.Padding = new System.Windows.Forms.Padding(7);
             this.Size = new System.Drawing.Size(231, 33);
+            this.Load += new System.EventHandler(this.CTextBox_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

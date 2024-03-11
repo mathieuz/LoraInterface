@@ -264,5 +264,10 @@ namespace LoraInterface.CustomControls
             isFocused = false;
             this.Invalidate();
         }
+
+        private void CTextBox_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

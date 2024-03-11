@@ -114,6 +114,7 @@ namespace LoraInterface.Forms
 
                         //Habilita o grupo de IOs
                         configurarIosPanel.Visible = true;
+                        configurarTempoZonasPanel.Visible = true;
 
                         MainForm.formInstance.acessoSideBar.Cursor = Cursors.No;
 
@@ -145,6 +146,7 @@ namespace LoraInterface.Forms
 
                 //Desabilita o grupo de IOs
                 configurarIosPanel.Visible = false;
+                configurarTempoZonasPanel.Visible = false;
 
                 MainForm.formInstance.acessoSideBar.Cursor = Cursors.Default;
 
