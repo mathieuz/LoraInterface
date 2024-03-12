@@ -1707,13 +1707,13 @@
             this.zona4Textbox.ForeColor = System.Drawing.Color.Black;
             this.zona4Textbox.Location = new System.Drawing.Point(0, 8);
             this.zona4Textbox.Margin = new System.Windows.Forms.Padding(0);
-            this.zona4Textbox.MaxLength = 8;
+            this.zona4Textbox.MaxLength = 5;
             this.zona4Textbox.Multiline = false;
             this.zona4Textbox.Name = "zona4Textbox";
             this.zona4Textbox.Padding = new System.Windows.Forms.Padding(12, 12, 8, 16);
             this.zona4Textbox.Size = new System.Drawing.Size(461, 44);
             this.zona4Textbox.TabIndex = 13;
-            this.zona4Textbox.Texts = "";
+            this.zona4Textbox.Texts = "10";
             this.zona4Textbox.UnderlinedStyle = false;
             // 
             // panel53
@@ -1745,13 +1745,13 @@
             this.zona3Textbox.ForeColor = System.Drawing.Color.Black;
             this.zona3Textbox.Location = new System.Drawing.Point(0, 8);
             this.zona3Textbox.Margin = new System.Windows.Forms.Padding(0);
-            this.zona3Textbox.MaxLength = 8;
+            this.zona3Textbox.MaxLength = 5;
             this.zona3Textbox.Multiline = false;
             this.zona3Textbox.Name = "zona3Textbox";
             this.zona3Textbox.Padding = new System.Windows.Forms.Padding(12, 12, 8, 16);
             this.zona3Textbox.Size = new System.Drawing.Size(461, 44);
             this.zona3Textbox.TabIndex = 13;
-            this.zona3Textbox.Texts = "";
+            this.zona3Textbox.Texts = "8";
             this.zona3Textbox.UnderlinedStyle = false;
             // 
             // panel51
@@ -1783,13 +1783,13 @@
             this.zona2Textbox.ForeColor = System.Drawing.Color.Black;
             this.zona2Textbox.Location = new System.Drawing.Point(0, 8);
             this.zona2Textbox.Margin = new System.Windows.Forms.Padding(0);
-            this.zona2Textbox.MaxLength = 8;
+            this.zona2Textbox.MaxLength = 5;
             this.zona2Textbox.Multiline = false;
             this.zona2Textbox.Name = "zona2Textbox";
             this.zona2Textbox.Padding = new System.Windows.Forms.Padding(12, 12, 8, 16);
             this.zona2Textbox.Size = new System.Drawing.Size(461, 44);
             this.zona2Textbox.TabIndex = 13;
-            this.zona2Textbox.Texts = "";
+            this.zona2Textbox.Texts = "6";
             this.zona2Textbox.UnderlinedStyle = false;
             // 
             // panel50
@@ -1821,13 +1821,13 @@
             this.zona1Textbox.ForeColor = System.Drawing.Color.Black;
             this.zona1Textbox.Location = new System.Drawing.Point(0, 8);
             this.zona1Textbox.Margin = new System.Windows.Forms.Padding(0);
-            this.zona1Textbox.MaxLength = 8;
+            this.zona1Textbox.MaxLength = 5;
             this.zona1Textbox.Multiline = false;
             this.zona1Textbox.Name = "zona1Textbox";
             this.zona1Textbox.Padding = new System.Windows.Forms.Padding(12, 12, 8, 16);
             this.zona1Textbox.Size = new System.Drawing.Size(461, 44);
             this.zona1Textbox.TabIndex = 12;
-            this.zona1Textbox.Texts = "";
+            this.zona1Textbox.Texts = "4";
             this.zona1Textbox.UnderlinedStyle = false;
             // 
             // panel47
@@ -1859,13 +1859,13 @@
             this.zona0Textbox.ForeColor = System.Drawing.Color.Black;
             this.zona0Textbox.Location = new System.Drawing.Point(0, 8);
             this.zona0Textbox.Margin = new System.Windows.Forms.Padding(0);
-            this.zona0Textbox.MaxLength = 8;
+            this.zona0Textbox.MaxLength = 5;
             this.zona0Textbox.Multiline = false;
             this.zona0Textbox.Name = "zona0Textbox";
             this.zona0Textbox.Padding = new System.Windows.Forms.Padding(12, 12, 8, 16);
             this.zona0Textbox.Size = new System.Drawing.Size(461, 44);
             this.zona0Textbox.TabIndex = 11;
-            this.zona0Textbox.Texts = "";
+            this.zona0Textbox.Texts = "2";
             this.zona0Textbox.UnderlinedStyle = false;
             // 
             // panel46
